@@ -6,6 +6,7 @@ import ResultsSection from "@/components/sections/ResultsSection";
 import DetailsSection from "@/components/sections/DetailsSection";
 import PrizesSection from "@/components/sections/PrizesSection";
 import SponsorsSection from "@/components/sections/SponsorsSection";
+import JudgesSection from "@/components/sections/JudgesSection";
 import CTASection from "@/components/sections/CTASection";
 import RegistrationSection from "@/components/sections/RegistrationSection";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <DetailsSection />
         <PrizesSection />
         <SponsorsSection />
+        <JudgesSection />
         <CTASection />
         <RegistrationSection />
       </main>

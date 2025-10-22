@@ -24,22 +24,24 @@ export default function HeroSection() {
           The Investment Olympics
         </h2>
         <p
-          className="text-xl md:text-2xl mb-16 max-w-3xl mx-auto leading-relaxed font-bold hero-text-shadow animate-fade-in-delay-2"
+          className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-bold hero-text-shadow animate-fade-in-delay-2"
           style={{ textShadow: "3px 3px 10px rgba(0,0,0,0.9)" }}
         >
-          Compete with students from around the world in the ultimate investment
-          challenge. Manage a $100,000 virtual portfolio over three months and
-          compete for $15,000 in prizes.
+          Compete with top student investors worldwide in a global investment
+          challenge. Manage a $100,000 virtual portfolio over three months for a
+          chance to win $15,000 in prizes.
         </p>
 
-        <a
-          href="https://forms.cloud.microsoft/r/avh5Ht6gee"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#8B0C19] hover:bg-[#9B1B2F] text-white px-12 py-6 rounded-xl text-xl font-bold transition-all duration-300 hover:scale-110 transform hover:shadow-2xl hover:shadow-[#FFD700]/50 animate-pulse-button"
-        >
-          Register Now
-        </a>
+        <div className="mt-16">
+          <a
+            href="https://forms.cloud.microsoft/r/avh5Ht6gee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#8B0C19] hover:bg-[#9B1B2F] text-white px-12 py-6 rounded-xl text-xl font-bold transition-all duration-300 hover:scale-110 transform hover:shadow-2xl hover:shadow-[#FFD700]/50 animate-pulse-button"
+          >
+            Register Now
+          </a>
+        </div>
       </div>
     </section>
   );

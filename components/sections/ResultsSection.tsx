@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
+import PerformanceChart from "../PerformanceChart";
 
 export default function ResultsSection() {
   const [isQuoteExpanded, setIsQuoteExpanded] = useState(false);
@@ -217,7 +218,7 @@ export default function ResultsSection() {
             {/* Section Header */}
             <div className="text-center">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                Competition Overview
+                Competition Overview (WIC 2024)
               </h3>
               <p className="text-lg text-gray-600">
                 Teams managed their portfolios using{" "}
@@ -276,7 +277,7 @@ export default function ResultsSection() {
             {/* DETAILS ROW - Two Columns */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* LEFT COLUMN: Global Participation Map */}
-              <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="bg-white rounded-xl p-6 shadow-lg h-full">
                 <div className="mb-6">
                   <h4 className="text-2xl font-bold text-gray-900">
                     Global Participation
@@ -306,21 +307,8 @@ export default function ResultsSection() {
               </div>
 
               {/* RIGHT COLUMN: Performance Chart */}
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="mb-6">
-                  <h4 className="text-2xl font-bold text-gray-900">
-                    Performance Chart
-                  </h4>
-                </div>
-                <div className="h-64 bg-gradient-to-br from-green-50 to-green-100 rounded-xl flex items-center justify-center border-2 border-green-200 group hover:border-green-300 transition-colors duration-300">
-                  <div className="text-center text-green-600">
-                    <BarChart3 className="w-16 h-16 mx-auto mb-4 opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-                    <p className="text-lg font-semibold mb-2">
-                      Performance Chart
-                    </p>
-                    <p className="text-sm text-green-500">Coming Soon</p>
-                  </div>
-                </div>
+              <div className="h-full">
+                <PerformanceChart />
               </div>
             </div>
           </div>

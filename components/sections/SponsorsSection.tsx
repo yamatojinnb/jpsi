@@ -43,7 +43,7 @@ export default function SponsorsSection() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-5xl mx-auto">
           {sponsors.map((sponsor, index) => (
             <div key={index} className="text-center">
               {/* Logo Display */}
@@ -59,22 +59,16 @@ export default function SponsorsSection() {
                 />
               </div>
 
-              {/* Company Info */}
-              <div className="space-y-3">
-                {/* Clickable Company Name */}
+              {/* Company Name */}
+              <div className="mt-4">
                 <a
                   href={sponsor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl font-bold text-gray-900 hover:text-[#8B0C19] hover:underline transition-colors duration-300 cursor-pointer block"
+                  className="text-sm text-gray-500 hover:text-[#8B0C19] hover:underline transition-colors duration-300 cursor-pointer block"
                 >
                   {sponsor.name}
                 </a>
-
-                {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {sponsor.description}
-                </p>
               </div>
             </div>
           ))}

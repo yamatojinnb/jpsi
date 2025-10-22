@@ -1,4 +1,4 @@
-import { Users, Globe, Trophy } from "lucide-react";
+import { Users, Network, Trophy } from "lucide-react";
 
 export default function CTASection() {
   return (
@@ -21,8 +21,8 @@ export default function CTASection() {
               <span className="text-lg">3 Students per Team</span>
             </div>
             <div className="flex items-center">
-              <Globe className="w-6 h-6 mr-3" />
-              <span className="text-lg">Global Competition</span>
+              <Network className="w-6 h-6 mr-3" />
+              <span className="text-lg">Investment Community</span>
             </div>
             <div className="flex items-center">
               <Trophy className="w-6 h-6 mr-3" />
@@ -34,13 +34,13 @@ export default function CTASection() {
             href="https://forms.cloud.microsoft/r/avh5Ht6gee"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#8B0C19] px-12 py-4 rounded-lg text-xl font-bold hover:bg-[#FFD700] hover:text-[#8B0C19] transition duration-200 hover:scale-105 transform shadow-lg"
+            className="inline-block bg-white text-gray-900 border-2 border-black px-12 py-4 rounded-lg text-xl font-bold hover:bg-[#8B0C19] hover:text-white hover:scale-102 hover:shadow-xl transition-all duration-300 transform shadow-lg"
           >
             Register Your Team Now
           </a>
 
           <div className="mt-8 text-sm opacity-75">
-            Registration deadline: TBD
+            Registration deadline: December 15, 2025
           </div>
         </div>
       </div>
