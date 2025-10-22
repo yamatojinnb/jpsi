@@ -293,7 +293,7 @@ export default function PerformanceChart() {
                 context.dataset.label + ": " + context.parsed.y.toFixed(0) + "%"
               );
             }
-            return null;
+            return "";
           },
         },
       },
