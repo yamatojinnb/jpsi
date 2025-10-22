@@ -25,16 +25,14 @@ export default function RegistrationSection() {
             Ready to Compete?
           </h2>
 
-          {/* Subheading */}
-          <p className="text-xl text-gray-700 mb-12 leading-relaxed">
-            Join students from around the world in the Investment Olympics 2025
-          </p>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             {/* Primary Button - Register Now */}
             <a
-              href="#contact"
+              href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=QOW1RZ6yGECByqwq6A1h2yTcxl4gZSdChYSPaRdO7QJUREdJUEtEODhUOVZRTUQ3QjlIU0dON0NUWC4u&route=shorturl"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#8B0C19] hover:bg-[#9B1B2F] text-white font-bold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#8B0C19]/25 min-w-[200px]"
             >
               Register Now
@@ -62,13 +60,6 @@ export default function RegistrationSection() {
             </a>
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-12 text-sm text-gray-600">
-            <p>
-              Registration now open • Competition runs December 2025 – March
-              2026
-            </p>
-          </div>
         </div>
       </div>
     </section>
