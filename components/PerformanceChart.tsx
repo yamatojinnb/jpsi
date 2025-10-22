@@ -14,6 +14,8 @@ import {
 import { Line } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import annotationPlugin from "chartjs-plugin-annotation";
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 // Custom plugin for white background
 const backgroundPlugin = {
@@ -43,25 +45,98 @@ ChartJS.register(
 );
 
 export default function PerformanceChart() {
-  // Competition performance data (Oct 13 - Nov 21, 2024)
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  const [animationProgress, setAnimationProgress] = useState(0);
+  const totalPoints = 7;
+
+  // Smoother animation: 60 fps for 3 seconds = 180 frames
+  const totalDuration = 3000; // 3 seconds total
+  const fps = 60;
+  const totalFrames = (totalDuration / 1000) * fps;
+
+  useEffect(() => {
+    if (inView) {
+      let frame = 0;
+
+      const animate = () => {
+        frame++;
+        const progress = (frame / totalFrames) * (totalPoints - 1);
+        setAnimationProgress(Math.min(progress, totalPoints - 1));
+
+        if (frame < totalFrames) {
+          requestAnimationFrame(animate);
+        }
+      };
+
+      requestAnimationFrame(animate);
+    }
+  }, [inView]);
+
+  // Full data arrays
+  const fullData1 = [100, 100, 100, 118, 122, 118, 129];
+  const fullData2 = [105, 112, 120, 113, 126, 127, 127];
+  const fullData3 = [100, 101, 100, 102, 114, 115, 115];
+
+  // KEEP ALL LABELS - don't slice them
+  const labels = [
+    "10/13/24",
+    "10/19/24",
+    "10/26/24",
+    "11/3/24",
+    "11/10/24",
+    "11/17/24",
+    "11/21/24",
+  ];
+
+  // Linear interpolation function
+  const lerp = (start: number, end: number, t: number) => {
+    return start + (end - start) * t;
+  };
+
+  // Create smooth interpolated data
+  const getInterpolatedData = (fullData: number[]) => {
+    return fullData.map((value, index) => {
+      if (index > animationProgress) {
+        // Point not reached yet
+        return null;
+      } else if (index < Math.floor(animationProgress)) {
+        // Point fully visible
+        return value;
+      } else {
+        // Point currently being drawn - interpolate
+        const prevIndex = Math.floor(animationProgress);
+        const nextIndex = prevIndex + 1;
+
+        if (nextIndex >= fullData.length) {
+          return value;
+        }
+
+        const t = animationProgress - prevIndex;
+        const prevValue = fullData[prevIndex];
+        const nextValue = fullData[nextIndex];
+
+        return lerp(prevValue, nextValue, t);
+      }
+    });
+  };
+
   const data = {
-    labels: [
-      "10/13/24",
-      "10/19/24",
-      "10/26/24",
-      "11/3/24",
-      "11/10/24",
-      "11/17/24",
-      "11/21/24",
-    ],
+    labels: labels,
     datasets: [
       {
         label: "TU München (1st)",
-        data: [100, 100, 100, 118, 122, 118, 129],
+        data: getInterpolatedData(fullData1),
         borderColor: "#8B0C19",
         backgroundColor: "rgba(139, 12, 25, 0.1)",
         borderWidth: 4,
-        pointRadius: 6,
+        pointRadius: (context: any) => {
+          // Show point only at completed positions
+          return context.dataIndex <= Math.floor(animationProgress) ? 6 : 0;
+        },
         pointHoverRadius: 8,
         tension: 0.4,
         pointBackgroundColor: "#8B0C19",
@@ -70,14 +145,17 @@ export default function PerformanceChart() {
         pointHoverBackgroundColor: "#8B0C19",
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
+        spanGaps: false,
       },
       {
         label: "2nd Place",
-        data: [105, 112, 120, 113, 126, 127, 127],
+        data: getInterpolatedData(fullData2),
         borderColor: "#F59E0B",
         backgroundColor: "rgba(245, 158, 11, 0.1)",
         borderWidth: 3,
-        pointRadius: 5,
+        pointRadius: (context: any) => {
+          return context.dataIndex <= Math.floor(animationProgress) ? 5 : 0;
+        },
         pointHoverRadius: 7,
         tension: 0.4,
         pointBackgroundColor: "#F59E0B",
@@ -86,14 +164,17 @@ export default function PerformanceChart() {
         pointHoverBackgroundColor: "#F59E0B",
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
+        spanGaps: false,
       },
       {
         label: "3rd Place",
-        data: [100, 101, 100, 102, 114, 115, 115],
+        data: getInterpolatedData(fullData3),
         borderColor: "#6B7280",
         backgroundColor: "rgba(107, 114, 128, 0.1)",
         borderWidth: 3,
-        pointRadius: 5,
+        pointRadius: (context: any) => {
+          return context.dataIndex <= Math.floor(animationProgress) ? 5 : 0;
+        },
         pointHoverRadius: 7,
         tension: 0.4,
         pointBackgroundColor: "#6B7280",
@@ -102,6 +183,7 @@ export default function PerformanceChart() {
         pointHoverBackgroundColor: "#6B7280",
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
+        spanGaps: false,
       },
     ],
   };
@@ -110,6 +192,11 @@ export default function PerformanceChart() {
     responsive: true,
     maintainAspectRatio: true,
     aspectRatio: 1.3,
+
+    // Disable default animation (we control it manually)
+    animation: {
+      duration: 0,
+    },
     layout: {
       padding: {
         right: 60,
@@ -144,13 +231,18 @@ export default function PerformanceChart() {
             xMax: 4.5,
             backgroundColor: "rgba(252, 211, 77, 0.25)",
             borderWidth: 0,
+            display: animationProgress > 3.5,
           },
         },
       },
       datalabels: {
         display: function (context: any) {
-          // Only show label on the last data point
-          return context.dataIndex === context.dataset.data.length - 1;
+          // Show label only when fully at that point
+          return (
+            context.dataIndex === Math.floor(animationProgress) &&
+            context.dataIndex === totalPoints - 1 &&
+            animationProgress >= totalPoints - 1
+          );
         },
         align: "right" as const,
         anchor: "end" as const,
@@ -177,6 +269,7 @@ export default function PerformanceChart() {
         },
       },
       tooltip: {
+        enabled: animationProgress >= totalPoints - 1, // Enable only after animation
         mode: "index" as const,
         intersect: false,
         backgroundColor: "rgba(0, 0, 0, 0.95)",
@@ -195,7 +288,12 @@ export default function PerformanceChart() {
         displayColors: true,
         callbacks: {
           label: function (context: any) {
-            return context.dataset.label + ": " + context.parsed.y + "%";
+            if (context.parsed && context.parsed.y !== null) {
+              return (
+                context.dataset.label + ": " + context.parsed.y.toFixed(0) + "%"
+              );
+            }
+            return null;
           },
         },
       },
@@ -241,7 +339,7 @@ export default function PerformanceChart() {
   };
 
   return (
-    <div className="bg-white rounded-xl p-6 shadow-lg h-full">
+    <div ref={ref} className="bg-white rounded-xl p-6 shadow-lg h-full">
       <div className="mb-4">
         <h4 className="text-2xl font-bold text-gray-900">Performance Chart</h4>
       </div>

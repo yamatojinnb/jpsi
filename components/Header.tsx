@@ -36,7 +36,10 @@ export default function Header() {
     { label: "Prizes", id: "prizes" },
     { label: "Sponsors", id: "sponsors" },
     { label: "About JPSI", href: "/about-us" },
-    { label: "Contact", id: "contact" },
+    {
+      label: "Contact",
+      href: "mailto:jpsi.waseda.univ@outlook.com?subject=WIC2025%20Inquiry&body=Hello%20WIC2025%20Team%2C%0A%0A",
+    },
   ];
 
   return (
@@ -61,21 +64,33 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.label}
-                onClick={() =>
-                  item.href
-                    ? (window.location.href = item.href)
-                    : scrollToSection(item.id!)
-                }
-                className={`font-medium transition-colors duration-300 hover:text-[#FFD700] text-white ${
-                  !isScrolled ? "text-shadow-lg" : ""
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
+            {navItems.map((item) =>
+              item.href && item.href.startsWith("mailto:") ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className={`font-medium transition-colors duration-300 hover:text-[#FFD700] text-white ${
+                    !isScrolled ? "text-shadow-lg" : ""
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <button
+                  key={item.label}
+                  onClick={() =>
+                    item.href
+                      ? (window.location.href = item.href)
+                      : scrollToSection(item.id!)
+                  }
+                  className={`font-medium transition-colors duration-300 hover:text-[#FFD700] text-white ${
+                    !isScrolled ? "text-shadow-lg" : ""
+                  }`}
+                >
+                  {item.label}
+                </button>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,19 +108,29 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() =>
-                    item.href
-                      ? (window.location.href = item.href)
-                      : scrollToSection(item.id!)
-                  }
-                  className="text-left font-medium text-gray-700 hover:text-[#8B0C19] transition-colors duration-300"
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.href && item.href.startsWith("mailto:") ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-left font-medium text-gray-700 hover:text-[#8B0C19] transition-colors duration-300"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <button
+                    key={item.label}
+                    onClick={() =>
+                      item.href
+                        ? (window.location.href = item.href)
+                        : scrollToSection(item.id!)
+                    }
+                    className="text-left font-medium text-gray-700 hover:text-[#8B0C19] transition-colors duration-300"
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
             </div>
           </div>
         )}

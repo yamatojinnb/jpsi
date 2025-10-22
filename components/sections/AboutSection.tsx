@@ -1,7 +1,27 @@
+"use client";
+
 import { DollarSign, Calendar, Trophy, Users } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function AboutSection() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const section = document.getElementById("wic-cards");
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
   const highlightCards = [
     {
       icon: Calendar,
@@ -54,8 +74,11 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Highlight Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {/* Animated Cards Grid */}
+        <div
+          id="wic-cards"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+        >
           {highlightCards.map((card, index) => {
             const images = [
               "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=160&fit=crop",
@@ -63,33 +86,41 @@ export default function AboutSection() {
               "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=400&h=160&fit=crop",
             ];
 
+            const delays = ["delay-0", "delay-200", "delay-400"];
+
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+                className={`transition-all duration-700 ${
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                } ${delays[index]}`}
               >
-                {/* Image Container */}
-                <div className="relative h-40 overflow-hidden">
-                  <Image
-                    src={images[index]}
-                    alt={card.title}
-                    width={400}
-                    height={160}
-                    className="w-full h-full object-cover"
-                  />
-                  {/* Dark Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                </div>
-
-                {/* Content Section */}
-                <div className="p-6 text-center">
-                  <div className="text-4xl font-bold text-[#8B0C19] mb-2">
-                    {card.number}
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                  {/* Image Container */}
+                  <div className="relative h-40 overflow-hidden">
+                    <Image
+                      src={images[index]}
+                      alt={card.title}
+                      width={400}
+                      height={160}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                    {/* Dark Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">{card.description}</p>
+
+                  {/* Content Section */}
+                  <div className="p-6 text-center">
+                    <div className="text-4xl font-bold text-[#8B0C19] mb-2">
+                      {card.number}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm text-gray-600">{card.description}</p>
+                  </div>
                 </div>
               </div>
             );
