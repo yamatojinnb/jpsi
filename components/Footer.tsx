@@ -1,66 +1,104 @@
 "use client";
 
+import { Mail, Twitter, Instagram, Linkedin } from "lucide-react";
+
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.offsetTop - headerHeight;
-      window.scrollTo({
-        top: elementPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const quickLinks = [
-    { label: "About WIC", id: "about" },
-    { label: "Results", id: "results" },
-    { label: "Rules", id: "rules" },
-    { label: "Prizes", id: "prizes" },
-    { label: "Contact", id: "contact" },
-    { label: "About JPSI", href: "/about-us" },
-  ];
-
   return (
-    <footer className="bg-gray-900 text-gray-400">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Copyright */}
-          <div className="text-center md:text-left">
-            <p className="text-sm">
-              © 2025 JPSI (Japan Students Investment Union). All rights
-              reserved.
-            </p>
-          </div>
+    <footer className="text-gray-700" style={{ backgroundColor: "#f9fafb" }}>
+      {/* Waseda crimson accent line */}
+      <div className="h-1 bg-gradient-to-r from-[#8B0C19] to-[#FFD700]"></div>
 
-          {/* Quick Links */}
-          <div className="text-center">
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {quickLinks.map((link) => (
-                <button
-                  key={link.label}
-                  onClick={() =>
-                    link.href
-                      ? (window.location.href = link.href)
-                      : scrollToSection(link.id!)
-                  }
-                  className="text-sm hover:text-white transition-colors duration-300"
-                >
-                  {link.label}
-                </button>
-              ))}
+      <div className="container mx-auto px-4 py-12">
+        {/* Top Section - Navigation */}
+        <div className="mb-8">
+          <nav className="flex flex-wrap justify-center gap-6 text-sm">
+            <a
+              href="#about"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              About WIC
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="#results"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              Results
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="#rules"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              Rules
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="#prizes"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              Prizes
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="#about"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              About JPSI
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="#contact"
+              className="hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+
+        {/* Middle Section - Contact */}
+        <div className="text-center mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {/* Email */}
+            <a
+              href="mailto:jpsi.waseda.univ@outlook.com"
+              className="flex items-center gap-2 text-gray-600 hover:text-[#8B0C19] transition-colors duration-300"
+            >
+              <Mail className="w-4 h-4" />
+              <span>jpsi.waseda.univ@outlook.com</span>
+            </a>
+
+            {/* Social Media */}
+            <div className="flex items-center gap-4">
+              {/* Twitter - Inactive */}
+              <div className="text-gray-400 opacity-50 cursor-default">
+                <Twitter className="w-5 h-5" />
+              </div>
+
+              {/* Instagram - Active */}
+              <a
+                href="https://www.instagram.com/jpsi_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-[#8B0C19] transition-colors duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+
+              {/* LinkedIn - Inactive */}
+              <div className="text-gray-400 opacity-50 cursor-default">
+                <Linkedin className="w-5 h-5" />
+              </div>
             </div>
           </div>
+        </div>
 
-          {/* Contact Info */}
-          <div className="text-center md:text-right">
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <p className="text-sm">
-              Questions about WIC2025?
-              <br />
-              Get in touch with our team.
+        {/* Bottom Section - Copyright */}
+        <div className="border-t border-gray-300 pt-8">
+          <div className="text-center text-sm text-gray-600">
+            <p>
+              © 2025 Japan Students Investment Union (JPSI). All rights
+              reserved.
             </p>
           </div>
         </div>

@@ -69,7 +69,7 @@ export default function ResultsSection() {
             </div>
 
             {/* RIGHT COLUMN: Information Stack (60% - 3/5 columns) */}
-            <div className="lg:col-span-3 space-y-6">
+            <div className="lg:col-span-3 space-y-3">
               {/* Team Name & Location */}
               <div className="space-y-3">
                 <div className="space-y-2">
@@ -93,7 +93,14 @@ export default function ResultsSection() {
                 </div>
                 <div className="flex items-center gap-2 text-gray-600">
                   <MapPin className="w-5 h-5" />
-                  <span className="text-lg">Munich, Germany</span>
+                  <a
+                    href="https://maps.app.goo.gl/qarP5UWZHvvBgSLn9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+                  >
+                    Arcisstraße 21, 80333 München, Germany
+                  </a>
                   <Image
                     src="/images/flags/germany.png"
                     alt="Germany"
@@ -124,23 +131,23 @@ export default function ResultsSection() {
                     statsInView ? "opacity-100 scale-100" : "opacity-0 scale-95"
                   }`}
                 >
-                  <div className="text-7xl md:text-8xl font-bold text-emerald-700 leading-none">
-                    {statsInView && (
-                      <CountUp
-                        start={0}
-                        end={28.4}
-                        duration={2}
-                        decimals={1}
-                        suffix="%"
-                        prefix="+"
-                      />
-                    )}
+                  <div className="text-center">
+                    {/* Performance Number */}
+                    <div className="text-7xl md:text-8xl font-bold text-emerald-700">
+                      {statsInView && (
+                        <CountUp
+                          start={0}
+                          end={28.4}
+                          duration={4}
+                          decimals={1}
+                          suffix="%"
+                          prefix="+"
+                        />
+                      )}
+                    </div>
                   </div>
                   <div className="text-lg text-[#8B0C19] font-mono tracking-wide font-medium">
                     Portfolio: $300,000 → $384,000
-                    <div className="text-sm text-emerald-600 font-semibold mt-1">
-                      +$84,000 profit
-                    </div>
                   </div>
                 </div>
               </div>
@@ -205,62 +212,114 @@ export default function ResultsSection() {
             </div>
           </div>
 
-          {/* BOTTOM SECTION: Full Width (2 Columns) */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* LEFT COLUMN: Competition Overview */}
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">
+          {/* COMPETITION OVERVIEW SECTION */}
+          <div className="space-y-8">
+            {/* Section Header */}
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                 Competition Overview
-              </h4>
+              </h3>
+              <p className="text-lg text-gray-600">
+                Teams managed their portfolios using{" "}
+                <a
+                  href="https://www.tradingview.com/chart/"
+                  target="_blank"
+                  rel="dofollow noopener noreferrer"
+                  className="text-[#8B0C19] underline font-semibold hover:text-[#6B0A15] transition-colors duration-300"
+                >
+                  TradingView's platform
+                </a>
+                , which provides real-time market data and professional trading
+                tools.
+              </p>
+            </div>
 
-              {/* Stats in one line */}
-              <div className="flex items-center justify-center gap-6 mb-6 py-4 bg-gray-50 rounded-lg">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#8B0C19]">9</div>
-                  <div className="text-sm text-gray-600">Countries</div>
+            {/* STATS ROW - Clean Typography */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-16">
+              {/* Countries */}
+              <div className="text-center">
+                <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
+                  9
                 </div>
-                <div className="w-px h-8 bg-gray-300"></div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#8B0C19]">12</div>
-                  <div className="text-sm text-gray-600">Universities</div>
-                </div>
-                <div className="w-px h-8 bg-gray-300"></div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#8B0C19]">50+</div>
-                  <div className="text-sm text-gray-600">Participants</div>
+                <div className="text-lg font-semibold text-gray-700">
+                  Countries
                 </div>
               </div>
 
-              {/* Participating Universities - Compact */}
-              <div>
-                <h5 className="text-sm font-semibold text-gray-700 mb-3">
-                  Participating Universities
-                </h5>
-                <div className="grid grid-cols-1 gap-2 text-sm text-gray-600">
-                  <div>• Yale University</div>
-                  <div>• TU München</div>
-                  <div>• RWTH Aachen</div>
-                  <div>• IIT Roorkee</div>
-                  <div>• SMU Singapore</div>
-                  <div>• Waseda University</div>
+              {/* Divider */}
+              <div className="hidden md:block w-px h-16 bg-gray-300"></div>
+
+              {/* Universities */}
+              <div className="text-center">
+                <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
+                  12
+                </div>
+                <div className="text-lg font-semibold text-gray-700">
+                  Universities
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div className="hidden md:block w-px h-16 bg-gray-300"></div>
+
+              {/* Competitors */}
+              <div className="text-center">
+                <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
+                  50+
+                </div>
+                <div className="text-lg font-semibold text-gray-700">
+                  Competitors
                 </div>
               </div>
             </div>
 
-            {/* RIGHT COLUMN: Performance Chart */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
-              <div className="flex items-center gap-3 mb-4">
-                <BarChart3 className="w-5 h-5 text-green-600" />
-                <h4 className="text-lg font-semibold text-gray-900">
-                  Performance Chart
-                </h4>
+            {/* DETAILS ROW - Two Columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* LEFT COLUMN: Global Participation Map */}
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <div className="mb-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Global Participation
+                  </h4>
+                </div>
+
+                {/* World Map Image */}
+                <div className="mb-6">
+                  <Image
+                    src="/images/world.webp"
+                    alt="WIC2024 Global Participation Map"
+                    width={1200}
+                    height={700}
+                    className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
+                    priority
+                  />
+                </div>
+
+                {/* Summary Stats */}
+                <div className="text-center py-4 border-t border-gray-200">
+                  <div className="flex justify-center items-center gap-8 text-lg font-semibold text-gray-700">
+                    <span>9 Countries</span>
+                    <span className="text-gray-300">•</span>
+                    <span>12 Universities</span>
+                  </div>
+                </div>
               </div>
-              <div className="h-48 bg-green-50 rounded border-2 border-dashed border-green-300 flex items-center justify-center">
-                <div className="text-center">
-                  <BarChart3 className="w-12 h-12 text-green-400 mx-auto mb-3" />
-                  <p className="text-sm text-green-600 font-medium">
-                    Chart Coming Soon
-                  </p>
+
+              {/* RIGHT COLUMN: Performance Chart */}
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <div className="mb-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Performance Chart
+                  </h4>
+                </div>
+                <div className="h-64 bg-gradient-to-br from-green-50 to-green-100 rounded-xl flex items-center justify-center border-2 border-green-200 group hover:border-green-300 transition-colors duration-300">
+                  <div className="text-center text-green-600">
+                    <BarChart3 className="w-16 h-16 mx-auto mb-4 opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+                    <p className="text-lg font-semibold mb-2">
+                      Performance Chart
+                    </p>
+                    <p className="text-sm text-green-500">Coming Soon</p>
+                  </div>
                 </div>
               </div>
             </div>

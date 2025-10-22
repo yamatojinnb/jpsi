@@ -34,6 +34,7 @@ export default function Header() {
     { label: "Results", id: "results" },
     { label: "Rules", id: "rules" },
     { label: "Prizes", id: "prizes" },
+    { label: "Sponsors", id: "sponsors" },
     { label: "About JPSI", href: "/about-us" },
     { label: "Contact", id: "contact" },
   ];

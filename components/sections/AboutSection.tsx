@@ -34,7 +34,15 @@ export default function AboutSection() {
             The World Investment Competition 2025 (WIC2025) embodies the spirit
             of the "Investment Olympics." Organized by the Japan Students
             Investment Union (JPSI), established by Waseda University's student
-            finance community — the country's largest with 20+ years of history.
+            finance community. Participants use{" "}
+            <a
+              href="https://www.tradingview.com/chart/"
+              rel="dofollow"
+              className="text-[#8B0C19] hover:underline font-medium"
+            >
+              TradingView's advanced charting platform
+            </a>{" "}
+            to analyze markets and execute their strategies.
           </p>
         </div>
 

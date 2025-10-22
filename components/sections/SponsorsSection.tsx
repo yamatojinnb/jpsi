@@ -25,63 +25,56 @@ export default function SponsorsSection() {
   ];
 
   return (
-    <section id="sponsors" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section
+      id="sponsors"
+      className="pt-8 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden"
+    >
+      {/* Premium Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700]/5 via-transparent to-[#FFD700]/5"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Partners
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Gold Sponsors
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            WIC2025 is made possible by our generous sponsors who provide the
-            tools and platforms for our participants.
+            Supporting the competition infrastructure
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
           {sponsors.map((sponsor, index) => (
-            <div key={index} className="text-center group">
-              {/* Premium Logo Card */}
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 mb-8 group-hover:shadow-2xl group-hover:shadow-gray-300/50 transition-all duration-500 group-hover:-translate-y-2 border border-gray-200/50">
-                <div className="bg-white rounded-xl p-8 flex items-center justify-center h-40 shadow-sm group-hover:shadow-lg transition-all duration-500 border border-gray-100">
-                  <Image
-                    src={sponsor.logo}
-                    alt={`${sponsor.name} logo`}
-                    width={240}
-                    height={100}
-                    className="max-h-24 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
-                  />
-                </div>
+            <div key={index} className="text-center">
+              {/* Logo Display */}
+              <div className="flex items-center justify-center h-32 mb-6">
+                <Image
+                  src={sponsor.logo}
+                  alt={`${sponsor.name} logo`}
+                  width={index === 0 ? 240 : 200}
+                  height={index === 0 ? 100 : 80}
+                  className={`${
+                    index === 0 ? "max-h-24" : "max-h-20"
+                  } w-auto object-contain`}
+                />
               </div>
 
               {/* Company Info */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#8B0C19] transition-colors duration-300">
-                  {sponsor.name}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {sponsor.description}
-                </p>
+              <div className="space-y-3">
+                {/* Clickable Company Name */}
                 <a
                   href={sponsor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-[#8B0C19] hover:bg-[#9B1B2F] text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#8B0C19]/25"
+                  className="text-xl font-bold text-gray-900 hover:text-[#8B0C19] hover:underline transition-colors duration-300 cursor-pointer block"
                 >
-                  Visit Website
-                  <svg
-                    className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
+                  {sponsor.name}
                 </a>
+
+                {/* Description */}
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {sponsor.description}
+                </p>
               </div>
             </div>
           ))}

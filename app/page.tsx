@@ -7,7 +7,7 @@ import DetailsSection from "@/components/sections/DetailsSection";
 import PrizesSection from "@/components/sections/PrizesSection";
 import SponsorsSection from "@/components/sections/SponsorsSection";
 import CTASection from "@/components/sections/CTASection";
-import ContactSection from "@/components/sections/ContactSection";
+import RegistrationSection from "@/components/sections/RegistrationSection";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <PrizesSection />
         <SponsorsSection />
         <CTASection />
-        <ContactSection />
+        <RegistrationSection />
       </main>
       <Footer />
     </div>
