@@ -193,7 +193,7 @@ export default function PerformanceChart() {
         padding: 12,
         titleFont: {
           size: 13,
-          weight: "bold",
+          weight: "bold" as const,
         },
         bodyFont: {
           size: 12,
