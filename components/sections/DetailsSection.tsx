@@ -8,9 +8,19 @@ import {
   ChevronDown,
   ChevronRight,
 } from "lucide-react";
-import { Disclosure } from "@headlessui/react";
+import { useState } from "react";
 
 export default function DetailsSection() {
+  const [openSections, setOpenSections] = useState<number[]>([0]); // Eligibility open by default
+
+  const toggleSection = (index: number) => {
+    setOpenSections(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
   const timeline = [
     {
       date: "Dec 1, 2025",
@@ -136,25 +146,29 @@ export default function DetailsSection() {
             </h3>
             
             <div className="space-y-4">
-              {rules.map((rule, index) => (
-                <Disclosure key={index} defaultOpen={index === 0}>
-                  {({ open }) => (
-                    <div className="border border-gray-200 rounded-lg">
-                      <Disclosure.Button className="flex w-full items-center justify-between p-6 text-left hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8B0C19] focus:ring-opacity-50">
-                        <div className="flex items-center">
-                          <rule.icon className="w-5 h-5 text-[#8B0C19] mr-3" />
-                          <h4 className="text-lg font-semibold text-gray-900">
-                            {rule.category}
-                          </h4>
-                        </div>
-                        {open ? (
-                          <ChevronDown className="w-5 h-5 text-gray-500 transition-transform duration-300" />
-                        ) : (
-                          <ChevronRight className="w-5 h-5 text-gray-500 transition-transform duration-300" />
-                        )}
-                      </Disclosure.Button>
-                      
-                      <Disclosure.Panel className="px-6 pb-6 transition-all duration-300">
+              {rules.map((rule, index) => {
+                const isOpen = openSections.includes(index);
+                return (
+                  <div key={index} className="border border-gray-200 rounded-lg">
+                    <button
+                      onClick={() => toggleSection(index)}
+                      className="flex w-full items-center justify-between p-6 text-left hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8B0C19] focus:ring-opacity-50"
+                    >
+                      <div className="flex items-center">
+                        <rule.icon className="w-5 h-5 text-[#8B0C19] mr-3" />
+                        <h4 className="text-lg font-semibold text-gray-900">
+                          {rule.category}
+                        </h4>
+                      </div>
+                      {isOpen ? (
+                        <ChevronDown className="w-5 h-5 text-gray-500 transition-transform duration-300" />
+                      ) : (
+                        <ChevronRight className="w-5 h-5 text-gray-500 transition-transform duration-300" />
+                      )}
+                    </button>
+                    
+                    {isOpen && (
+                      <div className="px-6 pb-6 transition-all duration-300">
                         <ul className="space-y-3">
                           {rule.items.map((item, itemIndex) => (
                             <li key={itemIndex} className="flex items-start">
@@ -163,11 +177,11 @@ export default function DetailsSection() {
                             </li>
                           ))}
                         </ul>
-                      </Disclosure.Panel>
-                    </div>
-                  )}
-                </Disclosure>
-              ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
