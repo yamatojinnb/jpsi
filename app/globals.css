@@ -127,3 +127,12 @@ html {
 .text-shadow-lg {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+/* Flag emoji styling */
+.flag-emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+    sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  display: inline-block;
+}
