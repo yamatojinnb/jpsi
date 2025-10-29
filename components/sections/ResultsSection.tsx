@@ -34,6 +34,11 @@ export default function ResultsSection() {
     threshold: 0.1,
   });
 
+  const [statsOverviewRef, statsOverviewInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
   return (
     <section id="results" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -235,10 +240,19 @@ export default function ResultsSection() {
               </p>
             </div>
 
-            {/* STATS ROW - Clean Typography */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-16">
+            {/* STATS ROW - Clean Typography with Animations */}
+            <div
+              ref={statsOverviewRef}
+              className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-16"
+            >
               {/* Countries */}
-              <div className="text-center">
+              <div
+                className={`text-center transition-all duration-700 ease-out ${
+                  statsOverviewInView
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+              >
                 <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
                   9
                 </div>
@@ -251,7 +265,13 @@ export default function ResultsSection() {
               <div className="hidden md:block w-px h-16 bg-gray-300"></div>
 
               {/* Universities */}
-              <div className="text-center">
+              <div
+                className={`text-center transition-all duration-700 ease-out delay-200 ${
+                  statsOverviewInView
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+              >
                 <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
                   12
                 </div>
@@ -264,7 +284,13 @@ export default function ResultsSection() {
               <div className="hidden md:block w-px h-16 bg-gray-300"></div>
 
               {/* Competitors */}
-              <div className="text-center">
+              <div
+                className={`text-center transition-all duration-700 ease-out delay-400 ${
+                  statsOverviewInView
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+              >
                 <div className="text-6xl md:text-7xl font-bold text-[#8B0C19] mb-2">
                   50+
                 </div>

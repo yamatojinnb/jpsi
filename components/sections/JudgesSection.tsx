@@ -10,7 +10,7 @@ export default function JudgesSection() {
     },
     {
       image: "/images/yamanaka.jpg",
-      nameEnglish: "Koji Yamanaka",
+      nameEnglish: "Yasuji Yamanaka",
       title: "Market Analyst",
       company: "TradingView",
     },
