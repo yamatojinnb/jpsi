@@ -66,9 +66,13 @@ export default function DetailsSection() {
     <section id="rules" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Competition Details
-          </h2>
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Competition Details
+            </h2>
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+          </div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Everything you need to know about WIC2025 schedule, rules, and
             requirements.

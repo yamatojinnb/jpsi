@@ -44,6 +44,49 @@ ChartJS.register(
   backgroundPlugin
 );
 
+// Generate smooth interpolated data with many points
+const generateSmoothData = (
+  originalData: number[],
+  targetPoints: number = 100
+): number[] => {
+  const result: number[] = [];
+  const segmentCount = originalData.length - 1;
+  const pointsPerSegment = Math.floor(targetPoints / segmentCount);
+
+  for (let i = 0; i < originalData.length - 1; i++) {
+    const start = originalData[i];
+    const end = originalData[i + 1];
+
+    for (let j = 0; j < pointsPerSegment; j++) {
+      const t = j / pointsPerSegment;
+      const easedT = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      result.push(start + (end - start) * easedT);
+    }
+  }
+
+  result.push(originalData[originalData.length - 1]);
+  return result;
+};
+
+// Generate corresponding date labels
+const generateSmoothLabels = (
+  originalLabels: string[],
+  targetPoints: number = 100
+): string[] => {
+  const result: string[] = [];
+  const segmentCount = originalLabels.length - 1;
+  const pointsPerSegment = Math.floor(targetPoints / segmentCount);
+
+  for (let i = 0; i < originalLabels.length - 1; i++) {
+    for (let j = 0; j < pointsPerSegment; j++) {
+      result.push("");
+    }
+  }
+
+  result.push("");
+  return result;
+};
+
 export default function PerformanceChart() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -51,7 +94,36 @@ export default function PerformanceChart() {
   });
 
   const [animationProgress, setAnimationProgress] = useState(0);
-  const totalPoints = 7;
+
+  // Original data
+  const originalData1 = [100, 100, 100, 118, 122, 118, 129];
+  const originalData2 = [105, 112, 120, 113, 126, 127, 127];
+  const originalData3 = [100, 101, 100, 102, 114, 115, 115];
+  const originalLabels = [
+    "10/13/24",
+    "10/19/24",
+    "10/26/24",
+    "11/3/24",
+    "11/10/24",
+    "11/17/24",
+    "11/21/24",
+  ];
+
+  const smoothData1 = generateSmoothData(originalData1, 100);
+  const smoothData2 = generateSmoothData(originalData2, 100);
+  const smoothData3 = generateSmoothData(originalData3, 100);
+  const smoothLabels = generateSmoothLabels(originalLabels, 100);
+
+  const totalPoints = smoothData1.length;
+
+  const originalLabelIndices: number[] = [];
+  const segmentCount = originalLabels.length - 1;
+  const pointsPerSegment = Math.floor(totalPoints / segmentCount);
+
+  for (let i = 0; i < originalLabels.length; i++) {
+    originalLabelIndices.push(i * pointsPerSegment);
+  }
+  originalLabelIndices[originalLabelIndices.length - 1] = totalPoints - 1;
 
   // Smoother animation: 60 fps for 3 seconds = 180 frames
   const totalDuration = 3000; // 3 seconds total
@@ -76,68 +148,55 @@ export default function PerformanceChart() {
     }
   }, [inView]);
 
-  // Full data arrays
-  const fullData1 = [100, 100, 100, 118, 122, 118, 129];
-  const fullData2 = [105, 112, 120, 113, 126, 127, 127];
-  const fullData3 = [100, 101, 100, 102, 114, 115, 115];
-
-  // KEEP ALL LABELS - don't slice them
-  const labels = [
-    "10/13/24",
-    "10/19/24",
-    "10/26/24",
-    "11/3/24",
-    "11/10/24",
-    "11/17/24",
-    "11/21/24",
-  ];
-
-  // Linear interpolation function
-  const lerp = (start: number, end: number, t: number) => {
-    return start + (end - start) * t;
-  };
-
   // Create smooth interpolated data
   const getInterpolatedData = (fullData: number[]) => {
+    const currentIndex = Math.floor(animationProgress);
+    const progress = animationProgress - currentIndex;
+
     return fullData.map((value, index) => {
-      if (index > animationProgress) {
-        // Point not reached yet
-        return null;
-      } else if (index < Math.floor(animationProgress)) {
-        // Point fully visible
+      if (index < currentIndex) {
         return value;
-      } else {
-        // Point currently being drawn - interpolate
-        const prevIndex = Math.floor(animationProgress);
-        const nextIndex = prevIndex + 1;
-
-        if (nextIndex >= fullData.length) {
+      } else if (index === currentIndex) {
+        if (currentIndex === fullData.length - 1) {
           return value;
+        } else {
+          const nextValue = fullData[currentIndex + 1];
+          return value + (nextValue - value) * progress;
         }
-
-        const t = animationProgress - prevIndex;
-        const prevValue = fullData[prevIndex];
-        const nextValue = fullData[nextIndex];
-
-        return lerp(prevValue, nextValue, t);
+      } else {
+        return null;
       }
     });
   };
 
   const data = {
-    labels: labels,
+    labels: smoothLabels,
     datasets: [
       {
         label: "TU München (1st)",
-        data: getInterpolatedData(fullData1),
+        data: getInterpolatedData(smoothData1),
         borderColor: "#8B0C19",
         backgroundColor: "rgba(139, 12, 25, 0.1)",
         borderWidth: 4,
         pointRadius: (context: any) => {
-          // Show point only at completed positions
-          return context.dataIndex <= Math.floor(animationProgress) ? 6 : 0;
+          const currentPoint = Math.floor(animationProgress);
+          const atCurrentPoint = context.dataIndex === currentPoint;
+          const beforeCurrentPoint = context.dataIndex < currentPoint;
+          const isOriginalPoint = originalLabelIndices.includes(
+            context.dataIndex
+          );
+
+          if (
+            (beforeCurrentPoint ||
+              (atCurrentPoint && animationProgress - currentPoint > 0.95)) &&
+            isOriginalPoint
+          ) {
+            return 6;
+          }
+          return 0;
         },
         pointHoverRadius: 8,
+        // Maintain smooth curves throughout animation
         tension: 0.4,
         pointBackgroundColor: "#8B0C19",
         pointBorderColor: "transparent",
@@ -146,17 +205,41 @@ export default function PerformanceChart() {
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
         spanGaps: false,
+        segment: {
+          borderColor: (ctx: any) => {
+            const currentPoint = Math.floor(animationProgress);
+            if (ctx.p1DataIndex > currentPoint + 1) {
+              return "transparent";
+            }
+            return undefined;
+          },
+        },
       },
       {
         label: "2nd Place",
-        data: getInterpolatedData(fullData2),
+        data: getInterpolatedData(smoothData2),
         borderColor: "#F59E0B",
         backgroundColor: "rgba(245, 158, 11, 0.1)",
         borderWidth: 3,
         pointRadius: (context: any) => {
-          return context.dataIndex <= Math.floor(animationProgress) ? 5 : 0;
+          const currentPoint = Math.floor(animationProgress);
+          const atCurrentPoint = context.dataIndex === currentPoint;
+          const beforeCurrentPoint = context.dataIndex < currentPoint;
+          const isOriginalPoint = originalLabelIndices.includes(
+            context.dataIndex
+          );
+
+          if (
+            (beforeCurrentPoint ||
+              (atCurrentPoint && animationProgress - currentPoint > 0.95)) &&
+            isOriginalPoint
+          ) {
+            return 5;
+          }
+          return 0;
         },
         pointHoverRadius: 7,
+        // Maintain smooth curves throughout animation
         tension: 0.4,
         pointBackgroundColor: "#F59E0B",
         pointBorderColor: "transparent",
@@ -165,17 +248,41 @@ export default function PerformanceChart() {
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
         spanGaps: false,
+        segment: {
+          borderColor: (ctx: any) => {
+            const currentPoint = Math.floor(animationProgress);
+            if (ctx.p1DataIndex > currentPoint + 1) {
+              return "transparent";
+            }
+            return undefined;
+          },
+        },
       },
       {
         label: "3rd Place",
-        data: getInterpolatedData(fullData3),
+        data: getInterpolatedData(smoothData3),
         borderColor: "#6B7280",
         backgroundColor: "rgba(107, 114, 128, 0.1)",
         borderWidth: 3,
         pointRadius: (context: any) => {
-          return context.dataIndex <= Math.floor(animationProgress) ? 5 : 0;
+          const currentPoint = Math.floor(animationProgress);
+          const atCurrentPoint = context.dataIndex === currentPoint;
+          const beforeCurrentPoint = context.dataIndex < currentPoint;
+          const isOriginalPoint = originalLabelIndices.includes(
+            context.dataIndex
+          );
+
+          if (
+            (beforeCurrentPoint ||
+              (atCurrentPoint && animationProgress - currentPoint > 0.95)) &&
+            isOriginalPoint
+          ) {
+            return 5;
+          }
+          return 0;
         },
         pointHoverRadius: 7,
+        // Maintain smooth curves throughout animation
         tension: 0.4,
         pointBackgroundColor: "#6B7280",
         pointBorderColor: "transparent",
@@ -184,6 +291,15 @@ export default function PerformanceChart() {
         pointHoverBorderColor: "transparent",
         pointHoverBorderWidth: 0,
         spanGaps: false,
+        segment: {
+          borderColor: (ctx: any) => {
+            const currentPoint = Math.floor(animationProgress);
+            if (ctx.p1DataIndex > currentPoint + 1) {
+              return "transparent";
+            }
+            return undefined;
+          },
+        },
       },
     ],
   };
@@ -227,11 +343,15 @@ export default function PerformanceChart() {
         annotations: {
           trumpElection: {
             type: "box" as const,
-            xMin: 2.5,
-            xMax: 4.5,
+            xMin:
+              ((smoothLabels.length - 1) / (originalLabels.length - 1)) * 2.5,
+            xMax:
+              ((smoothLabels.length - 1) / (originalLabels.length - 1)) * 4.5,
             backgroundColor: "rgba(252, 211, 77, 0.25)",
             borderWidth: 0,
-            display: animationProgress > 3.5,
+            display:
+              animationProgress >
+              ((smoothLabels.length - 1) / (originalLabels.length - 1)) * 3.5,
           },
         },
       },
@@ -325,6 +445,17 @@ export default function PerformanceChart() {
             size: 12,
           },
           color: "#374151",
+          autoSkip: false,
+          callback: function (_value: any, index: number) {
+            for (let i = 0; i < originalLabelIndices.length; i++) {
+              if (index === originalLabelIndices[i]) {
+                return originalLabels[i];
+              }
+            }
+            return "";
+          },
+          maxRotation: 45,
+          minRotation: 45,
         },
         grid: {
           display: false,

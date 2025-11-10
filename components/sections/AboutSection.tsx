@@ -22,6 +22,7 @@ export default function AboutSection() {
 
     return () => observer.disconnect();
   }, []);
+
   const highlightCards = [
     {
       icon: Calendar,
@@ -48,10 +49,14 @@ export default function AboutSection() {
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            What is WIC?
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              What is WIC?
+            </h2>
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+          </div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Compete with professional-grade tools:{" "}
             <a
               href="https://www.interactivebrokers.com/"
@@ -74,7 +79,6 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Animated Cards Grid */}
         <div
           id="wic-cards"
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
@@ -98,7 +102,6 @@ export default function AboutSection() {
                 } ${delays[index]}`}
               >
                 <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
-                  {/* Image Container */}
                   <div className="relative h-40 overflow-hidden">
                     <Image
                       src={images[index]}
@@ -107,11 +110,9 @@ export default function AboutSection() {
                       height={160}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                     />
-                    {/* Dark Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                   </div>
 
-                  {/* Content Section */}
                   <div className="p-6 text-center">
                     <div className="text-4xl font-bold text-[#8B0C19] mb-2">
                       {card.number}

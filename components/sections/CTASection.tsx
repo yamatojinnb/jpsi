@@ -51,9 +51,13 @@ export default function CTASection() {
       }}
     >
       <div className="container mx-auto text-center max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          Join the Investment Olympics
-        </h2>
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="w-16 h-1 bg-white"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Join the Investment Olympics
+          </h2>
+          <div className="w-16 h-1 bg-white"></div>
+        </div>
 
         <div className="flex justify-center">
           <div className="relative inline-block">

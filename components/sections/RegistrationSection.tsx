@@ -20,11 +20,13 @@ export default function RegistrationSection() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* Main Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Ready to Compete?
-          </h2>
-
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Ready to Compete?
+            </h2>
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+          </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -59,7 +61,6 @@ export default function RegistrationSection() {
               View Competition Rules
             </a>
           </div>
-
         </div>
       </div>
     </section>

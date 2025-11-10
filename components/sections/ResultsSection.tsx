@@ -10,7 +10,7 @@ import {
   BarChart3,
   ExternalLink,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import PerformanceChart from "../PerformanceChart";
@@ -39,15 +39,49 @@ export default function ResultsSection() {
     threshold: 0.3,
   });
 
+  const [mapRef, mapInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  const [mapReveal, setMapReveal] = useState(0);
+
+  useEffect(() => {
+    if (!mapInView) return;
+
+    let animationFrame: number;
+    let startTimestamp: number | null = null;
+    const duration = 2000; // milliseconds
+
+    const animate = (timestamp: number) => {
+      if (startTimestamp === null) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+      const progress = Math.min((elapsed / duration) * 100, 100);
+      setMapReveal(progress);
+
+      if (progress < 100) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [mapInView]);
+
   return (
     <section id="results" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* WIC2024 Results Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              WIC2024 Results
-            </h2>
+            <div className="flex items-center justify-center gap-4 mb-3">
+              <div className="w-16 h-1 bg-[#8B0C19]"></div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                WIC2024 Results
+              </h2>
+              <div className="w-16 h-1 bg-[#8B0C19]"></div>
+            </div>
           </div>
 
           {/* TOP SECTION: Photo Hero (40%) + Content (60%) */}
@@ -222,9 +256,13 @@ export default function ResultsSection() {
           <div className="space-y-8">
             {/* Section Header */}
             <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                Competition Overview (WIC 2024)
-              </h3>
+              <div className="flex items-center justify-center gap-4 mb-3">
+                <div className="w-16 h-1 bg-[#8B0C19]"></div>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  Competition Overview (WIC 2024)
+                </h3>
+                <div className="w-16 h-1 bg-[#8B0C19]"></div>
+              </div>
               <p className="text-lg text-gray-600">
                 Teams managed their portfolios using{" "}
                 <a
@@ -311,15 +349,23 @@ export default function ResultsSection() {
                 </div>
 
                 {/* World Map Image */}
-                <div className="mb-6">
-                  <Image
-                    src="/images/world.webp"
-                    alt="WIC2024 Global Participation Map"
-                    width={1200}
-                    height={700}
-                    className="w-full h-auto rounded-lg shadow-lg border border-gray-200"
-                    priority
-                  />
+                <div className="mb-6" ref={mapRef}>
+                  <div
+                    className="rounded-lg shadow-lg border border-gray-200 overflow-hidden"
+                    style={{
+                      clipPath: `inset(0 ${100 - mapReveal}% 0 0)`,
+                      transition: "clip-path 0.016s linear",
+                    }}
+                  >
+                    <Image
+                      src="/images/world.webp"
+                      alt="WIC2024 Global Participation Map"
+                      width={1200}
+                      height={700}
+                      className="w-full h-auto"
+                      priority
+                    />
+                  </div>
                 </div>
 
                 {/* Summary Stats */}

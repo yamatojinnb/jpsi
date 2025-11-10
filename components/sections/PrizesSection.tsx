@@ -39,9 +39,13 @@ export default function PrizesSection() {
     <section id="prizes" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Prize for the Winner
-          </h2>
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Prize for the Winner
+            </h2>
+            <div className="w-16 h-1 bg-[#8B0C19]"></div>
+          </div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
             With a $100 team fee, win prizes worth $15,000
           </p>
