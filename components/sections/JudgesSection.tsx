@@ -72,9 +72,10 @@ export default function JudgesSection() {
                   <h3 className="text-2xl font-bold text-gray-900">
                     Nobuhiko Shimura
                   </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Chief Strategist, Oxford Club Japan
-                  </p>
+                  <div className="text-sm text-gray-600 mt-1 space-y-1">
+                    <p>CEO, Skye Investment Managers Co Ltd.</p>
+                    <p>Visiting Fellow, Stanford University</p>
+                  </div>
                 </div>
               </div>
 
