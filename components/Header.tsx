@@ -19,7 +19,7 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80; // Account for fixed header
+      const headerHeight = 96; // Account for fixed header
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
@@ -48,7 +48,7 @@ export default function Header() {
         isScrolled ? "bg-[#8B0C19] shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
@@ -63,15 +63,31 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) =>
               item.href && item.href.startsWith("mailto:") ? (
                 <a
                   key={item.label}
                   href={item.href}
-                  className={`font-medium transition-colors duration-300 hover:text-[#FFD700] text-white ${
-                    !isScrolled ? "text-shadow-lg" : ""
-                  }`}
+                  className={`
+                    relative px-3 py-2 font-medium 
+                    transition-colors duration-300 
+                    text-white
+                    hover:text-[#FFD700]
+                    after:content-['']
+                    after:absolute
+                    after:bottom-0
+                    after:left-0
+                    after:right-0
+                    after:h-0.5
+                    ${isScrolled ? "after:bg-[#FFD700]" : "after:bg-white"}
+                    after:scale-x-0
+                    hover:after:scale-x-100
+                    after:transition-transform
+                    after:duration-300
+                    after:origin-center
+                    ${!isScrolled ? "text-shadow-lg" : ""}
+                  `}
                 >
                   {item.label}
                 </a>
@@ -83,9 +99,25 @@ export default function Header() {
                       ? (window.location.href = item.href)
                       : scrollToSection(item.id!)
                   }
-                  className={`font-medium transition-colors duration-300 hover:text-[#FFD700] text-white ${
-                    !isScrolled ? "text-shadow-lg" : ""
-                  }`}
+                  className={`
+                    relative px-3 py-2 font-medium 
+                    transition-colors duration-300 
+                    text-white
+                    hover:text-[#FFD700]
+                    after:content-['']
+                    after:absolute
+                    after:bottom-0
+                    after:left-0
+                    after:right-0
+                    after:h-0.5
+                    ${isScrolled ? "after:bg-[#FFD700]" : "after:bg-white"}
+                    after:scale-x-0
+                    hover:after:scale-x-100
+                    after:transition-transform
+                    after:duration-300
+                    after:origin-center
+                    ${!isScrolled ? "text-shadow-lg" : ""}
+                  `}
                 >
                   {item.label}
                 </button>
