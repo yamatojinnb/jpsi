@@ -50,17 +50,6 @@ const sponsorsData = [
       />
     ),
   },
-  {
-    title: "Special Sponsor",
-    borderColor: "border-amber-600",
-    content: (
-      <img
-        src="/images/sponsors/airsis.png"
-        alt="ASYS Holdings (Airsis)"
-        className="h-14 w-auto object-contain"
-      />
-    ),
-  },
 ];
 
 export default function SponsorsSection() {
@@ -74,7 +63,7 @@ export default function SponsorsSection() {
   useEffect(() => {
     if (!inView) return;
 
-    const delays = [0, 250, 500, 750, 1000];
+    const delays = [0, 250, 500, 750];
     const timers = delays.map((delay, index) =>
       setTimeout(() => {
         setVisibleSponsors((prev) => [...prev, index]);
