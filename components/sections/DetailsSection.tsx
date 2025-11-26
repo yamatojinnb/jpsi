@@ -9,17 +9,144 @@ import {
   ChevronRight,
   FileText,
   XCircle,
+  Video,
+  Settings,
+  LineChart,
+  Trophy,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+
+// Timezone data organized by participant countries
+// Note: Offsets are for December (winter time in Northern Hemisphere, summer time in Southern Hemisphere)
+const timezones = [
+  // Japan
+  { label: "🇯🇵 Japan (JST)", value: "Asia/Tokyo", offset: 9 },
+
+  // USA - Multiple timezones
+  { label: "🇺🇸 USA - Eastern (EST)", value: "America/New_York", offset: -5 },
+  { label: "🇺🇸 USA - Central (CST)", value: "America/Chicago", offset: -6 },
+  { label: "🇺🇸 USA - Mountain (MST)", value: "America/Denver", offset: -7 },
+  { label: "🇺🇸 USA - Pacific (PST)", value: "America/Los_Angeles", offset: -8 },
+
+  // Canada - Multiple timezones
+  { label: "🇨🇦 Canada - Eastern (EST)", value: "America/Toronto", offset: -5 },
+  { label: "🇨🇦 Canada - Central (CST)", value: "America/Winnipeg", offset: -6 },
+  {
+    label: "🇨🇦 Canada - Mountain (MST)",
+    value: "America/Edmonton",
+    offset: -7,
+  },
+  {
+    label: "🇨🇦 Canada - Pacific (PST)",
+    value: "America/Vancouver",
+    offset: -8,
+  },
+
+  // Australia - Multiple timezones (December = Summer Time)
+  {
+    label: "🇦🇺 Australia - Eastern (AEDT)",
+    value: "Australia/Sydney",
+    offset: 11,
+  },
+  {
+    label: "🇦🇺 Australia - Central (ACDT)",
+    value: "Australia/Adelaide",
+    offset: 10.5,
+  },
+  {
+    label: "🇦🇺 Australia - Western (AWST)",
+    value: "Australia/Perth",
+    offset: 8,
+  },
+
+  // UK
+  { label: "🇬🇧 United Kingdom (GMT)", value: "Europe/London", offset: 0 },
+
+  // Germany
+  { label: "🇩🇪 Germany (CET)", value: "Europe/Berlin", offset: 1 },
+
+  // Switzerland
+  { label: "🇨🇭 Switzerland (CET)", value: "Europe/Zurich", offset: 1 },
+
+  // Latvia
+  { label: "🇱🇻 Latvia (EET)", value: "Europe/Riga", offset: 2 },
+
+  // India
+  { label: "🇮🇳 India (IST)", value: "Asia/Kolkata", offset: 5.5 },
+
+  // Malaysia
+  { label: "🇲🇾 Malaysia (MYT)", value: "Asia/Kuala_Lumpur", offset: 8 },
+];
+
+// Base times in JST (UTC+9)
+const eventTimes = {
+  kickoff: {
+    date: "Dec 1, 2025",
+    dayOfWeek: "Sun",
+    startHour: 23,
+    endHour: 24,
+  },
+  opening: {
+    date: "Dec 14, 2025",
+    dayOfWeek: "Sun",
+    startHour: 20,
+    endHour: 21,
+  },
+};
 
 export default function DetailsSection() {
   const [accordionTimeline, setAccordionTimeline] = useState<number[]>([]); // All closed by default
   const [activeTab, setActiveTab] = useState("eligibility");
+  const [selectedTimezone, setSelectedTimezone] = useState("Asia/Tokyo");
 
   const toggleAccordionTimeline = (index: number) => {
     setAccordionTimeline((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
+  };
+
+  const convertTime = (jstHour: number, targetOffset: number) => {
+    const jstOffset = 9;
+    let convertedHour = jstHour - jstOffset + targetOffset;
+    let dayShift = 0;
+
+    if (convertedHour >= 24) {
+      convertedHour -= 24;
+      dayShift = 1;
+    } else if (convertedHour < 0) {
+      convertedHour += 24;
+      dayShift = -1;
+    }
+
+    return { hour: convertedHour, dayShift };
+  };
+
+  const formatTime = (hour: number) => {
+    const h = Math.floor(hour);
+    const m = hour % 1 === 0.5 ? 30 : 0;
+    return `${h.toString().padStart(2, "0")}:${m.toString().padStart(2, "0")}`;
+  };
+
+  const getConvertedEventTime = (eventKey: "kickoff" | "opening") => {
+    const tz = timezones.find((t) => t.value === selectedTimezone);
+    if (!tz) return null;
+
+    const event = eventTimes[eventKey];
+    const start = convertTime(event.startHour, tz.offset);
+    const end = convertTime(event.endHour, tz.offset);
+
+    const tzAbbrev = tz.label.match(/\(([^)]+)\)/)?.[1] || "";
+
+    let dateDisplay = event.date;
+    if (start.dayShift === 1) {
+      dateDisplay = eventKey === "kickoff" ? "Dec 2, 2025" : "Dec 15, 2025";
+    } else if (start.dayShift === -1) {
+      dateDisplay = eventKey === "kickoff" ? "Nov 30, 2025" : "Dec 13, 2025";
+    }
+
+    return `${dateDisplay} ${formatTime(start.hour)}-${formatTime(
+      end.hour
+    )} ${tzAbbrev}`;
   };
 
   const tabs = [
@@ -29,38 +156,56 @@ export default function DetailsSection() {
     { id: "prohibited", label: "Prohibited", icon: AlertTriangle },
   ];
 
-  const timeline = [
-    {
-      date: "Dec 1, 2025",
-      event: "Opening Ceremony (JST)",
-      description:
-        "Competition kickoff and orientation. Meet your competitors and learn about the platform.",
-    },
-    {
-      date: "Dec 1, 2025 - Dec 14, 2025",
-      event: "Pre-Orientation",
-      description:
-        "Trial trading period. Practice with virtual portfolio before competition begins.",
-    },
-    {
-      date: "Dec 14, 2025",
-      event: "Kickoff (JST)",
-      description:
-        "Official trading begins. Real competition starts - make your first trades!",
-    },
-    {
-      date: "Dec 15, 2025 - Mar 13, 2026",
-      event: "Trading Period",
-      description:
-        "3 months of active trading. Build and manage your $100K portfolio to beat competitors.",
-    },
-    {
-      date: "Mar 22, 2026",
-      event: "Closing Ceremony (JST)",
-      description:
-        "Results announcement and awards. Celebrate the winners and learn from the competition.",
-    },
-  ];
+  const timeline = useMemo(
+    () => [
+      {
+        date:
+          getConvertedEventTime("kickoff") ||
+          "Dec 1, 2025 (Sun) 23:00-24:00 JST",
+        event: "Kickoff (Zoom)",
+        icons: [
+          { icon: Video, bg: "bg-blue-500" },
+          { icon: FileText, bg: "bg-green-600" },
+        ],
+        description:
+          "Competition kickoff and orientation. Meet your competitors and learn about the trading platform and rules.",
+      },
+      {
+        date: "Dec 1 - Dec 14, 2025",
+        event: "Trial Trading Period",
+        icons: [{ icon: Settings, bg: "bg-green-600" }],
+        description:
+          "Trial trading period. Practice with your virtual portfolio before the official competition begins.",
+      },
+      {
+        date:
+          getConvertedEventTime("opening") ||
+          "Dec 14, 2025 (Sun) 20:00-21:00 JST",
+        event: "Opening Ceremony (Zoom)",
+        icons: [{ icon: Video, bg: "bg-blue-500" }],
+        description:
+          "Official opening of WIC2025. Final instructions before the main trading competition begins.",
+      },
+      {
+        date: "Dec 15, 2025 - Mar 13, 2026",
+        event: "Trading Period (3 months)",
+        icons: [{ icon: LineChart, bg: "bg-red-600" }],
+        description:
+          "3 months of active trading. Build and manage your $100K portfolio to beat competitors.",
+      },
+      {
+        date: "TBD",
+        event: "Closing Ceremony (Zoom)",
+        icons: [
+          { icon: Video, bg: "bg-blue-500" },
+          { icon: Trophy, bg: "bg-amber-500" },
+        ],
+        description:
+          "Results announcement and awards ceremony. Date and time to be announced.",
+      },
+    ],
+    [selectedTimezone]
+  );
 
   return (
     <section id="rules" className="py-16 bg-gray-50">
@@ -82,7 +227,26 @@ export default function DetailsSection() {
         <div className="space-y-12">
           {/* Schedule Section - Refined Accordion Timeline */}
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Schedule</h3>
+            {/* Timezone Selector - Inline Right-aligned */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+              <h3 className="text-3xl font-bold text-gray-900">Schedule</h3>
+
+              <div className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
+                <span className="text-sm text-gray-600">Timezone:</span>
+                <select
+                  id="timezone"
+                  value={selectedTimezone}
+                  onChange={(e) => setSelectedTimezone(e.target.value)}
+                  className="px-3 py-1.5 text-sm font-semibold text-[#8B0C19] bg-transparent border-none focus:ring-0 cursor-pointer"
+                >
+                  {timezones.map((tz) => (
+                    <option key={tz.value} value={tz.value}>
+                      {tz.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
 
             <div className="relative">
               {/* Vertical connecting line */}
@@ -93,11 +257,11 @@ export default function DetailsSection() {
                   const isOpen = accordionTimeline.includes(index);
                   return (
                     <div key={index} className="relative">
-                      {/* Timeline circle */}
+                      {/* Timeline circle - back to numbers */}
                       <div
                         className={`absolute left-0 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg border-4 border-white z-10 ${
                           // Period events (2 & 4) get larger circles
-                          index === 1 // Pre-Orientation
+                          index === 1 // Trial Trading Period
                             ? "w-11 h-11 bg-[#8B0C19]"
                             : index === 3 // Trading Period
                             ? "w-11 h-11 bg-[#F59E0B]"
@@ -131,8 +295,20 @@ export default function DetailsSection() {
                               <div className="text-sm font-semibold text-gray-500 mb-1">
                                 {item.date}
                               </div>
-                              <div className="text-lg font-bold text-gray-900">
-                                {item.event}
+                              <div className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                                {item.icons &&
+                                  item.icons.map((iconItem, iconIndex) => {
+                                    const IconComponent = iconItem.icon;
+                                    return (
+                                      <span
+                                        key={iconIndex}
+                                        className={`inline-flex items-center justify-center w-8 h-8 rounded-lg ${iconItem.bg} text-white`}
+                                      >
+                                        <IconComponent className="w-4 h-4" />
+                                      </span>
+                                    );
+                                  })}
+                                <span className="ml-1">{item.event}</span>
                               </div>
                             </div>
                           </div>
