@@ -114,6 +114,7 @@ const eventTimes = {
 export default function DetailsSection() {
   const [accordionTimeline, setAccordionTimeline] = useState<number[]>([]); // All closed by default
   const [activeTab, setActiveTab] = useState("eligibility");
+  const [isPaused, setIsPaused] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("JP");
   const [selectedTimezone, setSelectedTimezone] = useState("Asia/Tokyo");
   const [showSubMenu, setShowSubMenu] = useState<string | null>(null);
@@ -191,11 +192,50 @@ export default function DetailsSection() {
   };
 
   const tabs = [
-    { id: "eligibility", label: "Eligibility", icon: Users },
-    { id: "trading", label: "Trading", icon: DollarSign },
-    { id: "reports", label: "Reports", icon: FileText },
-    { id: "prohibited", label: "Prohibited", icon: AlertTriangle },
+    {
+      id: "eligibility",
+      label: "Eligibility",
+      icon: Users,
+      color: "text-blue-600",
+      bgColor: "bg-blue-600",
+    },
+    {
+      id: "trading",
+      label: "Trading",
+      icon: DollarSign,
+      color: "text-purple-600",
+      bgColor: "bg-purple-600",
+    },
+    {
+      id: "reports",
+      label: "Reports",
+      icon: FileText,
+      color: "text-green-600",
+      bgColor: "bg-green-600",
+    },
+    {
+      id: "prohibited",
+      label: "Prohibited",
+      icon: AlertTriangle,
+      color: "text-amber-500",
+      bgColor: "bg-amber-500",
+    },
   ];
+
+  // Auto-slide tabs
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveTab((current) => {
+        const currentIndex = tabs.findIndex((tab) => tab.id === current);
+        const nextIndex = (currentIndex + 1) % tabs.length;
+        return tabs[nextIndex].id;
+      });
+    }, 5000); // 5 seconds per slide
+
+    return () => clearInterval(interval);
+  }, [isPaused, tabs]);
 
   const timeline = useMemo(
     () => [
@@ -476,17 +516,35 @@ export default function DetailsSection() {
             </div>
           </div>
 
-          {/* Rules Section - Tab Version */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+          {/* Rules Section - Tab Version with Auto-Slide */}
+          <div
+            className="bg-white rounded-xl shadow-lg p-6 md:p-8"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
             <div className="mb-6">
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">
                 Rules Overview
               </h3>
+              <p className="text-sm text-gray-500 italic">
+                A{" "}
+                <a
+                  href="/about-us"
+                  className="text-[#8B0C19] underline hover:text-[#6d0a14] transition-colors"
+                >
+                  detailed Rulebook
+                </a>{" "}
+                will be provided and explained at the Kickoff session for all
+                participants.
+              </p>
             </div>
 
             {/* Tab Navigation */}
             <div className="border-b border-gray-200 mb-6">
-              <nav className="flex space-x-2 md:space-x-4" role="tablist">
+              <nav
+                className="flex items-center space-x-2 md:space-x-4"
+                role="tablist"
+              >
                 {tabs.map((tab) => {
                   const Icon = tab.icon;
                   const isActive = activeTab === tab.id;
@@ -494,7 +552,7 @@ export default function DetailsSection() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`inline-flex items-center px-6 py-3 text-base font-semibold transition-all duration-300 border-b-3 ${
+                      className={`relative inline-flex items-center px-4 md:px-6 py-3 text-sm md:text-base font-semibold transition-all duration-300 border-b-2 ${
                         isActive
                           ? "text-gray-900 border-[#8B0C19]"
                           : "text-gray-500 border-transparent hover:text-gray-900 hover:border-gray-300"
@@ -502,11 +560,51 @@ export default function DetailsSection() {
                       role="tab"
                       aria-selected={isActive}
                     >
-                      <Icon className="w-4 h-4 mr-2" />
+                      <Icon
+                        className={`w-4 h-4 mr-2 ${
+                          isActive ? tab.color : "text-gray-400"
+                        }`}
+                      />
                       {tab.label}
+                      {/* Progress bar for active tab */}
+                      {isActive && !isPaused && (
+                        <span
+                          className="absolute bottom-0 left-0 h-0.5 bg-[#8B0C19] animate-progress"
+                          style={{
+                            animation: "progress 5s linear",
+                          }}
+                        />
+                      )}
                     </button>
                   );
                 })}
+
+                {/* Right Arrow Navigation Button */}
+                <button
+                  onClick={() => {
+                    const currentIndex = tabs.findIndex(
+                      (tab) => tab.id === activeTab
+                    );
+                    const nextIndex = (currentIndex + 1) % tabs.length;
+                    setActiveTab(tabs[nextIndex].id);
+                  }}
+                  className="ml-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-[#8B0C19] hover:text-white text-gray-500 flex items-center justify-center transition-all duration-300 shadow-sm hover:shadow-md"
+                  aria-label="Next tab"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
               </nav>
             </div>
 
@@ -515,7 +613,7 @@ export default function DetailsSection() {
               {activeTab === "eligibility" && (
                 <div className="transition-all duration-300 ease-in-out">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-[#8B0C19] rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-2xl font-bold text-gray-900">
@@ -525,13 +623,13 @@ export default function DetailsSection() {
 
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         High school, university, or graduate students
                       </span>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Team composition:{" "}
                         <span className="font-bold text-[#8B0C19] text-lg">
@@ -541,7 +639,7 @@ export default function DetailsSection() {
                       </span>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Participation fee:{" "}
                         <span className="font-bold text-[#8B0C19] text-lg">
@@ -557,7 +655,7 @@ export default function DetailsSection() {
               {activeTab === "trading" && (
                 <div className="transition-all duration-300 ease-in-out">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-[#8B0C19] rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
                       <DollarSign className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-2xl font-bold text-gray-900">
@@ -567,13 +665,13 @@ export default function DetailsSection() {
 
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Markets: U.S. equities, ETFs, and options
                       </span>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Portfolio: Each participant manages individual{" "}
                         <span className="font-bold text-[#8B0C19] text-lg">
@@ -583,13 +681,13 @@ export default function DetailsSection() {
                       </span>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Team scoring: Combined result of three portfolios
                       </span>
                     </div>
                     <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
                       <span className="text-gray-700">
                         Platform: Interactive Brokers demo accounts
                       </span>
@@ -601,7 +699,7 @@ export default function DetailsSection() {
               {activeTab === "reports" && (
                 <div className="transition-all duration-300 ease-in-out">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-[#8B0C19] rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
                       <FileText className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-2xl font-bold text-gray-900">
@@ -609,42 +707,112 @@ export default function DetailsSection() {
                     </h4>
                   </div>
 
+                  {/* Scoring Overview */}
+                  <div className="bg-gray-50 rounded-lg p-4 mb-6">
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">
+                      Point Allocation (Total: 100 points)
+                    </h5>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="flex items-center justify-between bg-white p-3 rounded-lg border-l-4 border-l-[#8B0C19]">
+                        <span className="text-gray-700">
+                          Mandatory Final Report
+                        </span>
+                        <span className="font-bold text-[#8B0C19] text-lg">
+                          80 pts
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between bg-white p-3 rounded-lg border-l-4 border-l-blue-500">
+                        <span className="text-gray-700">
+                          Optional Monthly Reports
+                        </span>
+                        <span className="font-bold text-blue-600 text-lg">
+                          20 pts
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Submission Requirements */}
+                  <div className="mb-6">
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">
+                      Submission Format
+                    </h5>
+                    <div className="flex flex-wrap gap-4">
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        <span>
+                          Format: <strong>PDF (A4)</strong>
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        <span>
+                          Language: <strong>English</strong>
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        <span>
+                          Length: <strong>No limit</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="grid md:grid-cols-2 gap-8">
+                    {/* Mandatory Final Report */}
                     <div>
-                      <h5 className="text-lg font-semibold text-gray-900 mb-4">
-                        Required Reports
+                      <h5 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                        <span className="w-2 h-2 bg-[#8B0C19] rounded-full"></span>
+                        Mandatory Final Report
                       </h5>
                       <div className="space-y-3">
                         <div className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
-                            Mandatory report in December (investment strategy)
+                            <strong>Deadline:</strong> March 10, 2026
                           </span>
                         </div>
                         <div className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
-                            Monthly performance tracking
+                            Covers the 3-month trading period (Dec 2025 – Feb
+                            2026)
+                          </span>
+                        </div>
+                        <div className="flex items-start">
+                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <span className="text-gray-700">
+                            Must include 3 sections: Strategy, Analysis, Results
                           </span>
                         </div>
                       </div>
                     </div>
 
+                    {/* Optional Monthly Reports */}
                     <div>
-                      <h5 className="text-lg font-semibold text-gray-900 mb-4">
-                        Optional Reports
+                      <h5 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        Optional Monthly Reports
                       </h5>
                       <div className="space-y-3">
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
-                            Strategy change notifications
+                            <strong>Deadline:</strong> 15th of each month
                           </span>
                         </div>
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
-                            Additional analysis documents
+                            Submit in Dec, Jan, Feb (up to 20 pts total)
+                          </span>
+                        </div>
+                        <div className="flex items-start">
+                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <span className="text-gray-700">
+                            Document progress, strategy adjustments, and
+                            insights
                           </span>
                         </div>
                       </div>
@@ -656,38 +824,76 @@ export default function DetailsSection() {
               {activeTab === "prohibited" && (
                 <div className="transition-all duration-300 ease-in-out">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
                       <AlertTriangle className="w-6 h-6 text-white" />
                     </div>
-                    <h4 className="text-2xl font-bold text-red-600">
+                    <h4 className="text-2xl font-bold text-amber-600">
                       Prohibited Activities
                     </h4>
                   </div>
 
-                  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
-                    <div className="space-y-4">
+                  <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
+                    <div className="space-y-5">
                       <div className="flex items-start">
-                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Latency arbitrage</span>
+                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <span className="font-semibold text-gray-900">
+                            Latency Arbitrage
+                          </span>
+                          <p className="text-sm text-gray-600 mt-1">
+                            Exploiting delays between real-time accounts and
+                            delayed price feeds
+                          </p>
+                        </div>
                       </div>
                       <div className="flex items-start">
-                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">
-                          Insider information usage
-                        </span>
+                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <span className="font-semibold text-gray-900">
+                            Use of Insider Information
+                          </span>
+                          <p className="text-sm text-gray-600 mt-1">
+                            Trading based on non-public, material information
+                          </p>
+                        </div>
                       </div>
                       <div className="flex items-start">
-                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">
-                          Market manipulation
-                        </span>
+                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <span className="font-semibold text-gray-900">
+                            Market Manipulation
+                          </span>
+                          <p className="text-sm text-gray-600 mt-1">
+                            Any attempt to distort prices or volume, including
+                            coordinated trading
+                          </p>
+                        </div>
                       </div>
                       <div className="flex items-start">
-                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">
-                          Collusion with other teams
-                        </span>
+                        <XCircle className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <span className="font-semibold text-gray-900">
+                            Other Misconduct
+                          </span>
+                          <p className="text-sm text-gray-600 mt-1">
+                            Any activities that undermine the fairness or
+                            integrity of the competition
+                          </p>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+
+                  {/* Penalty Clause */}
+                  <div className="bg-gray-900 text-white p-4 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0" />
+                      <p className="text-sm">
+                        <strong>Penalty:</strong> Violation of any prohibited
+                        activities will result in immediate disqualification
+                        from the competition and forfeiture of all prize
+                        eligibility.
+                      </p>
                     </div>
                   </div>
                 </div>

@@ -152,21 +152,24 @@ export default function PrizesSection() {
                 key={index}
                 className={`
                   relative overflow-hidden
-                  bg-white rounded-xl shadow-lg p-6 border-l-4
+                  bg-white rounded-xl shadow-lg p-6
                   transition-all duration-500 ease-out
                   ${
-                    prize.category.includes("Team")
-                      ? "border-l-[#8B0C19]"
-                      : "border-l-blue-500"
+                    isHighlighted
+                      ? "scale-[1.02] border-2 border-amber-300 bg-amber-50 shadow-xl"
+                      : `border-l-4 ${
+                          prize.category.includes("Team")
+                            ? "border-l-[#8B0C19]"
+                            : "border-l-blue-500"
+                        }`
                   }
-                  ${isHighlighted ? "scale-[1.03] bg-amber-50/60" : ""}
                   ${isOtherHighlighted ? "opacity-30" : ""}
                 `}
                 style={
                   isHighlighted
                     ? {
                         boxShadow:
-                          "0 0 20px rgba(139, 12, 25, 0.3), 0 0 40px rgba(139, 12, 25, 0.15), 0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                          "0 10px 40px rgba(217, 169, 79, 0.25), 0 4px 12px rgba(0,0,0,0.1)",
                       }
                     : {}
                 }
@@ -182,11 +185,6 @@ export default function PrizesSection() {
                       width: "50%",
                     }}
                   />
-                )}
-
-                {/* Crimson Border Glow */}
-                {isHighlighted && (
-                  <div className="absolute inset-0 rounded-xl pointer-events-none border-2 border-[#8B0C19]" />
                 )}
 
                 {/* Category Badge - Centered */}
