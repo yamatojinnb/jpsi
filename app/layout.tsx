@@ -74,6 +74,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://jpsi-official.jp",
   },
+  verification: {
+    google: "BG2JjrV8EOdhjV6-PChkknUsgZKyR1A9qL2-cowAngM",
+  },
 };
 
 export default function RootLayout({
