@@ -18,9 +18,62 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "WIC2025 - World Investment Competition",
+  title:
+    "WIC2025 - World Investment Competition | Global Student Investment Challenge",
   description:
-    "Global student investment competition. Compete with $100K virtual portfolio over 3 months. $15K in prizes. Organized by JPSI.",
+    "Compete with top student investors worldwide in the Investment Olympics. Manage a $100,000 virtual portfolio using Interactive Brokers and TradingView. Win $15,000 in prizes and a trip to Japan. Registration open now.",
+  keywords: [
+    "investment competition",
+    "student investing",
+    "virtual trading",
+    "WIC2025",
+    "World Investment Competition",
+    "finance competition",
+    "stock trading competition",
+    "university investment",
+    "JPSI",
+    "Japan Students Investment Union",
+  ],
+  authors: [{ name: "Japan Students Investment Union (JPSI)" }],
+  openGraph: {
+    title: "WIC2025 - World Investment Competition",
+    description:
+      "Join the Investment Olympics. Compete with students from leading universities across 8 countries. Win $15,000 in prizes and a trip to Japan.",
+    url: "https://jpsi-official.jp",
+    siteName: "WIC2025 - World Investment Competition",
+    images: [
+      {
+        url: "https://jpsi-official.jp/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "World Investment Competition 2025 - The Investment Olympics",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WIC2025 - World Investment Competition",
+    description:
+      "Join the Investment Olympics. Compete globally, win $15,000 in prizes and a trip to Japan.",
+    images: ["https://jpsi-official.jp/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  metadataBase: new URL("https://jpsi-official.jp"),
+  alternates: {
+    canonical: "https://jpsi-official.jp",
+  },
 };
 
 export default function RootLayout({
