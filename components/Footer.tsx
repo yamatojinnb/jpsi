@@ -70,17 +70,24 @@ export default function Footer() {
 
             {/* Social Media */}
             <div className="flex items-center gap-4">
-              {/* Twitter - Inactive */}
-              <div className="text-gray-400 opacity-50 cursor-default">
+              {/* Twitter/X - Active */}
+              <a
+                href="https://x.com/official33541"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-[#8B0C19] transition-colors duration-300 cursor-pointer"
+                aria-label="Follow us on X (Twitter)"
+              >
                 <Twitter className="w-5 h-5" />
-              </div>
+              </a>
 
               {/* Instagram - Active */}
               <a
                 href="https://www.instagram.com/jpsi_official/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-[#8B0C19] transition-colors duration-300"
+                className="text-gray-600 hover:text-[#8B0C19] transition-colors duration-300 cursor-pointer"
+                aria-label="Follow us on Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>

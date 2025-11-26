@@ -14,68 +14,85 @@ import {
   LineChart,
   Trophy,
 } from "lucide-react";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
-// Timezone data organized by participant countries
+// Timezone data grouped by country
 // Note: Offsets are for December (winter time in Northern Hemisphere, summer time in Southern Hemisphere)
-const timezones = [
-  // Japan
-  { label: "🇯🇵 Japan (JST)", value: "Asia/Tokyo", offset: 9 },
-
-  // USA - Multiple timezones
-  { label: "🇺🇸 USA - Eastern (EST)", value: "America/New_York", offset: -5 },
-  { label: "🇺🇸 USA - Central (CST)", value: "America/Chicago", offset: -6 },
-  { label: "🇺🇸 USA - Mountain (MST)", value: "America/Denver", offset: -7 },
-  { label: "🇺🇸 USA - Pacific (PST)", value: "America/Los_Angeles", offset: -8 },
-
-  // Canada - Multiple timezones
-  { label: "🇨🇦 Canada - Eastern (EST)", value: "America/Toronto", offset: -5 },
-  { label: "🇨🇦 Canada - Central (CST)", value: "America/Winnipeg", offset: -6 },
+const countries = [
   {
-    label: "🇨🇦 Canada - Mountain (MST)",
-    value: "America/Edmonton",
-    offset: -7,
+    code: "JP",
+    flag: "🇯🇵",
+    name: "Japan",
+    timezones: [{ label: "JST", value: "Asia/Tokyo", offset: 9 }],
   },
   {
-    label: "🇨🇦 Canada - Pacific (PST)",
-    value: "America/Vancouver",
-    offset: -8,
-  },
-
-  // Australia - Multiple timezones (December = Summer Time)
-  {
-    label: "🇦🇺 Australia - Eastern (AEDT)",
-    value: "Australia/Sydney",
-    offset: 11,
-  },
-  {
-    label: "🇦🇺 Australia - Central (ACDT)",
-    value: "Australia/Adelaide",
-    offset: 10.5,
+    code: "US",
+    flag: "🇺🇸",
+    name: "USA",
+    timezones: [
+      { label: "EST (Eastern)", value: "America/New_York", offset: -5 },
+      { label: "CST (Central)", value: "America/Chicago", offset: -6 },
+      { label: "MST (Mountain)", value: "America/Denver", offset: -7 },
+      { label: "PST (Pacific)", value: "America/Los_Angeles", offset: -8 },
+    ],
   },
   {
-    label: "🇦🇺 Australia - Western (AWST)",
-    value: "Australia/Perth",
-    offset: 8,
+    code: "GB",
+    flag: "🇬🇧",
+    name: "UK",
+    timezones: [{ label: "GMT", value: "Europe/London", offset: 0 }],
   },
-
-  // UK
-  { label: "🇬🇧 United Kingdom (GMT)", value: "Europe/London", offset: 0 },
-
-  // Germany
-  { label: "🇩🇪 Germany (CET)", value: "Europe/Berlin", offset: 1 },
-
-  // Switzerland
-  { label: "🇨🇭 Switzerland (CET)", value: "Europe/Zurich", offset: 1 },
-
-  // Latvia
-  { label: "🇱🇻 Latvia (EET)", value: "Europe/Riga", offset: 2 },
-
-  // India
-  { label: "🇮🇳 India (IST)", value: "Asia/Kolkata", offset: 5.5 },
-
-  // Malaysia
-  { label: "🇲🇾 Malaysia (MYT)", value: "Asia/Kuala_Lumpur", offset: 8 },
+  {
+    code: "DE",
+    flag: "🇩🇪",
+    name: "Germany",
+    timezones: [{ label: "CET", value: "Europe/Berlin", offset: 1 }],
+  },
+  {
+    code: "CA",
+    flag: "🇨🇦",
+    name: "Canada",
+    timezones: [
+      { label: "EST (Eastern)", value: "America/Toronto", offset: -5 },
+      { label: "CST (Central)", value: "America/Winnipeg", offset: -6 },
+      { label: "MST (Mountain)", value: "America/Edmonton", offset: -7 },
+      { label: "PST (Pacific)", value: "America/Vancouver", offset: -8 },
+    ],
+  },
+  {
+    code: "AU",
+    flag: "🇦🇺",
+    name: "Australia",
+    timezones: [
+      { label: "AEDT (Sydney)", value: "Australia/Sydney", offset: 11 },
+      { label: "ACDT (Adelaide)", value: "Australia/Adelaide", offset: 10.5 },
+      { label: "AWST (Perth)", value: "Australia/Perth", offset: 8 },
+    ],
+  },
+  {
+    code: "CH",
+    flag: "🇨🇭",
+    name: "Switzerland",
+    timezones: [{ label: "CET", value: "Europe/Zurich", offset: 1 }],
+  },
+  {
+    code: "LV",
+    flag: "🇱🇻",
+    name: "Latvia",
+    timezones: [{ label: "EET", value: "Europe/Riga", offset: 2 }],
+  },
+  {
+    code: "IN",
+    flag: "🇮🇳",
+    name: "India",
+    timezones: [{ label: "IST", value: "Asia/Kolkata", offset: 5.5 }],
+  },
+  {
+    code: "MY",
+    flag: "🇲🇾",
+    name: "Malaysia",
+    timezones: [{ label: "MYT", value: "Asia/Kuala_Lumpur", offset: 8 }],
+  },
 ];
 
 // Base times in JST (UTC+9)
@@ -97,7 +114,9 @@ const eventTimes = {
 export default function DetailsSection() {
   const [accordionTimeline, setAccordionTimeline] = useState<number[]>([]); // All closed by default
   const [activeTab, setActiveTab] = useState("eligibility");
+  const [selectedCountry, setSelectedCountry] = useState("JP");
   const [selectedTimezone, setSelectedTimezone] = useState("Asia/Tokyo");
+  const [showSubMenu, setShowSubMenu] = useState<string | null>(null);
 
   const toggleAccordionTimeline = (index: number) => {
     setAccordionTimeline((prev) =>
@@ -127,15 +146,37 @@ export default function DetailsSection() {
     return `${h.toString().padStart(2, "0")}:${m.toString().padStart(2, "0")}`;
   };
 
+  // Close submenu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest(".timezone-selector")) {
+        setShowSubMenu(null);
+      }
+    };
+    if (showSubMenu) {
+      document.addEventListener("click", handleClickOutside);
+      return () => document.removeEventListener("click", handleClickOutside);
+    }
+  }, [showSubMenu]);
+
   const getConvertedEventTime = (eventKey: "kickoff" | "opening") => {
-    const tz = timezones.find((t) => t.value === selectedTimezone);
+    // Find timezone from countries structure
+    let tz = null;
+    for (const country of countries) {
+      const found = country.timezones.find((t) => t.value === selectedTimezone);
+      if (found) {
+        tz = found;
+        break;
+      }
+    }
     if (!tz) return null;
 
     const event = eventTimes[eventKey];
     const start = convertTime(event.startHour, tz.offset);
     const end = convertTime(event.endHour, tz.offset);
 
-    const tzAbbrev = tz.label.match(/\(([^)]+)\)/)?.[1] || "";
+    const tzAbbrev = tz.label;
 
     let dateDisplay = event.date;
     if (start.dayShift === 1) {
@@ -227,24 +268,111 @@ export default function DetailsSection() {
         <div className="space-y-12">
           {/* Schedule Section - Refined Accordion Timeline */}
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-            {/* Timezone Selector - Inline Right-aligned */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+            <div className="mb-6">
               <h3 className="text-3xl font-bold text-gray-900">Schedule</h3>
+              <p className="text-sm text-gray-500 mt-1">
+                Select your country to view times in your timezone
+              </p>
+            </div>
 
-              <div className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-200">
-                <span className="text-sm text-gray-600">Timezone:</span>
-                <select
-                  id="timezone"
-                  value={selectedTimezone}
-                  onChange={(e) => setSelectedTimezone(e.target.value)}
-                  className="px-3 py-1.5 text-sm font-semibold text-[#8B0C19] bg-transparent border-none focus:ring-0 cursor-pointer"
-                >
-                  {timezones.map((tz) => (
-                    <option key={tz.value} value={tz.value}>
-                      {tz.label}
-                    </option>
-                  ))}
-                </select>
+            {/* Timezone Selector - Flag Toggle Buttons */}
+            <div className="mb-8 timezone-selector">
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex flex-wrap justify-center gap-2">
+                  {countries.map((country) => {
+                    const isSelected = selectedCountry === country.code;
+                    const hasMultipleTimezones = country.timezones.length > 1;
+
+                    return (
+                      <div key={country.code} className="relative">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (hasMultipleTimezones) {
+                              setShowSubMenu(
+                                showSubMenu === country.code
+                                  ? null
+                                  : country.code
+                              );
+                            } else {
+                              setSelectedCountry(country.code);
+                              setSelectedTimezone(country.timezones[0].value);
+                              setShowSubMenu(null);
+                            }
+                          }}
+                          className={`
+                            flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium
+                            transition-all duration-200 border-2
+                            ${
+                              isSelected
+                                ? "bg-[#8B0C19] text-white border-[#8B0C19] shadow-lg"
+                                : "bg-white text-gray-700 border-gray-200 hover:border-[#8B0C19] hover:bg-red-50"
+                            }
+                          `}
+                        >
+                          <span className="text-xl">{country.flag}</span>
+                          <span>{country.name}</span>
+                          {hasMultipleTimezones && (
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          )}
+                        </button>
+
+                        {/* Sub-menu for countries with multiple timezones */}
+                        {hasMultipleTimezones &&
+                          showSubMenu === country.code && (
+                            <div
+                              className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-20 min-w-[180px]"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              {country.timezones.map((tz) => (
+                                <button
+                                  key={tz.value}
+                                  onClick={() => {
+                                    setSelectedCountry(country.code);
+                                    setSelectedTimezone(tz.value);
+                                    setShowSubMenu(null);
+                                  }}
+                                  className={`
+                                  w-full px-4 py-2 text-left text-sm hover:bg-red-50 transition-colors
+                                  ${
+                                    selectedTimezone === tz.value
+                                      ? "bg-red-100 text-[#8B0C19] font-semibold"
+                                      : "text-gray-700"
+                                  }
+                                `}
+                                >
+                                  {tz.label}
+                                </button>
+                              ))}
+                            </div>
+                          )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Currently selected timezone display */}
+                <div className="text-sm text-gray-600 mt-2">
+                  Currently viewing:{" "}
+                  <span className="font-semibold text-[#8B0C19]">
+                    {countries
+                      .find((c) => c.code === selectedCountry)
+                      ?.timezones.find((t) => t.value === selectedTimezone)
+                      ?.label || "JST"}
+                  </span>
+                </div>
               </div>
             </div>
 
