@@ -217,8 +217,8 @@ export default function DetailsSection() {
       id: "prohibited",
       label: "Prohibited",
       icon: AlertTriangle,
-      color: "text-amber-500",
-      bgColor: "bg-amber-500",
+      color: "text-red-500",
+      bgColor: "bg-red-500",
     },
   ];
 
@@ -713,11 +713,11 @@ export default function DetailsSection() {
                       Point Allocation (Total: 100 points)
                     </h5>
                     <div className="grid md:grid-cols-2 gap-4">
-                      <div className="flex items-center justify-between bg-white p-3 rounded-lg border-l-4 border-l-[#8B0C19]">
+                      <div className="flex items-center justify-between bg-white p-3 rounded-lg border-l-4 border-l-orange-500">
                         <span className="text-gray-700">
                           Mandatory Final Report
                         </span>
-                        <span className="font-bold text-[#8B0C19] text-lg">
+                        <span className="font-bold text-orange-500 text-lg">
                           80 pts
                         </span>
                       </div>
@@ -763,25 +763,25 @@ export default function DetailsSection() {
                     {/* Mandatory Final Report */}
                     <div>
                       <h5 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                        <span className="w-2 h-2 bg-[#8B0C19] rounded-full"></span>
+                        <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                         Mandatory Final Report
                       </h5>
                       <div className="space-y-3">
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-orange-500 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             <strong>Deadline:</strong> March 10, 2026
                           </span>
                         </div>
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-orange-500 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             Covers the 3-month trading period (Dec 2025 – Feb
                             2026)
                           </span>
                         </div>
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-orange-500 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             Must include 3 sections: Strategy, Analysis, Results
                           </span>
@@ -797,19 +797,19 @@ export default function DetailsSection() {
                       </h5>
                       <div className="space-y-3">
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             <strong>Deadline:</strong> 15th of each month
                           </span>
                         </div>
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             Submit in Dec, Jan, Feb (up to 20 pts total)
                           </span>
                         </div>
                         <div className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
                             Document progress, strategy adjustments, and
                             insights
@@ -824,10 +824,10 @@ export default function DetailsSection() {
               {activeTab === "prohibited" && (
                 <div className="transition-all duration-300 ease-in-out">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
                       <AlertTriangle className="w-6 h-6 text-white" />
                     </div>
-                    <h4 className="text-2xl font-bold text-amber-600">
+                    <h4 className="text-2xl font-bold text-red-600">
                       Prohibited Activities
                     </h4>
                   </div>
