@@ -1,44 +1,29 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Clock, AlertTriangle } from "lucide-react";
 
 export default function CTASection() {
   const [daysRemaining, setDaysRemaining] = useState<number | null>(null);
 
   useEffect(() => {
-    const calculateDaysRemaining = () => {
+    const calculateDays = () => {
+      const deadline = new Date("2025-12-07T23:59:59");
       const now = new Date();
-      // Set deadline to 21 days from now
-      const deadline = new Date(now.getTime() + 21 * 24 * 60 * 60 * 1000);
       const diffTime = deadline.getTime() - now.getTime();
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
       return diffDays > 0 ? diffDays : 0;
     };
 
     // Calculate immediately
-    setDaysRemaining(calculateDaysRemaining());
+    setDaysRemaining(calculateDays());
 
-    // Update daily at midnight
-    const updateAtMidnight = () => {
-      const now = new Date();
-      const tomorrow = new Date(
-        now.getFullYear(),
-        now.getMonth(),
-        now.getDate() + 1
-      );
-      const msUntilMidnight = tomorrow.getTime() - now.getTime();
+    // Update every hour (in case user keeps page open overnight)
+    const interval = setInterval(() => {
+      setDaysRemaining(calculateDays());
+    }, 1000 * 60 * 60); // Every hour
 
-      setTimeout(() => {
-        setDaysRemaining(calculateDaysRemaining());
-        // Set up daily updates
-        setInterval(() => {
-          setDaysRemaining(calculateDaysRemaining());
-        }, 24 * 60 * 60 * 1000);
-      }, msUntilMidnight);
-    };
-
-    updateAtMidnight();
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -92,25 +77,25 @@ export default function CTASection() {
         </div>
 
         {/* Dynamic countdown with icon */}
-        <div className="flex items-center justify-center gap-2 text-white/90 text-sm mt-6">
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <span>Registration closes in: </span>
-          <span className="font-bold text-white bg-white/20 px-2 py-1 rounded">
-            {daysRemaining !== null ? `${daysRemaining} days` : "Loading..."}
-          </span>
-        </div>
+        {daysRemaining !== null && daysRemaining > 0 ? (
+          <div className="flex items-center justify-center gap-2 text-white/80 text-sm mt-6">
+            <Clock className="w-4 h-4" />
+            <span>Registration closes in:</span>
+            <span className="bg-black/30 px-2 py-1 rounded font-semibold">
+              {daysRemaining} {daysRemaining === 1 ? "day" : "days"}
+            </span>
+          </div>
+        ) : daysRemaining === 0 ? (
+          <div className="flex items-center justify-center gap-2 text-yellow-300 text-sm mt-6">
+            <AlertTriangle className="w-4 h-4" />
+            <span>Registration closes TODAY!</span>
+          </div>
+        ) : (
+          <div className="flex items-center justify-center gap-2 text-white/80 text-sm mt-6">
+            <Clock className="w-4 h-4" />
+            <span>Loading...</span>
+          </div>
+        )}
       </div>
     </section>
   );
