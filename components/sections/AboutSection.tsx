@@ -6,9 +6,24 @@ import { useEffect, useState } from "react";
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
+  const [showRipple, setShowRipple] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    // Observer for ripple effect - triggers when section enters view
+    const rippleObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Trigger ripple after a short delay when section becomes visible
+          setTimeout(() => {
+            setShowRipple(true);
+          }, 500);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    // Observer for cards animation
+    const cardsObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
@@ -17,10 +32,16 @@ export default function AboutSection() {
       { threshold: 0.2 }
     );
 
-    const section = document.getElementById("wic-cards");
-    if (section) observer.observe(section);
+    const aboutSection = document.getElementById("about");
+    const cardsSection = document.getElementById("wic-cards");
 
-    return () => observer.disconnect();
+    if (aboutSection) rippleObserver.observe(aboutSection);
+    if (cardsSection) cardsObserver.observe(cardsSection);
+
+    return () => {
+      rippleObserver.disconnect();
+      cardsObserver.disconnect();
+    };
   }, []);
 
   const highlightCards = [
@@ -48,56 +69,72 @@ export default function AboutSection() {
   return (
     <>
       <style jsx>{`
-        @keyframes ripple {
+        @keyframes ripple-expand {
           0% {
             transform: translate(-50%, -50%) scale(0);
-            opacity: 0.6;
+            opacity: 0.8;
           }
-          100% {
-            transform: translate(-50%, -50%) scale(2.5);
-            opacity: 0;
-          }
-        }
-
-        @keyframes ripple-delay {
-          0%,
           50% {
-            transform: translate(-50%, -50%) scale(0);
-            opacity: 0;
-          }
-          60% {
-            transform: translate(-50%, -50%) scale(0);
             opacity: 0.5;
           }
           100% {
-            transform: translate(-50%, -50%) scale(2.5);
+            transform: translate(-50%, -50%) scale(4);
             opacity: 0;
           }
         }
 
-        .ripple-effect {
+        .ripple-container {
           position: relative;
           display: inline-block;
         }
 
-        .ripple-effect::after {
-          content: "";
+        .ripple-circle {
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 20px;
-          height: 20px;
-          background: rgba(59, 130, 246, 0.5);
+          width: 40px;
+          height: 40px;
+          background: radial-gradient(
+            circle,
+            rgba(249, 115, 22, 0.8) 0%,
+            rgba(249, 115, 22, 0.4) 50%,
+            transparent 70%
+          );
           border-radius: 50%;
           transform: translate(-50%, -50%) scale(0);
-          animation: ripple 1.5s ease-out;
-          animation-delay: 1s;
           pointer-events: none;
         }
 
-        .ripple-effect-2::after {
-          animation: ripple-delay 1.5s ease-out;
-          animation-delay: 1.3s;
+        .ripple-active .ripple-circle {
+          animation: ripple-expand 1.2s ease-out forwards;
+        }
+
+        .ripple-active .ripple-circle-2 {
+          animation: ripple-expand 1.2s ease-out forwards;
+          animation-delay: 1s;
+        }
+
+        /* Second ring for more emphasis */
+        .ripple-ring {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 40px;
+          height: 40px;
+          border: 3px solid rgba(249, 115, 22, 0.6);
+          border-radius: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          pointer-events: none;
+        }
+
+        .ripple-active .ripple-ring {
+          animation: ripple-expand 1s ease-out forwards;
+          animation-delay: 0.15s;
+        }
+
+        .ripple-active .ripple-ring-2 {
+          animation: ripple-expand 1s ease-out forwards;
+          animation-delay: 1.15s;
         }
       `}</style>
 
@@ -117,18 +154,26 @@ export default function AboutSection() {
                 href="https://www.interactivebrokers.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ripple-effect font-semibold text-[#8B0C19] hover:underline cursor-pointer"
+                className={`ripple-container font-semibold text-[#8B0C19] hover:underline cursor-pointer ${
+                  showRipple ? "ripple-active" : ""
+                }`}
               >
                 Interactive Brokers
+                <span className="ripple-circle"></span>
+                <span className="ripple-ring"></span>
               </a>
               ' real-time market data and{" "}
               <a
                 href="https://www.tradingview.com/chart/"
                 target="_blank"
                 rel="dofollow noopener noreferrer"
-                className="ripple-effect ripple-effect-2 font-semibold text-[#8B0C19] hover:underline cursor-pointer"
+                className={`ripple-container font-semibold text-[#8B0C19] hover:underline cursor-pointer ${
+                  showRipple ? "ripple-active" : ""
+                }`}
               >
                 TradingView
+                <span className="ripple-circle ripple-circle-2"></span>
+                <span className="ripple-ring ripple-ring-2"></span>
               </a>
               's premium charts—exclusively for all participants.
             </p>
