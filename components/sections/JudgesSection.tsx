@@ -29,7 +29,7 @@ const judgesData = [
     name: "Yasuji Yamanaka",
     image: "/images/yamanaka.png",
     imageShape: "circle",
-    titles: ["Director, Ascendant Inc.", "Head of Japan Market, TradingView"],
+    titles: ["Director, Ascendant Inc."],
     bio: [
       "Graduated from Keio University in 1982 and joined Bank of America. He engaged in proprietary trading operations and was promoted to Vice President in 1989.",
       "In 1997, he moved to Nikko Securities, and in 1999 became Deputy General Manager of the Foreign Exchange Division at NikkoCiti Trust & Banking.",
