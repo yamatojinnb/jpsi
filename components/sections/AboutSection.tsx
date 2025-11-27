@@ -164,18 +164,18 @@ export default function AboutSection() {
               </a>
               ' real-time market data and{" "}
               <a
-                href="https://www.tradingview.com/chart/"
+                href="https://www.tradingview.com/markets/stocks-usa/"
                 target="_blank"
-                rel="dofollow noopener noreferrer"
+                rel="noopener"
                 className={`ripple-container font-semibold text-[#8B0C19] hover:underline cursor-pointer ${
                   showRipple ? "ripple-active" : ""
                 }`}
               >
-                TradingView
+                professional charting tools
                 <span className="ripple-circle ripple-circle-2"></span>
                 <span className="ripple-ring ripple-ring-2"></span>
               </a>
-              's premium charts—exclusively for all participants.
+              —exclusively for all participants.
             </p>
           </div>
 

@@ -266,12 +266,12 @@ export default function ResultsSection() {
               <p className="text-lg text-gray-600">
                 Teams managed their portfolios using{" "}
                 <a
-                  href="https://www.tradingview.com/chart/"
+                  href="https://www.tradingview.com/markets/stocks-usa/"
                   target="_blank"
-                  rel="dofollow noopener noreferrer"
+                  rel="noopener"
                   className="text-[#8B0C19] underline font-semibold hover:text-[#6B0A15] transition-colors duration-300"
                 >
-                  TradingView's platform
+                  professional charting tools
                 </a>
                 , which provides real-time market data and professional trading
                 tools.
