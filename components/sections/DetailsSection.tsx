@@ -536,6 +536,17 @@ export default function DetailsSection() {
                 </a>{" "}
                 will be provided and explained at the Kickoff session for all
                 participants.
+                <br />
+                For IBKR platform instructions, please refer to the{" "}
+                <a
+                  href="/documents/IBKR%20Operations%20Manual.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8B0C19] underline hover:text-[#6d0a14] transition-colors"
+                >
+                  IBKR Quick Start Guide
+                </a>
+                .
               </p>
             </div>
 
