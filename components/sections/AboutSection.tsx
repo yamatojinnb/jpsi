@@ -162,7 +162,7 @@ export default function AboutSection() {
                 <span className="ripple-circle"></span>
                 <span className="ripple-ring"></span>
               </a>
-              ' real-time market data and{" "}
+              ' trading platform paired with{" "}
               <a
                 href="https://www.tradingview.com/markets/stocks-usa/"
                 target="_blank"
@@ -171,7 +171,7 @@ export default function AboutSection() {
                   showRipple ? "ripple-active" : ""
                 }`}
               >
-                professional charting tools
+                advanced charting software
                 <span className="ripple-circle ripple-circle-2"></span>
                 <span className="ripple-ring ripple-ring-2"></span>
               </a>
