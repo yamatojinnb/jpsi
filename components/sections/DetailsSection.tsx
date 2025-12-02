@@ -810,7 +810,7 @@ export default function DetailsSection() {
                         <div className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">
-                            <strong>Deadline:</strong> 15th of each month
+                            <strong>Deadline:</strong> 22nd of each month
                           </span>
                         </div>
                         <div className="flex items-start">
