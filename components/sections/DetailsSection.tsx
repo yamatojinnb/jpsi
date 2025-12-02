@@ -548,6 +548,35 @@ export default function DetailsSection() {
                 </a>
                 .
               </p>
+              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+                <span className="text-gray-500 font-medium">Useful Links:</span>
+                <a
+                  href="https://www.interactivebrokers.com/en/trading/margin-requirements.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8B0C19] hover:underline"
+                >
+                  Margin Overview
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="https://www.interactivebrokers.com/en/trading/margin-stocks.php?hm=us&ex=us&rgt=1&rsk=0&pm=1&rst=101004110808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8B0C19] hover:underline"
+                >
+                  US Stock Margin Rates
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="https://www.interactivebrokers.com/campus/glossary-terms/special-memorandum-account/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8B0C19] hover:underline"
+                >
+                  What is SMA?
+                </a>
+              </div>
             </div>
 
             {/* Tab Navigation */}
