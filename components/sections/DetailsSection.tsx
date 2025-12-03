@@ -732,6 +732,28 @@ export default function DetailsSection() {
                         Platform: Interactive Brokers demo accounts
                       </span>
                     </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Stock price restriction: Trading in stocks priced at{" "}
+                        <span className="font-bold text-[#8B0C19] text-lg">
+                          $1.00 or below
+                        </span>{" "}
+                        is prohibited
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Warning note for stock price restriction */}
+                  <div className="mt-6 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                    <div className="flex items-start gap-3">
+                      <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-sm text-amber-800">
+                        <strong>Note:</strong> The $1.00 stock price restriction
+                        is not enforced by the system. Participants are
+                        responsible for monitoring and complying with this rule.
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
