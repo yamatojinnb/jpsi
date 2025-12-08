@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,14 +53,14 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <button
-              onClick={() => scrollToSection("hero")}
-              className={`text-2xl font-bold transition-colors duration-300 text-white ${
+            <Link
+              href="/"
+              className={`text-2xl font-bold transition-all duration-300 text-white cursor-pointer hover:opacity-80 ${
                 !isScrolled ? "text-shadow-lg" : ""
               }`}
             >
               WIC2025
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
