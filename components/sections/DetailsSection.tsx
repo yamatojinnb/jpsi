@@ -529,7 +529,7 @@ export default function DetailsSection() {
               <p className="text-sm text-gray-500 italic">
                 A{" "}
                 <a
-                  href="/about-us"
+                  href="/rulebook"
                   className="text-[#8B0C19] underline hover:text-[#6d0a14] transition-colors"
                 >
                   detailed Rulebook
