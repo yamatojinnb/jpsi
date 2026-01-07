@@ -27,14 +27,19 @@ interface HistoryEntry {
 }
 
 interface PerformanceChartProps {
-  history: HistoryEntry[];
-  rankings: { team: string }[];
+  history: HistoryEntry[] | undefined;
+  rankings: { team: string }[] | undefined;
 }
 
 export default function PerformanceChart({
   history,
   rankings,
 }: PerformanceChartProps) {
+  // Guard clause - return null if no data
+  if (!history || history.length === 0 || !rankings || rankings.length === 0) {
+    return null;
+  }
+
   // Transform data for Recharts
   const chartData = history.map((entry) => ({
     week: `W${entry.week}`,

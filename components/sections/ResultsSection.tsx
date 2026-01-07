@@ -13,7 +13,6 @@ import {
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
-import PerformanceChart from "../PerformanceChart";
 
 export default function ResultsSection() {
   const [isQuoteExpanded, setIsQuoteExpanded] = useState(false);
@@ -369,10 +368,6 @@ export default function ResultsSection() {
                 </div>
               </div>
 
-              {/* RIGHT COLUMN: Performance Chart */}
-              <div className="h-full">
-                <PerformanceChart />
-              </div>
             </div>
           </div>
         </div>
