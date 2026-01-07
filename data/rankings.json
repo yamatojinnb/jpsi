@@ -1,53 +1,37 @@
 {
-  "week": 3,
-  "lastUpdated": "2026-01-04",
+  "week": 2,
+  "lastUpdated": "2025-12-31",
   "rankings": [
     {
       "rank": 1,
-      "team": "Team Alpha",
-      "university": "University of Toronto",
-      "country": "CA",
-      "return": 12.5,
-      "change": 2.3
+      "team": "Lukas Matzer",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 4.85,
+      "change": 0
     },
     {
       "rank": 2,
-      "team": "Team Beta",
-      "university": "TUM",
-      "country": "DE",
-      "return": 10.2,
-      "change": -0.5
+      "team": "Yutaro Nagamori",
+      "university": "The University of Sheffield",
+      "country": "🇬🇧",
+      "return": 3.09,
+      "change": 0
     },
     {
       "rank": 3,
-      "team": "Team Gamma",
-      "university": "Waseda",
-      "country": "JP",
-      "return": 9.8,
-      "change": 1.1
-    },
-    {
-      "rank": 4,
-      "team": "Team Delta",
-      "university": "UNSW",
-      "country": "AU",
-      "return": 8.5,
-      "change": 0.3
-    },
-    {
-      "rank": 5,
-      "team": "Team Epsilon",
-      "university": "IIT Roorkee",
-      "country": "IN",
-      "return": 7.2,
-      "change": -1.2
+      "team": "William Florio",
+      "university": "Roger Williams University",
+      "country": "🇺🇸",
+      "return": 2.77,
+      "change": 0
     }
   ],
   "announcements": [
     {
       "date": "2026-01-04",
       "title": "Rankings Updated",
-      "content": "Week 3 rankings have been updated. Check your current standing!"
+      "content": "Week 2 rankings have been updated. Check your current standing!"
     },
     {
       "date": "2026-01-01",
@@ -60,50 +44,5 @@
       "content": "December report deadline is January 22, 2026. Submit via email to earn bonus points."
     }
   ],
-  "history": [
-    {
-      "week": 0,
-      "date": "2025-12-15",
-      "data": {
-        "Team Alpha": 0,
-        "Team Beta": 0,
-        "Team Gamma": 0,
-        "Team Delta": 0,
-        "Team Epsilon": 0
-      }
-    },
-    {
-      "week": 1,
-      "date": "2025-12-22",
-      "data": {
-        "Team Alpha": 5.2,
-        "Team Beta": 4.8,
-        "Team Gamma": 3.5,
-        "Team Delta": 4.1,
-        "Team Epsilon": 6.2
-      }
-    },
-    {
-      "week": 2,
-      "date": "2025-12-29",
-      "data": {
-        "Team Alpha": 10.2,
-        "Team Beta": 10.7,
-        "Team Gamma": 8.7,
-        "Team Delta": 8.2,
-        "Team Epsilon": 8.4
-      }
-    },
-    {
-      "week": 3,
-      "date": "2026-01-04",
-      "data": {
-        "Team Alpha": 12.5,
-        "Team Beta": 10.2,
-        "Team Gamma": 9.8,
-        "Team Delta": 8.5,
-        "Team Epsilon": 7.2
-      }
-    }
-  ]
+  "history": []
 }

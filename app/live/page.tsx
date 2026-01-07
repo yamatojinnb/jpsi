@@ -29,21 +29,6 @@ export default function LivePage() {
     });
   };
 
-  // Country flag emoji helper
-  const getFlag = (code: string) => {
-    const flags: { [key: string]: string } = {
-      CA: "🇨🇦",
-      DE: "🇩🇪",
-      JP: "🇯🇵",
-      AU: "🇦🇺",
-      IN: "🇮🇳",
-      UK: "🇬🇧",
-      MY: "🇲🇾",
-      US: "🇺🇸",
-      CH: "🇨🇭",
-    };
-    return flags[code] || "🏳️";
-  };
 
   return (
     <div className="min-h-screen">
@@ -151,7 +136,7 @@ export default function LivePage() {
                           Rank
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                          Team
+                          Name
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
                           University
@@ -191,9 +176,7 @@ export default function LivePage() {
                             {team.team}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-gray-600">
-                            <span className="mr-2">
-                              {getFlag(team.country)}
-                            </span>
+                            <span className="mr-2">{team.country}</span>
                             {team.university}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-right font-semibold text-gray-900">
