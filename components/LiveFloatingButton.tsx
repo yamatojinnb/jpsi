@@ -41,30 +41,30 @@ export default function LiveFloatingButton() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Tooltip - Dark Background + Gold Text */}
+      {/* Tooltip - White Background + Black Text */}
       {showTooltip && (
         <div
           className="absolute bottom-full right-0 mb-4 animate-tooltip-bounce"
           onClick={dismissTooltip}
         >
           <div
-            className="relative bg-gray-900 px-4 py-2.5 rounded-lg shadow-2xl whitespace-nowrap border border-gray-700"
-            style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)" }}
+            className="relative bg-white px-4 py-2.5 rounded-lg shadow-2xl whitespace-nowrap border border-gray-200"
+            style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.15)" }}
           >
             {/* Content */}
-            <div className="flex items-center gap-2 pr-6">
-              <p className="font-semibold text-sm" style={{ color: "#C9A227" }}>
+            <div className="flex items-center gap-2">
+              <p className="font-semibold text-sm text-gray-900">
                 View Live Rankings
               </p>
-              <span style={{ color: "#C9A227" }}>→</span>
+              <span className="text-gray-500">→</span>
             </div>
 
-            {/* Arrow pointing down - dark */}
-            <div className="absolute -bottom-2 right-6 w-0 h-0 border-l-[8px] border-r-[8px] border-t-[8px] border-l-transparent border-r-transparent border-t-gray-900"></div>
+            {/* Arrow pointing down - white */}
+            <div className="absolute -bottom-2 right-6 w-0 h-0 border-l-[8px] border-r-[8px] border-t-[8px] border-l-transparent border-r-transparent border-t-white"></div>
 
             {/* Close button */}
             <button
-              className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-gray-700 text-gray-400 rounded-full text-xs flex items-center justify-center hover:bg-gray-600 hover:text-white"
+              className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-gray-200 text-gray-500 rounded-full text-xs flex items-center justify-center hover:bg-gray-300"
               onClick={(e) => {
                 e.stopPropagation();
                 dismissTooltip();

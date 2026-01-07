@@ -367,7 +367,6 @@ export default function ResultsSection() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

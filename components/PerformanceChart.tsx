@@ -73,8 +73,13 @@ export default function PerformanceChart({
               domain={["dataMin - 2", "dataMax + 2"]}
             />
             <Tooltip
-              formatter={(value: number) => [`${value.toFixed(2)}%`, ""]}
-              labelFormatter={(label) => `Week ${label.replace("W", "")}`}
+              formatter={(value) => {
+                if (typeof value === 'number') {
+                  return [`${value.toFixed(2)}%`, ""];
+                }
+                return ["", ""];
+              }}
+              labelFormatter={(label) => `Week ${String(label).replace("W", "")}`}
               contentStyle={{
                 backgroundColor: "white",
                 border: "1px solid #e5e7eb",
