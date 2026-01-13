@@ -142,8 +142,12 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
                 {index + 1}
               </div>
               
-              {/* Name */}
-              <div className="w-40 text-sm font-medium text-gray-900 truncate">
+              {/* Name with colored dot */}
+              <div className="w-40 text-sm font-medium text-gray-900 truncate flex items-center gap-2">
+                <span
+                  className="w-3 h-3 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: getColor(item.name) }}
+                ></span>
                 {item.name}
               </div>
               
