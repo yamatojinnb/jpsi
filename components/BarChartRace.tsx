@@ -99,7 +99,7 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
 
   const currentData = validHistory[currentIndex];
   const maxPerf = currentData["1stPerf"] || 100; // 1st place is always max
-  const scaleMax = maxPerf + 1; // 1st place value + 1%
+  const scaleMax = maxPerf + 0.5; // 1st place value + 0.5%
   const scaleMin = 100;
 
   // Build ranking data for current frame

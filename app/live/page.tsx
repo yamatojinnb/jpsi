@@ -195,7 +195,7 @@ export default function LivePage() {
                               </span>
                             ) : (
                               <span
-                                className={`inline-flex items-center gap-1 ${
+                                className={`text-sm font-medium ${
                                   team.change > 0
                                     ? "text-green-600"
                                     : team.change < 0
@@ -203,11 +203,6 @@ export default function LivePage() {
                                     : "text-gray-500"
                                 }`}
                               >
-                                {team.change > 0 ? (
-                                  <TrendingUp className="w-4 h-4" />
-                                ) : team.change < 0 ? (
-                                  <TrendingDown className="w-4 h-4" />
-                                ) : null}
                                 {team.change > 0 ? "+" : ""}
                                 {team.change.toFixed(2)}%
                               </span>
