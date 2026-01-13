@@ -45,6 +45,7 @@ const getColor = (name: string) => COLORS[name] || "#6b7280";
 
 export default function BarChartRace({ history }: BarChartRaceProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [initialized, setInitialized] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -52,6 +53,14 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
   const validHistory = history.filter(
     (entry) => entry["1stPerf"] !== undefined
   );
+
+  // Set initial position to last frame (latest date)
+  useEffect(() => {
+    if (!initialized && validHistory.length > 0) {
+      setCurrentIndex(validHistory.length - 1);
+      setInitialized(true);
+    }
+  }, [validHistory.length, initialized]);
 
   useEffect(() => {
     if (isPlaying && currentIndex < validHistory.length - 1) {
