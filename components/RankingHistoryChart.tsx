@@ -86,13 +86,13 @@ export default function RankingHistoryChart({ history }: RankingHistoryChartProp
               }}
             />
             <Tooltip
-              formatter={(value: number | undefined, name: string) => {
-                if (typeof value === "number") {
-                  if (value === 1) return ["1st place", name];
-                  if (value === 2) return ["2nd place", name];
-                  if (value === 3) return ["3rd place", name];
-                }
-                return ["", name];
+              formatter={(value, name) => {
+                const numValue = Number(value);
+                const nameStr = String(name || "");
+                if (numValue === 1) return ["1st place", nameStr];
+                if (numValue === 2) return ["2nd place", nameStr];
+                if (numValue === 3) return ["3rd place", nameStr];
+                return ["", nameStr];
               }}
             />
             <Legend />
