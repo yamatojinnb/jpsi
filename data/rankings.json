@@ -7,7 +7,7 @@
       "team": "Yorck Linderhaus",
       "university": "TUM",
       "country": "🇩🇪",
-      "return": 23.00,
+      "return": 22.6,
       "change": 0
     },
     {
@@ -15,7 +15,7 @@
       "team": "Elias Hannert",
       "university": "TUM",
       "country": "🇩🇪",
-      "return": 6.00,
+      "return": 6.0,
       "change": 2
     },
     {
@@ -23,7 +23,7 @@
       "team": "William Florio",
       "university": "Roger Williams University",
       "country": "🇺🇸",
-      "return": 4.00,
+      "return": 4.1,
       "change": -1
     }
   ],
@@ -40,23 +40,23 @@
     }
   ],
   "history": [
-    { "date": "2025-12-18", "1st": "Yash Kumar", "2nd": "Yigit Kaan Ertürk", "3rd": "Catherine Yanran Xu" },
-    { "date": "2025-12-19", "1st": "William Florio", "2nd": "Yutaro Nagamori", "3rd": "Yash Kumar" },
-    { "date": "2025-12-22", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-23", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
-    { "date": "2025-12-24", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-25", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-26", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-29", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-30", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2025-12-31", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
-    { "date": "2026-01-01", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
-    { "date": "2026-01-02", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
-    { "date": "2026-01-05", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
-    { "date": "2026-01-06", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Elias Hannert" },
-    { "date": "2026-01-07", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland" },
-    { "date": "2026-01-08", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland" },
-    { "date": "2026-01-09", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio" }
+    { "date": "2025-12-18", "1st": "Yash Kumar", "2nd": "Yigit Kaan Ertürk", "3rd": "Catherine Yanran Xu", "1stPerf": 100.0, "2ndPerf": 100.0, "3rdPerf": 100.0 },
+    { "date": "2025-12-19", "1st": "William Florio", "2nd": "Yutaro Nagamori", "3rd": "Yash Kumar", "1stPerf": 100.9, "2ndPerf": 100.7, "3rdPerf": 100.2 },
+    { "date": "2025-12-22", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 102.5, "2ndPerf": 102.2, "3rdPerf": 102.0 },
+    { "date": "2025-12-23", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "1stPerf": 104.1, "2ndPerf": 103.0, "3rdPerf": 102.9 },
+    { "date": "2025-12-24", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 104.0, "2ndPerf": 103.8, "3rdPerf": 103.8 },
+    { "date": "2025-12-25", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 105.6, "2ndPerf": 104.0, "3rdPerf": 103.8 },
+    { "date": "2025-12-26", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 105.6, "2ndPerf": 104.0, "3rdPerf": 103.8 },
+    { "date": "2025-12-29", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 105.7, "2ndPerf": 104.2, "3rdPerf": 103.6 },
+    { "date": "2025-12-30", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 106.8, "2ndPerf": 103.7, "3rdPerf": 103.5 },
+    { "date": "2025-12-31", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "1stPerf": 106.6, "2ndPerf": 103.6, "3rdPerf": 103.5 },
+    { "date": "2026-01-01", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "1stPerf": 104.8, "2ndPerf": 103.1, "3rdPerf": 102.8 },
+    { "date": "2026-01-02", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "1stPerf": 104.8, "2ndPerf": 103.1, "3rdPerf": 102.8 },
+    { "date": "2026-01-05", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "1stPerf": 108.4, "2ndPerf": 103.0, "3rdPerf": 103.0 },
+    { "date": "2026-01-06", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Elias Hannert", "1stPerf": 110.8, "2ndPerf": 103.5, "3rdPerf": 102.8 },
+    { "date": "2026-01-07", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "1stPerf": 119.4, "2ndPerf": 104.0, "3rdPerf": 103.0 },
+    { "date": "2026-01-08", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "1stPerf": 117.9, "2ndPerf": 104.0, "3rdPerf": 103.8 },
+    { "date": "2026-01-09", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio", "1stPerf": 122.6, "2ndPerf": 106.0, "3rdPerf": 104.1 }
   ],
   "hallOfFame": {
     "mostDaysAt1": [
