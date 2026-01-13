@@ -13,6 +13,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RankingHistoryChart from "@/components/RankingHistoryChart";
+import BarChartRace from "@/components/BarChartRace";
 import HallOfFame from "@/components/HallOfFame";
 
 // Import rankings data
@@ -213,6 +214,11 @@ export default function LivePage() {
               {/* Ranking History Chart */}
               {data.history && data.history.length > 0 && (
                 <RankingHistoryChart history={data.history} />
+              )}
+
+              {/* Bar Chart Race */}
+              {data.history && data.history.length > 0 && (
+                <BarChartRace history={data.history} />
               )}
 
               {/* Hall of Fame */}

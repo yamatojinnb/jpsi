@@ -1,0 +1,197 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import { Play, Pause, RotateCcw } from "lucide-react";
+
+interface HistoryEntry {
+  date: string;
+  "1st": string;
+  "2nd": string;
+  "3rd": string;
+  "1stPerf"?: number;
+  "2ndPerf"?: number;
+  "3rdPerf"?: number;
+}
+
+interface BarChartRaceProps {
+  history: HistoryEntry[];
+}
+
+// Color mapping for participants
+const COLORS: { [key: string]: string } = {
+  "Yorck Linderhaus": "#8B0C19",
+  "William Florio": "#2563eb",
+  "Yutaro Nagamori": "#16a34a",
+  "Elias Hannert": "#d97706",
+  "Noah Holland": "#7c3aed",
+  "Yash Kumar": "#dc2626",
+  "Yigit Kaan Ertürk": "#0891b2",
+  "Catherine Yanran Xu": "#ec4899",
+};
+
+const getColor = (name: string) => COLORS[name] || "#6b7280";
+
+export default function BarChartRace({ history }: BarChartRaceProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Filter history to only include entries with performance data
+  const validHistory = history.filter(
+    (entry) => entry["1stPerf"] !== undefined
+  );
+
+  useEffect(() => {
+    if (isPlaying && currentIndex < validHistory.length - 1) {
+      intervalRef.current = setTimeout(() => {
+        setCurrentIndex((prev) => prev + 1);
+      }, 800); // 800ms between each frame
+    } else if (currentIndex >= validHistory.length - 1) {
+      setIsPlaying(false);
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearTimeout(intervalRef.current);
+      }
+    };
+  }, [isPlaying, currentIndex, validHistory.length]);
+
+  const handlePlayPause = () => {
+    if (currentIndex >= validHistory.length - 1) {
+      setCurrentIndex(0);
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleReset = () => {
+    setIsPlaying(false);
+    setCurrentIndex(0);
+  };
+
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsPlaying(false);
+    setCurrentIndex(Number(e.target.value));
+  };
+
+  if (!validHistory || validHistory.length === 0) return null;
+
+  const currentData = validHistory[currentIndex];
+  const maxPerf = Math.max(
+    currentData["1stPerf"] || 100,
+    currentData["2ndPerf"] || 100,
+    currentData["3rdPerf"] || 100
+  );
+
+  // Build ranking data for current frame
+  const rankings = [
+    { name: currentData["1st"], perf: currentData["1stPerf"] || 100, rank: 1 },
+    { name: currentData["2nd"], perf: currentData["2ndPerf"] || 100, rank: 2 },
+    { name: currentData["3rd"], perf: currentData["3rdPerf"] || 100, rank: 3 },
+  ];
+
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mt-6">
+      <div className="px-6 py-4 border-b border-gray-200">
+        <h2 className="text-xl font-bold text-gray-900">🏁 Performance Race</h2>
+        <p className="text-sm text-gray-500">Watch the top 3 battle over time</p>
+      </div>
+      
+      <div className="p-6">
+        {/* Bar Chart */}
+        <div className="space-y-4 mb-6">
+          {rankings.map((item, index) => (
+            <div key={item.name} className="flex items-center gap-4">
+              {/* Rank Badge */}
+              <div
+                className={`w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold ${
+                  index === 0
+                    ? "bg-yellow-500"
+                    : index === 1
+                    ? "bg-gray-400"
+                    : "bg-amber-600"
+                }`}
+              >
+                {index + 1}
+              </div>
+              
+              {/* Name */}
+              <div className="w-40 text-sm font-medium text-gray-900 truncate">
+                {item.name}
+              </div>
+              
+              {/* Bar */}
+              <div className="flex-1 h-8 bg-gray-100 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-500 ease-out flex items-center justify-end pr-3"
+                  style={{
+                    width: `${((item.perf - 95) / (maxPerf - 95)) * 100}%`,
+                    backgroundColor: getColor(item.name),
+                    minWidth: "60px",
+                  }}
+                >
+                  <span className="text-white text-sm font-bold">
+                    {item.perf.toFixed(1)}%
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Date Display */}
+        <div className="text-right mb-4">
+          <span className="text-2xl font-bold text-gray-300">
+            {formatDate(currentData.date)}
+          </span>
+        </div>
+
+        {/* Controls */}
+        <div className="flex items-center gap-4">
+          {/* Play/Pause Button */}
+          <button
+            onClick={handlePlayPause}
+            className="p-3 bg-[#8B0C19] text-white rounded-full hover:bg-[#6d0a14] transition-colors"
+          >
+            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+          </button>
+
+          {/* Reset Button */}
+          <button
+            onClick={handleReset}
+            className="p-3 bg-gray-200 text-gray-600 rounded-full hover:bg-gray-300 transition-colors"
+          >
+            <RotateCcw className="w-5 h-5" />
+          </button>
+
+          {/* Timeline Slider */}
+          <div className="flex-1">
+            <input
+              type="range"
+              min="0"
+              max={validHistory.length - 1}
+              value={currentIndex}
+              onChange={handleSliderChange}
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#8B0C19]"
+            />
+          </div>
+
+          {/* Frame Counter */}
+          <span className="text-sm text-gray-500">
+            {currentIndex + 1} / {validHistory.length}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
