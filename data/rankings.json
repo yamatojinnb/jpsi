@@ -5,7 +5,7 @@
     {
       "rank": 1,
       "team": "Yorck Linderhaus",
-      "university": "TUM",
+      "university": "Ludwig Maximilian University of Munich",
       "country": "🇩🇪",
       "return": 22.6,
       "change": 0
@@ -13,7 +13,7 @@
     {
       "rank": 2,
       "team": "Elias Hannert",
-      "university": "TUM",
+      "university": "RWTH Aachen University",
       "country": "🇩🇪",
       "return": 6.0,
       "change": 2
@@ -60,17 +60,19 @@
   ],
   "hallOfFame": {
     "mostDaysAt1": [
-      { "name": "Yorck Linderhaus", "days": 16, "country": "🇩🇪" },
-      { "name": "William Florio", "days": 1, "country": "🇺🇸" },
-      { "name": "Yash Kumar", "days": 1, "country": "🇮🇳" }
+      { "name": "Yorck Linderhaus", "days": 16, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "William Florio", "days": 1, "country": "🇺🇸", "university": "Roger Williams University" },
+      { "name": "Yash Kumar", "days": 1, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" }
     ],
     "top3Appearances": [
-      { "name": "Yorck Linderhaus", "count": 16, "country": "🇩🇪" },
-      { "name": "William Florio", "count": 16, "country": "🇺🇸" },
-      { "name": "Yutaro Nagamori", "count": 14, "country": "🇬🇧" },
-      { "name": "Yash Kumar", "count": 2, "country": "🇮🇳" },
-      { "name": "Noah Holland", "count": 2, "country": "🇺🇸" },
-      { "name": "Elias Hannert", "count": 2, "country": "🇩🇪" }
+      { "name": "Yorck Linderhaus", "count": 16, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "William Florio", "count": 16, "country": "🇺🇸", "university": "Roger Williams University" },
+      { "name": "Yutaro Nagamori", "count": 14, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Yash Kumar", "count": 2, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
+      { "name": "Noah Holland", "count": 2, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Elias Hannert", "count": 2, "country": "🇩🇪", "university": "RWTH Aachen University" },
+      { "name": "Yigit Kaan Ertürk", "count": 1, "country": "🇩🇪", "university": "Technical University of Munich" },
+      { "name": "Catherine Yanran Xu", "count": 1, "country": "🇨🇦", "university": "University of Toronto" }
     ]
   }
 }
