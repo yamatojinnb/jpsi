@@ -166,7 +166,7 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
                   className="h-full rounded-full transition-all duration-500 ease-out flex items-center justify-end pr-3"
                   style={{
                     width: `${((item.perf - 95) / (maxPerf - 95)) * 100}%`,
-                    backgroundColor: getColor(item.name),
+                    backgroundColor: getColor(item.name || ""),
                     minWidth: "60px",
                   }}
                 >
