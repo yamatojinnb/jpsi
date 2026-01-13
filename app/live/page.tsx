@@ -123,11 +123,14 @@ export default function LivePage() {
             {/* Rankings Table - Main Content */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                <div className="px-6 py-4 border-b border-gray-200 flex items-center gap-2">
-                  <Trophy className="w-5 h-5 text-[#8B0C19]" />
-                  <h2 className="text-xl font-bold text-gray-900">
-                    Current Standings
-                  </h2>
+                <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Trophy className="w-5 h-5 text-[#8B0C19]" />
+                    <h2 className="text-xl font-bold text-gray-900">
+                      Current Standings
+                    </h2>
+                  </div>
+                  <span className="text-sm text-gray-500">as of {formatDate(data.lastUpdated)}</span>
                 </div>
 
                 <div className="overflow-x-auto">
@@ -186,23 +189,29 @@ export default function LivePage() {
                             {team.return.toFixed(2)}%
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-right">
-                            <span
-                              className={`inline-flex items-center gap-1 ${
-                                team.change > 0
-                                  ? "text-green-600"
-                                  : team.change < 0
-                                  ? "text-red-600"
-                                  : "text-gray-500"
-                              }`}
-                            >
-                              {team.change > 0 ? (
-                                <TrendingUp className="w-4 h-4" />
-                              ) : team.change < 0 ? (
-                                <TrendingDown className="w-4 h-4" />
-                              ) : null}
-                              {team.change > 0 ? "+" : ""}
-                              {team.change.toFixed(2)}%
-                            </span>
+                            {team.change === "NEW" ? (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
+                                NEW
+                              </span>
+                            ) : (
+                              <span
+                                className={`inline-flex items-center gap-1 ${
+                                  team.change > 0
+                                    ? "text-green-600"
+                                    : team.change < 0
+                                    ? "text-red-600"
+                                    : "text-gray-500"
+                                }`}
+                              >
+                                {team.change > 0 ? (
+                                  <TrendingUp className="w-4 h-4" />
+                                ) : team.change < 0 ? (
+                                  <TrendingDown className="w-4 h-4" />
+                                ) : null}
+                                {team.change > 0 ? "+" : ""}
+                                {team.change.toFixed(2)}%
+                              </span>
+                            )}
                           </td>
                         </tr>
                       ))}

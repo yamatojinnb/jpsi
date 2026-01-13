@@ -8,7 +8,7 @@
       "university": "Ludwig Maximilian University of Munich",
       "country": "🇩🇪",
       "return": 22.6,
-      "change": 0
+      "change": 16.0
     },
     {
       "rank": 2,
@@ -16,7 +16,7 @@
       "university": "RWTH Aachen University",
       "country": "🇩🇪",
       "return": 6.0,
-      "change": 2
+      "change": "NEW"
     },
     {
       "rank": 3,
@@ -24,7 +24,7 @@
       "university": "Roger Williams University",
       "country": "🇺🇸",
       "return": 4.1,
-      "change": -1
+      "change": 0.6
     }
   ],
   "announcements": [
