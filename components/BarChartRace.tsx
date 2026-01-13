@@ -8,9 +8,13 @@ interface HistoryEntry {
   "1st": string;
   "2nd": string;
   "3rd": string;
+  "4th"?: string;
+  "5th"?: string;
   "1stPerf"?: number;
   "2ndPerf"?: number;
   "3rdPerf"?: number;
+  "4thPerf"?: number;
+  "5thPerf"?: number;
 }
 
 interface BarChartRaceProps {
@@ -27,6 +31,14 @@ const COLORS: { [key: string]: string } = {
   "Yash Kumar": "#dc2626",
   "Yigit Kaan Ertürk": "#0891b2",
   "Catherine Yanran Xu": "#ec4899",
+  "Brandon Choi": "#14b8a6",
+  "Xianmingsheng Diao": "#f97316",
+  "Victor Popescu": "#8b5cf6",
+  "Charlotte Voon": "#06b6d4",
+  "Hana Shigeta": "#f43f5e",
+  "Aditya Jain": "#84cc16",
+  "Divyansh Kashyap": "#a855f7",
+  "Ohji Fukuda": "#10b981",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
@@ -80,7 +92,9 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
   const maxPerf = Math.max(
     currentData["1stPerf"] || 100,
     currentData["2ndPerf"] || 100,
-    currentData["3rdPerf"] || 100
+    currentData["3rdPerf"] || 100,
+    currentData["4thPerf"] || 100,
+    currentData["5thPerf"] || 100
   );
 
   // Build ranking data for current frame
@@ -88,7 +102,9 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     { name: currentData["1st"], perf: currentData["1stPerf"] || 100, rank: 1 },
     { name: currentData["2nd"], perf: currentData["2ndPerf"] || 100, rank: 2 },
     { name: currentData["3rd"], perf: currentData["3rdPerf"] || 100, rank: 3 },
-  ];
+    { name: currentData["4th"], perf: currentData["4thPerf"] || 100, rank: 4 },
+    { name: currentData["5th"], perf: currentData["5thPerf"] || 100, rank: 5 },
+  ].filter(item => item.name); // Filter out entries without a name
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -103,7 +119,7 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mt-6">
       <div className="px-6 py-4 border-b border-gray-200">
         <h2 className="text-xl font-bold text-gray-900">🏁 Performance Race</h2>
-        <p className="text-sm text-gray-500">Watch the top 3 battle over time</p>
+        <p className="text-sm text-gray-500">Watch the top 5 battle over time</p>
       </div>
       
       <div className="p-6">
@@ -118,7 +134,9 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
                     ? "bg-yellow-500"
                     : index === 1
                     ? "bg-gray-400"
-                    : "bg-amber-600"
+                    : index === 2
+                    ? "bg-amber-600"
+                    : "bg-gray-500"
                 }`}
               >
                 {index + 1}
