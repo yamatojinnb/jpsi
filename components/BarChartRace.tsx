@@ -98,15 +98,9 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
   if (!validHistory || validHistory.length === 0) return null;
 
   const currentData = validHistory[currentIndex];
-  const maxPerf = Math.max(
-    currentData["1stPerf"] || 100,
-    currentData["2ndPerf"] || 100,
-    currentData["3rdPerf"] || 100,
-    currentData["4thPerf"] || 100,
-    currentData["5thPerf"] || 100
-  );
-  const scaleMax = maxPerf + 5; // Add 5% margin to the right
-  const scaleMin = 100; // Always start from 100%
+  const maxPerf = currentData["1stPerf"] || 100; // 1st place is always max
+  const scaleMax = maxPerf + 1; // 1st place value + 1%
+  const scaleMin = 100;
 
   // Build ranking data for current frame
   const rankings = [
