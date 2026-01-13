@@ -211,12 +211,7 @@ export default function LivePage() {
                 </div>
               </div>
 
-              {/* Ranking History Chart */}
-              {data.history && data.history.length > 0 && (
-                <RankingHistoryChart history={data.history} />
-              )}
-
-              {/* Bar Chart Race */}
+              {/* Performance Race */}
               {data.history && data.history.length > 0 && (
                 <BarChartRace history={data.history} />
               )}
@@ -224,6 +219,11 @@ export default function LivePage() {
               {/* Hall of Fame */}
               {data.hallOfFame && (
                 <HallOfFame hallOfFame={data.hallOfFame} />
+              )}
+
+              {/* Ranking History Chart */}
+              {data.history && data.history.length > 0 && (
+                <RankingHistoryChart history={data.history} />
               )}
             </div>
 
