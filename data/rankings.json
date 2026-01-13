@@ -1,48 +1,76 @@
 {
-  "week": 2,
-  "lastUpdated": "2025-12-31",
+  "week": 4,
+  "lastUpdated": "2026-01-09",
   "rankings": [
     {
       "rank": 1,
-      "team": "Lukas Matzer",
-      "university": "Ludwig Maximilian University of Munich",
+      "team": "Yorck Linderhaus",
+      "university": "TUM",
       "country": "🇩🇪",
-      "return": 4.85,
+      "return": 23.00,
       "change": 0
     },
     {
       "rank": 2,
-      "team": "Yutaro Nagamori",
-      "university": "The University of Sheffield",
-      "country": "🇬🇧",
-      "return": 3.09,
-      "change": 0
+      "team": "Elias Hannert",
+      "university": "TUM",
+      "country": "🇩🇪",
+      "return": 6.00,
+      "change": 2
     },
     {
       "rank": 3,
       "team": "William Florio",
       "university": "Roger Williams University",
       "country": "🇺🇸",
-      "return": 2.77,
-      "change": 0
+      "return": 4.00,
+      "change": -1
     }
   ],
   "announcements": [
     {
-      "date": "2026-01-04",
+      "date": "2026-01-09",
       "title": "Rankings Updated",
-      "content": "Week 2 rankings have been updated. Check your current standing!"
+      "content": "Week 4 rankings have been updated. Check your current standing!"
     },
     {
       "date": "2026-01-01",
       "title": "Happy New Year!",
       "content": "Wishing all participants a successful trading year. Good luck!"
-    },
-    {
-      "date": "2025-12-20",
-      "title": "Optional Report #1 Reminder",
-      "content": "December report deadline is January 22, 2026. Submit via email to earn bonus points."
     }
   ],
-  "history": []
+  "history": [
+    { "date": "2025-12-18", "1st": "Yash Kumar", "2nd": "Yigit Kaan Ertürk", "3rd": "Catherine Yanran Xu" },
+    { "date": "2025-12-19", "1st": "William Florio", "2nd": "Yutaro Nagamori", "3rd": "Yash Kumar" },
+    { "date": "2025-12-22", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-23", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
+    { "date": "2025-12-24", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-25", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-26", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-29", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-30", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2025-12-31", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
+    { "date": "2026-01-01", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
+    { "date": "2026-01-02", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio" },
+    { "date": "2026-01-05", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori" },
+    { "date": "2026-01-06", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Elias Hannert" },
+    { "date": "2026-01-07", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland" },
+    { "date": "2026-01-08", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland" },
+    { "date": "2026-01-09", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio" }
+  ],
+  "hallOfFame": {
+    "mostDaysAt1": [
+      { "name": "Yorck Linderhaus", "days": 16, "country": "🇩🇪" },
+      { "name": "William Florio", "days": 1, "country": "🇺🇸" },
+      { "name": "Yash Kumar", "days": 1, "country": "🇮🇳" }
+    ],
+    "top3Appearances": [
+      { "name": "Yorck Linderhaus", "count": 16, "country": "🇩🇪" },
+      { "name": "William Florio", "count": 16, "country": "🇺🇸" },
+      { "name": "Yutaro Nagamori", "count": 14, "country": "🇬🇧" },
+      { "name": "Yash Kumar", "count": 2, "country": "🇮🇳" },
+      { "name": "Noah Holland", "count": 2, "country": "🇺🇸" },
+      { "name": "Elias Hannert", "count": 2, "country": "🇩🇪" }
+    ]
+  }
 }

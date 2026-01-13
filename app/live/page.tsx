@@ -13,6 +13,8 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PerformanceChart from "@/components/PerformanceChart";
+import RankingHistoryChart from "@/components/RankingHistoryChart";
+import HallOfFame from "@/components/HallOfFame";
 
 // Import rankings data
 import rankingsData from "@/data/rankings.json";
@@ -208,6 +210,16 @@ export default function LivePage() {
                   </table>
                 </div>
               </div>
+
+              {/* Ranking History Chart */}
+              {data.history && data.history.length > 0 && (
+                <RankingHistoryChart history={data.history} />
+              )}
+
+              {/* Hall of Fame */}
+              {data.hallOfFame && (
+                <HallOfFame hallOfFame={data.hallOfFame} />
+              )}
 
               {/* Performance Chart */}
               {data.history && data.history.length > 0 && (
