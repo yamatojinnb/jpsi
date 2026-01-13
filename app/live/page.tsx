@@ -189,9 +189,9 @@ export default function LivePage() {
                             {team.return.toFixed(2)}%
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-right">
-                            {team.change === "NEW" ? (
+                            {typeof team.change === "string" ? (
                               <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
-                                NEW
+                                {team.change}
                               </span>
                             ) : (
                               <span
