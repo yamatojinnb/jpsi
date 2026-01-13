@@ -105,6 +105,8 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     currentData["4thPerf"] || 100,
     currentData["5thPerf"] || 100
   );
+  const scaleMax = maxPerf + 5; // Add 5% margin to the right
+  const scaleMin = 100; // Always start from 100%
 
   // Build ranking data for current frame
   const rankings = [
@@ -165,18 +167,32 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
                 <div
                   className="h-full rounded-full transition-all duration-500 ease-out flex items-center justify-end pr-3"
                   style={{
-                    width: `${((item.perf - 95) / (maxPerf - 95)) * 100}%`,
+                    width: `${((item.perf - scaleMin) / (scaleMax - scaleMin)) * 100}%`,
                     backgroundColor: getColor(item.name || ""),
-                    minWidth: "60px",
+                    minWidth: "40px",
                   }}
                 >
                   <span className="text-white text-sm font-bold">
-                    {item.perf.toFixed(1)}%
+                    +{(item.perf - 100).toFixed(1)}%
                   </span>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Scale Bar */}
+        <div className="mb-4">
+          <div className="flex justify-between text-xs text-gray-400 mb-1">
+            <span>100%</span>
+            <span>{scaleMax.toFixed(1)}%</span>
+          </div>
+          <div className="h-1 bg-gray-200 rounded-full relative">
+            <div 
+              className="absolute left-0 top-0 h-full bg-gray-300 rounded-full"
+              style={{ width: '100%' }}
+            ></div>
+          </div>
         </div>
 
         {/* Date Display */}
