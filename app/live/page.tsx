@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PerformanceChart from "@/components/PerformanceChart";
 import RankingHistoryChart from "@/components/RankingHistoryChart";
 import HallOfFame from "@/components/HallOfFame";
 
@@ -219,14 +218,6 @@ export default function LivePage() {
               {/* Hall of Fame */}
               {data.hallOfFame && (
                 <HallOfFame hallOfFame={data.hallOfFame} />
-              )}
-
-              {/* Performance Chart */}
-              {data.history && data.history.length > 0 && (
-                <PerformanceChart
-                  history={data.history}
-                  rankings={data.rankings}
-                />
               )}
             </div>
 
