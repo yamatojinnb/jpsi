@@ -10,11 +10,21 @@ interface HistoryEntry {
   "3rd": string;
   "4th"?: string;
   "5th"?: string;
+  "6th"?: string;
+  "7th"?: string;
+  "8th"?: string;
+  "9th"?: string;
+  "10th"?: string;
   "1stPerf"?: number;
   "2ndPerf"?: number;
   "3rdPerf"?: number;
   "4thPerf"?: number;
   "5thPerf"?: number;
+  "6thPerf"?: number;
+  "7thPerf"?: number;
+  "8thPerf"?: number;
+  "9thPerf"?: number;
+  "10thPerf"?: number;
 }
 
 interface BarChartRaceProps {
@@ -39,6 +49,10 @@ const COLORS: { [key: string]: string } = {
   "Aditya Jain": "#84cc16",
   "Divyansh Kashyap": "#a855f7",
   "Ohji Fukuda": "#10b981",
+  "Kenzo Ota": "#ef4444",
+  "Elizabeth Dufrane": "#06b6d4",
+  "Kokota SUMI": "#14b8a6",
+  "Risa KONNO": "#f59e0b",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
@@ -109,6 +123,11 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     { name: currentData["3rd"], perf: currentData["3rdPerf"] || 100, rank: 3 },
     { name: currentData["4th"], perf: currentData["4thPerf"] || 100, rank: 4 },
     { name: currentData["5th"], perf: currentData["5thPerf"] || 100, rank: 5 },
+    { name: currentData["6th"], perf: currentData["6thPerf"] || 100, rank: 6 },
+    { name: currentData["7th"], perf: currentData["7thPerf"] || 100, rank: 7 },
+    { name: currentData["8th"], perf: currentData["8thPerf"] || 100, rank: 8 },
+    { name: currentData["9th"], perf: currentData["9thPerf"] || 100, rank: 9 },
+    { name: currentData["10th"], perf: currentData["10thPerf"] || 100, rank: 10 },
   ].filter(item => item.name); // Filter out entries without a name
 
   const formatDate = (dateStr: string) => {
@@ -124,7 +143,7 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mt-6">
       <div className="px-6 py-4 border-b border-gray-200">
         <h2 className="text-xl font-bold text-gray-900">🏁 Performance Race</h2>
-        <p className="text-sm text-gray-500">Watch the top 5 battle over time</p>
+        <p className="text-sm text-gray-500">Watch the top 10 battle over time</p>
       </div>
       
       <div className="p-6">

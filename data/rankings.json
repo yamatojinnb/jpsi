@@ -1,33 +1,24 @@
 {
-  "week": 4,
-  "lastUpdated": "2026-01-09",
+  "week": 5,
+  "lastUpdated": "2026-01-16",
   "rankings": [
-    {
-      "rank": 1,
-      "team": "Yorck Linderhaus",
-      "university": "Ludwig Maximilian University of Munich",
-      "country": "🇩🇪",
-      "return": 22.6,
-      "change": 16.0
-    },
-    {
-      "rank": 2,
-      "team": "Elias Hannert",
-      "university": "RWTH Aachen University",
-      "country": "🇩🇪",
-      "return": 6.0,
-      "change": "NEW"
-    },
-    {
-      "rank": 3,
-      "team": "William Florio",
-      "university": "Roger Williams University",
-      "country": "🇺🇸",
-      "return": 4.1,
-      "change": 0.6
-    }
+    { "rank": 1, "team": "Yorck Linderhaus", "university": "Ludwig Maximilian University of Munich", "country": "🇩🇪", "return": 14.2, "change": -8.4 },
+    { "rank": 2, "team": "Victor Popescu", "university": "University of Geneva", "country": "🇨🇭", "return": 6.4, "change": "NEW" },
+    { "rank": 3, "team": "Elias Hannert", "university": "RWTH Aachen University", "country": "🇩🇪", "return": 6.0, "change": 0 },
+    { "rank": 4, "team": "Ohji Fukuda", "university": "University of Geneva", "country": "🇨🇭", "return": 5.4, "change": 0 },
+    { "rank": 5, "team": "Kenzo Ota", "university": "Technical University of Munich", "country": "🇩🇪", "return": 5.4, "change": 0 },
+    { "rank": 6, "team": "Yutaro Nagamori", "university": "The University of Sheffield", "country": "🇬🇧", "return": 3.8, "change": 1 },
+    { "rank": 7, "team": "William Florio", "university": "Roger Williams University", "country": "🇺🇸", "return": 3.4, "change": 0 },
+    { "rank": 8, "team": "Hana Shigeta", "university": "The University of Sheffield", "country": "🇬🇧", "return": 3.0, "change": 0 },
+    { "rank": 9, "team": "Divyansh Kashyap", "university": "University of Delhi", "country": "🇮🇳", "return": 2.3, "change": 0 },
+    { "rank": 10, "team": "Elizabeth Dufrane", "university": "Roger Williams University", "country": "🇺🇸", "return": 2.0, "change": 1 }
   ],
   "announcements": [
+    {
+      "date": "2026-01-16",
+      "title": "Rankings Updated",
+      "content": "Week 5 rankings have been updated. Now showing Top 10!"
+    },
     {
       "date": "2026-01-09",
       "title": "Rankings Updated",
@@ -52,25 +43,32 @@
     { "date": "2025-12-31", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "4th": "Charlotte Voon", "5th": "Xianmingsheng Diao", "1stPerf": 106.6, "2ndPerf": 103.6, "3rdPerf": 103.5, "4thPerf": 100.8, "5thPerf": 100.6 },
     { "date": "2026-01-01", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "4th": "Xianmingsheng Diao", "5th": "Aditya Jain", "1stPerf": 104.8, "2ndPerf": 103.1, "3rdPerf": 102.8, "4thPerf": 100.6, "5thPerf": 100.3 },
     { "date": "2026-01-02", "1st": "Yorck Linderhaus", "2nd": "Yutaro Nagamori", "3rd": "William Florio", "4th": "Xianmingsheng Diao", "5th": "Aditya Jain", "1stPerf": 104.8, "2ndPerf": 103.1, "3rdPerf": 102.8, "4thPerf": 100.6, "5thPerf": 100.3 },
-    { "date": "2026-01-05", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Yutaro Nagamori", "4th": "Charlotte Voon", "5th": "Xianmingsheng Diao", "1stPerf": 108.4, "2ndPerf": 103.0, "3rdPerf": 103.0, "4thPerf": 102.1, "5thPerf": 100.6 },
-    { "date": "2026-01-06", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Elias Hannert", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "1stPerf": 110.8, "2ndPerf": 103.5, "3rdPerf": 102.8, "4thPerf": 102.4, "5thPerf": 102.2 },
-    { "date": "2026-01-07", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "1stPerf": 119.4, "2ndPerf": 104.0, "3rdPerf": 103.0, "4thPerf": 102.8, "5thPerf": 102.2 },
-    { "date": "2026-01-08", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "1stPerf": 117.9, "2ndPerf": 104.0, "3rdPerf": 103.8, "4thPerf": 103.1, "5thPerf": 102.2 },
-    { "date": "2026-01-09", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio", "4th": "Noah Holland", "5th": "Yutaro Nagamori", "1stPerf": 122.6, "2ndPerf": 106.0, "3rdPerf": 104.1, "4thPerf": 103.0, "5thPerf": 102.5 }
+    { "date": "2026-01-05", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Elias Hannert", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "6th": "Charlotte Voon", "7th": "Noah Holland", "8th": "Elizabeth Dufrane", "9th": "Yigit Kaan Ertürk", "10th": "Kokota SUMI", "1stPerf": 110.8, "2ndPerf": 103.5, "3rdPerf": 102.8, "4thPerf": 102.4, "5thPerf": 102.2, "6thPerf": 101.4, "7thPerf": 101.4, "8thPerf": 100.8, "9thPerf": 100.7, "10thPerf": 100.7 },
+    { "date": "2026-01-06", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "6th": "Elizabeth Dufrane", "7th": "Hana Shigeta", "8th": "Kokota SUMI", "9th": "Xianmingsheng Diao", "10th": "Risa KONNO", "1stPerf": 119.4, "2ndPerf": 104.0, "3rdPerf": 103.0, "4thPerf": 102.8, "5thPerf": 102.2, "6thPerf": 101.8, "7thPerf": 101.6, "8thPerf": 101.1, "9thPerf": 100.6, "10thPerf": 100.6 },
+    { "date": "2026-01-07", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "4th": "Yutaro Nagamori", "5th": "Divyansh Kashyap", "6th": "Elizabeth Dufrane", "7th": "Kokota SUMI", "8th": "Xianmingsheng Diao", "9th": "Risa KONNO", "10th": "Hana Shigeta", "1stPerf": 117.9, "2ndPerf": 104.0, "3rdPerf": 103.8, "4thPerf": 103.1, "5thPerf": 102.2, "6thPerf": 101.8, "7thPerf": 101.1, "8thPerf": 100.6, "9thPerf": 100.5, "10thPerf": 100.5 },
+    { "date": "2026-01-08", "1st": "Yorck Linderhaus", "2nd": "William Florio", "3rd": "Noah Holland", "4th": "Ohji Fukuda", "5th": "Divyansh Kashyap", "6th": "Yutaro Nagamori", "7th": "Kokota SUMI", "8th": "Hana Shigeta", "9th": "Elizabeth Dufrane", "10th": "Xianmingsheng Diao", "1stPerf": 116.5, "2ndPerf": 103.5, "3rdPerf": 103.4, "4thPerf": 102.2, "5thPerf": 102.2, "6thPerf": 101.7, "7thPerf": 101.5, "8thPerf": 101.0, "9thPerf": 100.8, "10thPerf": 100.7 },
+    { "date": "2026-01-09", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio", "4th": "Noah Holland", "5th": "Yutaro Nagamori", "6th": "Divyansh Kashyap", "7th": "Kokota SUMI", "8th": "Hana Shigeta", "9th": "Elizabeth Dufrane", "10th": "Ohji Fukuda", "1stPerf": 122.6, "2ndPerf": 106.0, "3rdPerf": 104.1, "4thPerf": 103.0, "5thPerf": 102.5, "6thPerf": 102.2, "7thPerf": 102.0, "8thPerf": 101.4, "9thPerf": 101.4, "10thPerf": 101.0 },
+    { "date": "2026-01-12", "1st": "Yorck Linderhaus", "2nd": "Elias Hannert", "3rd": "William Florio", "4th": "Yutaro Nagamori", "5th": "Ohji Fukuda", "6th": "Hana Shigeta", "7th": "Divyansh Kashyap", "8th": "Elizabeth Dufrane", "9th": "Noah Holland", "10th": "Kokota SUMI", "1stPerf": 123.8, "2ndPerf": 105.5, "3rdPerf": 104.2, "4thPerf": 103.5, "5thPerf": 102.5, "6thPerf": 102.5, "7thPerf": 102.3, "8thPerf": 102.2, "9thPerf": 101.9, "10thPerf": 101.8 },
+    { "date": "2026-01-13", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Elias Hannert", "4th": "Ohji Fukuda", "5th": "Kenzo Ota", "6th": "William Florio", "7th": "Yutaro Nagamori", "8th": "Hana Shigeta", "9th": "Divyansh Kashyap", "10th": "Elizabeth Dufrane", "1stPerf": 120.6, "2ndPerf": 110.1, "3rdPerf": 105.7, "4thPerf": 104.7, "5thPerf": 104.6, "6thPerf": 104.0, "7thPerf": 103.8, "8thPerf": 102.9, "9thPerf": 102.3, "10thPerf": 101.9 },
+    { "date": "2026-01-14", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Elias Hannert", "4th": "Ohji Fukuda", "5th": "Kenzo Ota", "6th": "Hana Shigeta", "7th": "William Florio", "8th": "Yutaro Nagamori", "9th": "Divyansh Kashyap", "10th": "Kokota SUMI", "1stPerf": 114.9, "2ndPerf": 109.0, "3rdPerf": 106.1, "4thPerf": 105.8, "5thPerf": 104.6, "6thPerf": 103.3, "7thPerf": 102.9, "8thPerf": 102.8, "9thPerf": 102.3, "10thPerf": 101.3 },
+    { "date": "2026-01-15", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Elias Hannert", "4th": "Ohji Fukuda", "5th": "Kenzo Ota", "6th": "Yutaro Nagamori", "7th": "William Florio", "8th": "Hana Shigeta", "9th": "Divyansh Kashyap", "10th": "Yigit Kaan Ertürk", "1stPerf": 114.5, "2ndPerf": 107.4, "3rdPerf": 105.9, "4thPerf": 105.3, "5thPerf": 103.9, "6thPerf": 103.7, "7thPerf": 103.5, "8thPerf": 102.7, "9thPerf": 102.3, "10thPerf": 102.2 },
+    { "date": "2026-01-16", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Elias Hannert", "4th": "Ohji Fukuda", "5th": "Kenzo Ota", "6th": "Yutaro Nagamori", "7th": "William Florio", "8th": "Hana Shigeta", "9th": "Divyansh Kashyap", "10th": "Elizabeth Dufrane", "1stPerf": 114.2, "2ndPerf": 106.4, "3rdPerf": 106.0, "4thPerf": 105.4, "5thPerf": 105.4, "6thPerf": 103.8, "7thPerf": 103.4, "8thPerf": 103.0, "9thPerf": 102.3, "10thPerf": 102.0 }
   ],
   "hallOfFame": {
     "mostDaysAt1": [
-      { "name": "Yorck Linderhaus", "days": 16, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "Yorck Linderhaus", "days": 21, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
       { "name": "William Florio", "days": 1, "country": "🇺🇸", "university": "Roger Williams University" },
       { "name": "Yash Kumar", "days": 1, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" }
     ],
     "top3Appearances": [
-      { "name": "Yorck Linderhaus", "count": 16, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
-      { "name": "William Florio", "count": 16, "country": "🇺🇸", "university": "Roger Williams University" },
-      { "name": "Yutaro Nagamori", "count": 14, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Yorck Linderhaus", "count": 21, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "William Florio", "count": 17, "country": "🇺🇸", "university": "Roger Williams University" },
+      { "name": "Yutaro Nagamori", "count": 15, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Elias Hannert", "count": 7, "country": "🇩🇪", "university": "RWTH Aachen University" },
+      { "name": "Victor Popescu", "count": 4, "country": "🇨🇭", "university": "University of Geneva" },
+      { "name": "Noah Holland", "count": 5, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Ohji Fukuda", "count": 2, "country": "🇨🇭", "university": "University of Geneva" },
       { "name": "Yash Kumar", "count": 2, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
-      { "name": "Noah Holland", "count": 2, "country": "🇬🇧", "university": "The University of Sheffield" },
-      { "name": "Elias Hannert", "count": 2, "country": "🇩🇪", "university": "RWTH Aachen University" },
       { "name": "Yigit Kaan Ertürk", "count": 1, "country": "🇩🇪", "university": "Technical University of Munich" },
       { "name": "Catherine Yanran Xu", "count": 1, "country": "🇨🇦", "university": "University of Toronto" }
     ]
