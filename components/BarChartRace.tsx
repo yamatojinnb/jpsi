@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Play, Pause, RotateCcw } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface HistoryEntry {
   date: string;
@@ -127,8 +128,12 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     { name: currentData["7th"], perf: currentData["7thPerf"] || 100, rank: 7 },
     { name: currentData["8th"], perf: currentData["8thPerf"] || 100, rank: 8 },
     { name: currentData["9th"], perf: currentData["9thPerf"] || 100, rank: 9 },
-    { name: currentData["10th"], perf: currentData["10thPerf"] || 100, rank: 10 },
-  ].filter(item => item.name); // Filter out entries without a name
+    {
+      name: currentData["10th"],
+      perf: currentData["10thPerf"] || 100,
+      rank: 10,
+    },
+  ].filter((item) => item.name); // Filter out entries without a name
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -143,55 +148,75 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mt-6">
       <div className="px-6 py-4 border-b border-gray-200">
         <h2 className="text-xl font-bold text-gray-900">🏁 Performance Race</h2>
-        <p className="text-sm text-gray-500">Watch the top 10 battle over time</p>
+        <p className="text-sm text-gray-500">
+          Watch the top 10 battle over time
+        </p>
       </div>
-      
+
       <div className="p-6">
         {/* Bar Chart */}
         <div className="space-y-4 mb-6">
-          {rankings.map((item, index) => (
-            <div key={item.name} className="flex items-center gap-4">
-              {/* Rank Badge */}
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold ${
-                  index === 0
-                    ? "bg-yellow-500"
-                    : index === 1
-                    ? "bg-gray-400"
-                    : index === 2
-                    ? "bg-amber-600"
-                    : "bg-gray-500"
-                }`}
-              >
-                {index + 1}
-              </div>
-              
-              {/* Name with colored dot */}
-              <div className="w-40 text-sm font-medium text-gray-900 truncate flex items-center gap-2">
-                <span
-                  className="w-3 h-3 rounded-full flex-shrink-0"
-                  style={{ backgroundColor: getColor(item.name || "") }}
-                ></span>
-                {item.name}
-              </div>
-              
-              {/* Bar */}
-              <div className="flex-1 h-8 bg-gray-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-all duration-500 ease-out flex items-center justify-end pr-3"
-                  style={{
-                    width: `${((item.perf - scaleMin) / (scaleMax - scaleMin)) * 100}%`,
-                    backgroundColor: getColor(item.name || ""),
-                    minWidth: "40px",
+          <AnimatePresence mode="popLayout">
+            {rankings.map((item, index) => {
+              const barWidth =
+                ((item.perf - scaleMin) / (scaleMax - scaleMin)) * 100;
+              return (
+                <motion.div
+                  key={item.name}
+                  layout
+                  layoutId={item.name}
+                  initial={false}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0, y: 50, transition: { duration: 0.3 } }}
+                  transition={{
+                    layout: { type: "spring", stiffness: 100, damping: 20 },
                   }}
+                  className="flex items-center gap-4"
                 >
-                  <span className="text-white text-sm font-bold">
-                    +{(item.perf - 100).toFixed(1)}%
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
+                  {/* Rank Badge */}
+                  <motion.div
+                    layout
+                    className={`w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold ${
+                      index === 0
+                        ? "bg-yellow-500"
+                        : index === 1
+                        ? "bg-gray-400"
+                        : index === 2
+                        ? "bg-amber-600"
+                        : "bg-gray-500"
+                    }`}
+                  >
+                    {index + 1}
+                  </motion.div>
+
+                  {/* Name with colored dot */}
+                  <div className="w-40 text-sm font-medium text-gray-900 truncate flex items-center gap-2">
+                    <span
+                      className="w-3 h-3 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: getColor(item.name || "") }}
+                    ></span>
+                    {item.name}
+                  </div>
+
+                  {/* Bar */}
+                  <div className="flex-1 h-8 bg-gray-100 rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full transition-[width] duration-300 ease-out flex items-center justify-end pr-3"
+                      style={{
+                        width: `${barWidth}%`,
+                        backgroundColor: getColor(item.name || ""),
+                        minWidth: "40px",
+                      }}
+                    >
+                      <span className="text-white text-sm font-bold">
+                        +{(item.perf - 100).toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
         </div>
 
         {/* Scale Bar */}
@@ -201,9 +226,9 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
             <span>{scaleMax.toFixed(1)}%</span>
           </div>
           <div className="h-1 bg-gray-200 rounded-full relative">
-            <div 
+            <div
               className="absolute left-0 top-0 h-full bg-gray-300 rounded-full"
-              style={{ width: '100%' }}
+              style={{ width: "100%" }}
             ></div>
           </div>
         </div>
@@ -222,7 +247,11 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
             onClick={handlePlayPause}
             className="p-3 bg-[#8B0C19] text-white rounded-full hover:bg-[#6d0a14] transition-colors"
           >
-            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+            {isPlaying ? (
+              <Pause className="w-5 h-5" />
+            ) : (
+              <Play className="w-5 h-5" />
+            )}
           </button>
 
           {/* Reset Button */}
@@ -254,4 +283,3 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
     </div>
   );
 }
-
