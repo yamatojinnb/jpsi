@@ -2,16 +2,30 @@
   "week": 5,
   "lastUpdated": "2026-01-16",
   "rankings": [
-    { "rank": 1, "team": "Yorck Linderhaus", "university": "Ludwig Maximilian University of Munich", "country": "🇩🇪", "return": 14.2, "change": -8.4 },
-    { "rank": 2, "team": "Victor Popescu", "university": "University of Geneva", "country": "🇨🇭", "return": 6.4, "change": "NEW" },
-    { "rank": 3, "team": "Elias Hannert", "university": "RWTH Aachen University", "country": "🇩🇪", "return": 6.0, "change": 0 },
-    { "rank": 4, "team": "Ohji Fukuda", "university": "University of Geneva", "country": "🇨🇭", "return": 5.4, "change": 0 },
-    { "rank": 5, "team": "Kenzo Ota", "university": "Technical University of Munich", "country": "🇩🇪", "return": 5.4, "change": 0 },
-    { "rank": 6, "team": "Yutaro Nagamori", "university": "The University of Sheffield", "country": "🇬🇧", "return": 3.8, "change": 1 },
-    { "rank": 7, "team": "William Florio", "university": "Roger Williams University", "country": "🇺🇸", "return": 3.4, "change": 0 },
-    { "rank": 8, "team": "Hana Shigeta", "university": "The University of Sheffield", "country": "🇬🇧", "return": 3.0, "change": 0 },
-    { "rank": 9, "team": "Divyansh Kashyap", "university": "University of Delhi", "country": "🇮🇳", "return": 2.3, "change": 0 },
-    { "rank": 10, "team": "Elizabeth Dufrane", "university": "Roger Williams University", "country": "🇺🇸", "return": 2.0, "change": 1 }
+    {
+      "rank": 1,
+      "team": "Yorck Linderhaus",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 14.2,
+      "change": -8.4
+    },
+    {
+      "rank": 2,
+      "team": "Victor Popescu",
+      "university": "University of Geneva",
+      "country": "🇨🇭",
+      "return": 6.4,
+      "change": "NEW"
+    },
+    {
+      "rank": 3,
+      "team": "Elias Hannert",
+      "university": "RWTH Aachen University",
+      "country": "🇩🇪",
+      "return": 6.0,
+      "change": 0
+    }
   ],
   "announcements": [
     {
