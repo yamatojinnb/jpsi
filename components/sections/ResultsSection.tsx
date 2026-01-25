@@ -13,6 +13,7 @@ import {
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
+import WIC2024Chart from "../WIC2024Chart";
 
 export default function ResultsSection() {
   const [isQuoteExpanded, setIsQuoteExpanded] = useState(false);
@@ -367,6 +368,9 @@ export default function ResultsSection() {
                   </div>
                 </div>
               </div>
+
+              {/* RIGHT COLUMN: Performance Chart */}
+              <WIC2024Chart />
             </div>
           </div>
         </div>
