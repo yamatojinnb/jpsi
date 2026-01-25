@@ -74,6 +74,8 @@ const COLORS: { [key: string]: string } = {
   "Elizabeth Dufrane": "#0ea5e9",
   "Kokota SUMI": "#14b8a6",
   "Risa KONNO": "#f59e0b",
+  "yuki sumiyoshi": "#22c55e",
+  "Pratyush Kumar": "#3b82f6",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
