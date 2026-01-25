@@ -60,6 +60,34 @@ const COLORS: { [key: string]: string } = {
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
 
+// Country flags for participants
+const FLAGS: { [key: string]: string } = {
+  "Yorck Linderhaus": "🇩🇪",
+  "William Florio": "🇺🇸",
+  "Yutaro Nagamori": "🇬🇧",
+  "Elias Hannert": "🇩🇪",
+  "Noah Holland": "🇬🇧",
+  "Yash Kumar": "🇮🇳",
+  "Yigit Kaan Ertürk": "🇩🇪",
+  "Catherine Yanran Xu": "🇨🇦",
+  "Brandon Choi": "🇨🇦",
+  "Xianmingsheng Diao": "🇩🇪",
+  "Victor Popescu": "🇨🇭",
+  "Charlotte Voon": "🇦🇺",
+  "Hana Shigeta": "🇬🇧",
+  "Aditya Jain": "🇮🇳",
+  "Divyansh Kashyap": "🇮🇳",
+  "Ohji Fukuda": "🇨🇭",
+  "Kenzo Ota": "🇩🇪",
+  "Elizabeth Dufrane": "🇺🇸",
+  "Kokota SUMI": "🇯🇵",
+  "Risa KONNO": "🇯🇵",
+  "yuki sumiyoshi": "🇺🇸",
+  "Pratyush Kumar": "🇮🇳",
+};
+
+const getFlag = (name: string) => FLAGS[name] || "";
+
 export default function BarChartRace({ history }: BarChartRaceProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [initialized, setInitialized] = useState(false);
@@ -191,13 +219,14 @@ export default function BarChartRace({ history }: BarChartRaceProps) {
                     {index + 1}
                   </motion.div>
 
-                  {/* Name with colored dot */}
-                  <div className="w-40 text-sm font-medium text-gray-900 truncate flex items-center gap-2">
+                  {/* Name with colored dot and flag */}
+                  <div className="w-44 text-sm font-medium text-gray-900 truncate flex items-center gap-2">
                     <span
                       className="w-3 h-3 rounded-full flex-shrink-0"
                       style={{ backgroundColor: getColor(item.name || "") }}
                     ></span>
-                    {item.name}
+                    <span className="flex-shrink-0">{getFlag(item.name || "")}</span>
+                    <span className="truncate">{item.name}</span>
                   </div>
 
                   {/* Bar */}
