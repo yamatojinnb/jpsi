@@ -57,7 +57,7 @@ const COLORS: { [key: string]: string } = {
   "Yorck Linderhaus": "#8B0C19",
   "William Florio": "#2563eb",
   "Yutaro Nagamori": "#16a34a",
-  "Elias Hannert": "#d97706",
+  "Maximilian Emmanuel Zimmer": "#d97706",
   "Noah Holland": "#7c3aed",
   "Yash Kumar": "#dc2626",
   "Yigit Kaan Ertürk": "#0891b2",
