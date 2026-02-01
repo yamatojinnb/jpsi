@@ -34,56 +34,124 @@ interface BarChartRaceProps {
 
 // Color mapping for participants
 const COLORS: { [key: string]: string } = {
-  "Yorck Linderhaus": "#8B0C19",
-  "William Florio": "#2563eb",
-  "Yutaro Nagamori": "#16a34a",
-  "Maximilian Emmanuel Zimmer": "#d97706",
-  "Noah Holland": "#7c3aed",
-  "Yash Kumar": "#dc2626",
-  "Yigit Kaan Ertürk": "#0891b2",
-  "Catherine Yanran Xu": "#ec4899",
+  // University of Alberta (Canada)
   "Brandon Choi": "#14b8a6",
+  "Raheel Kumar": "#0d9488",
+  "Jaskaran Grewal": "#0f766e",
+  // Technical University of Munich (Germany)
   "Xianmingsheng Diao": "#f97316",
-  "Victor Popescu": "#8b5cf6",
-  "Charlotte Voon": "#06b6d4",
-  "Hana Shigeta": "#f43f5e",
-  "Aditya Jain": "#84cc16",
-  "Divyansh Kashyap": "#a855f7",
-  "Ohji Fukuda": "#10b981",
+  "Yigit Kaan Ertürk": "#0891b2",
   "Kenzo Ota": "#ef4444",
-  "Elizabeth Dufrane": "#06b6d4",
-  "Kokota SUMI": "#14b8a6",
-  "Risa KONNO": "#f59e0b",
-  "yuki sumiyoshi": "#22c55e",
+  // RWTH Aachen University (Germany)
+  "Mathis Makarski": "#eab308",
+  "Maximilian Emmanuel Zimmer": "#d97706",
+  "Elias Hannert": "#ca8a04",
+  // Indian Institute of Technology Roorkee (India)
+  "Yash Kumar": "#dc2626",
+  "Akshat Trehan": "#b91c1c",
+  "Aditya Jain": "#84cc16",
+  // The University of New South Wales (Australia)
+  "Albert Vuong": "#06b6d4",
+  "Charlotte Voon": "#0ea5e9",
+  "Cathlyn Widjaja": "#0284c7",
+  // The University of Sheffield (UK)
+  "Yutaro Nagamori": "#16a34a",
+  "Hana Shigeta": "#f43f5e",
+  "Noah Holland": "#7c3aed",
+  // The National University Of Malaysia
+  "LOH KAR LOK": "#8b5cf6",
+  "LAU TECK XIANG": "#7c3aed",
+  "LAU YEW KIAN": "#6d28d9",
+  // University of Delhi (India)
   "Pratyush Kumar": "#3b82f6",
+  "Yash Kumar Bhawsingka": "#1d4ed8",
+  "Divyansh Kashyap": "#a855f7",
+  // University of Toronto (Canada)
+  "Ken Shinohara": "#ec4899",
+  "Catherine Yanran Xu": "#db2777",
+  "Yuzan Naradate": "#be185d",
+  // Roger Williams University (USA)
+  "William Florio": "#2563eb",
+  "Rory Lynch": "#1e40af",
+  "Elizabeth Dufrane": "#06b6d4",
+  // Waseda University (Japan)
+  "Risa KONNO": "#f59e0b",
+  "Chihiro KUGA": "#d97706",
+  "Kokota SUMI": "#14b8a6",
+  // University of Geneva (Switzerland)
+  "Ohji Fukuda": "#10b981",
+  "Victor Popescu": "#8b5cf6",
+  "André dos Santos Mendo": "#059669",
+  // Ludwig Maximilian University of Munich (Germany)
+  "Lukas Matzer": "#9f1239",
+  "Paul Rockholz": "#be123c",
+  "Yorck Linderhaus": "#8B0C19",
+  // University of California, Los Angeles (USA)
+  "yuki sumiyoshi": "#22c55e",
+  "Anker": "#15803d",
+  "Seungho": "#166534",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
 
 // Country flags for participants
 const FLAGS: { [key: string]: string } = {
-  "Yorck Linderhaus": "🇩🇪",
-  "William Florio": "🇺🇸",
-  "Yutaro Nagamori": "🇬🇧",
-  "Maximilian Emmanuel Zimmer": "🇩🇪",
-  "Noah Holland": "🇬🇧",
-  "Yash Kumar": "🇮🇳",
-  "Yigit Kaan Ertürk": "🇩🇪",
-  "Catherine Yanran Xu": "🇨🇦",
+  // University of Alberta (Canada)
   "Brandon Choi": "🇨🇦",
+  "Raheel Kumar": "🇨🇦",
+  "Jaskaran Grewal": "🇨🇦",
+  // Technical University of Munich (Germany)
   "Xianmingsheng Diao": "🇩🇪",
-  "Victor Popescu": "🇨🇭",
-  "Charlotte Voon": "🇦🇺",
-  "Hana Shigeta": "🇬🇧",
-  "Aditya Jain": "🇮🇳",
-  "Divyansh Kashyap": "🇮🇳",
-  "Ohji Fukuda": "🇨🇭",
+  "Yigit Kaan Ertürk": "🇩🇪",
   "Kenzo Ota": "🇩🇪",
-  "Elizabeth Dufrane": "🇺🇸",
-  "Kokota SUMI": "🇯🇵",
-  "Risa KONNO": "🇯🇵",
-  "yuki sumiyoshi": "🇺🇸",
+  // RWTH Aachen University (Germany)
+  "Mathis Makarski": "🇩🇪",
+  "Maximilian Emmanuel Zimmer": "🇩🇪",
+  "Elias Hannert": "🇩🇪",
+  // Indian Institute of Technology Roorkee (India)
+  "Yash Kumar": "🇮🇳",
+  "Akshat Trehan": "🇮🇳",
+  "Aditya Jain": "🇮🇳",
+  // The University of New South Wales (Australia)
+  "Albert Vuong": "🇦🇺",
+  "Charlotte Voon": "🇦🇺",
+  "Cathlyn Widjaja": "🇦🇺",
+  // The University of Sheffield (UK)
+  "Yutaro Nagamori": "🇬🇧",
+  "Hana Shigeta": "🇬🇧",
+  "Noah Holland": "🇬🇧",
+  // The National University Of Malaysia
+  "LOH KAR LOK": "🇲🇾",
+  "LAU TECK XIANG": "🇲🇾",
+  "LAU YEW KIAN": "🇲🇾",
+  // University of Delhi (India)
   "Pratyush Kumar": "🇮🇳",
+  "Yash Kumar Bhawsingka": "🇮🇳",
+  "Divyansh Kashyap": "🇮🇳",
+  // University of Toronto (Canada)
+  "Ken Shinohara": "🇨🇦",
+  "Catherine Yanran Xu": "🇨🇦",
+  "Yuzan Naradate": "🇨🇦",
+  // Roger Williams University (USA)
+  "William Florio": "🇺🇸",
+  "Rory Lynch": "🇺🇸",
+  "Elizabeth Dufrane": "🇺🇸",
+  // Waseda University (Japan)
+  "Risa KONNO": "🇯🇵",
+  "Chihiro KUGA": "🇯🇵",
+  "Kokota SUMI": "🇯🇵",
+  // University of Geneva (Switzerland)
+  "Ohji Fukuda": "🇨🇭",
+  "Victor Popescu": "🇨🇭",
+  "André dos Santos Mendo": "🇨🇭",
+  // Ludwig Maximilian University of Munich (Germany)
+  "Lukas Matzer": "🇩🇪",
+  "Paul Rockholz": "🇩🇪",
+  "Yorck Linderhaus": "🇩🇪",
+  // University of California, Los Angeles (USA)
+  "yuki sumiyoshi": "🇺🇸",
+  "Anker": "🇺🇸",
+  "Seungho": "🇺🇸",
 };
 
 const getFlag = (name: string) => FLAGS[name] || "";
