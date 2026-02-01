@@ -1,33 +1,94 @@
 {
-  "week": 6,
-  "lastUpdated": "2026-01-23",
+  "week": 7,
+  "lastUpdated": "2026-01-30",
   "rankings": [
     {
       "rank": 1,
-      "team": "Yorck Linderhaus",
-      "university": "Ludwig Maximilian University of Munich",
-      "country": "🇩🇪",
-      "return": 13.3,
-      "change": -0.9
+      "team": "Yash Kumar Bhawsingka",
+      "university": "University of Delhi",
+      "country": "🇮🇳",
+      "return": 44.4,
+      "change": "NEW"
     },
     {
       "rank": 2,
-      "team": "Victor Popescu",
-      "university": "University of Geneva",
-      "country": "🇨🇭",
-      "return": 12.5,
-      "change": 6.1
+      "team": "Pratyush Kumar",
+      "university": "University of Delhi",
+      "country": "🇮🇳",
+      "return": 14.6,
+      "change": 7.3
     },
     {
       "rank": 3,
+      "team": "Victor Popescu",
+      "university": "University of Geneva",
+      "country": "🇨🇭",
+      "return": 14.1,
+      "change": 1.6
+    },
+    {
+      "rank": 4,
       "team": "Yigit Kaan Ertürk",
       "university": "Technical University of Munich",
       "country": "🇩🇪",
-      "return": 11.1,
+      "return": 13.3,
+      "change": 2.2
+    },
+    {
+      "rank": 5,
+      "team": "yuki sumiyoshi",
+      "university": "University of California, Los Angeles",
+      "country": "🇺🇸",
+      "return": 12.4,
+      "change": 2.9
+    },
+    {
+      "rank": 6,
+      "team": "Divyansh Kashyap",
+      "university": "University of Delhi",
+      "country": "🇮🇳",
+      "return": 7.2,
+      "change": 0.1
+    },
+    {
+      "rank": 7,
+      "team": "Yorck Linderhaus",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 6.8,
+      "change": -6.5
+    },
+    {
+      "rank": 8,
+      "team": "Hana Shigeta",
+      "university": "The University of Sheffield",
+      "country": "🇬🇧",
+      "return": 5.9,
+      "change": -0.6
+    },
+    {
+      "rank": 9,
+      "team": "Kokota SUMI",
+      "university": "Waseda University",
+      "country": "🇯🇵",
+      "return": 4.6,
+      "change": "NEW"
+    },
+    {
+      "rank": 10,
+      "team": "William Florio",
+      "university": "Roger Williams University",
+      "country": "🇺🇸",
+      "return": 3.6,
       "change": "NEW"
     }
   ],
   "announcements": [
+    {
+      "date": "2026-01-30",
+      "title": "Week 7 Rankings Updated",
+      "content": "Week 7 rankings are live! Major shake-up as Yash Kumar Bhawsingka claims the top spot with an impressive 44.4% return."
+    },
     {
       "date": "2026-01-23",
       "title": "Week 6 Rankings Updated",
@@ -82,11 +143,17 @@
     { "date": "2026-01-20", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Maximilian Emmanuel Zimmer", "4th": "Yigit Kaan Ertürk", "5th": "Hana Shigeta", "6th": "Xianmingsheng Diao", "7th": "Elizabeth Dufrane", "8th": "William Florio", "9th": "Kenzo Ota", "10th": "Ohji Fukuda", "1stPerf": 114.0, "2ndPerf": 112.7, "3rdPerf": 105.9, "4thPerf": 105.4, "5thPerf": 103.9, "6thPerf": 102.6, "7thPerf": 101.0, "8thPerf": 101.0, "9thPerf": 100.9, "10thPerf": 100.6 },
     { "date": "2026-01-21", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Yigit Kaan Ertürk", "4th": "Divyansh Kashyap", "5th": "Maximilian Emmanuel Zimmer", "6th": "Hana Shigeta", "7th": "Xianmingsheng Diao", "8th": "Elizabeth Dufrane", "9th": "Ohji Fukuda", "10th": "William Florio", "1stPerf": 115.3, "2ndPerf": 112.9, "3rdPerf": 108.2, "4thPerf": 107.1, "5thPerf": 106.0, "6thPerf": 105.0, "7thPerf": 103.6, "8thPerf": 102.7, "9thPerf": 102.7, "10thPerf": 102.2 },
     { "date": "2026-01-22", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Yigit Kaan Ertürk", "4th": "Divyansh Kashyap", "5th": "Maximilian Emmanuel Zimmer", "6th": "Hana Shigeta", "7th": "Xianmingsheng Diao", "8th": "yuki sumiyoshi", "9th": "Elizabeth Dufrane", "10th": "William Florio", "1stPerf": 117.2, "2ndPerf": 113.6, "3rdPerf": 111.3, "4thPerf": 107.1, "5thPerf": 106.0, "6thPerf": 105.9, "7thPerf": 104.7, "8thPerf": 104.3, "9thPerf": 103.8, "10thPerf": 102.9 },
-    { "date": "2026-01-23", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Yigit Kaan Ertürk", "4th": "yuki sumiyoshi", "5th": "Pratyush Kumar", "6th": "Divyansh Kashyap", "7th": "Hana Shigeta", "8th": "Maximilian Emmanuel Zimmer", "9th": "Elizabeth Dufrane", "10th": "Xianmingsheng Diao", "1stPerf": 113.3, "2ndPerf": 112.5, "3rdPerf": 111.1, "4thPerf": 109.5, "5thPerf": 107.3, "6thPerf": 107.1, "7thPerf": 106.5, "8thPerf": 106.1, "9thPerf": 104.3, "10thPerf": 103.7 }
+    { "date": "2026-01-23", "1st": "Yorck Linderhaus", "2nd": "Victor Popescu", "3rd": "Yigit Kaan Ertürk", "4th": "yuki sumiyoshi", "5th": "Pratyush Kumar", "6th": "Divyansh Kashyap", "7th": "Hana Shigeta", "8th": "Maximilian Emmanuel Zimmer", "9th": "Elizabeth Dufrane", "10th": "Xianmingsheng Diao", "1stPerf": 113.3, "2ndPerf": 112.5, "3rdPerf": 111.1, "4thPerf": 109.5, "5thPerf": 107.3, "6thPerf": 107.1, "7thPerf": 106.5, "8thPerf": 106.1, "9thPerf": 104.3, "10thPerf": 103.7 },
+    { "date": "2026-01-26", "1st": "Yash Kumar Bhawsingka", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Yorck Linderhaus", "5th": "Yigit Kaan Ertürk", "6th": "Hana Shigeta", "7th": "Divyansh Kashyap", "8th": "Elizabeth Dufrane", "9th": "Maximilian Emmanuel Zimmer", "10th": "Xianmingsheng Diao", "1stPerf": 121.1, "2ndPerf": 115.2, "3rdPerf": 112.3, "4thPerf": 111.8, "5thPerf": 110.2, "6thPerf": 107.2, "7thPerf": 107.1, "8thPerf": 105.0, "9thPerf": 104.3, "10thPerf": 104.3 },
+    { "date": "2026-01-27", "1st": "Yash Kumar Bhawsingka", "2nd": "Victor Popescu", "3rd": "Yorck Linderhaus", "4th": "yuki sumiyoshi", "5th": "Yigit Kaan Ertürk", "6th": "Hana Shigeta", "7th": "Divyansh Kashyap", "8th": "Pratyush Kumar", "9th": "Xianmingsheng Diao", "10th": "Elizabeth Dufrane", "1stPerf": 130.2, "2ndPerf": 116.1, "3rdPerf": 115.1, "4thPerf": 112.3, "5thPerf": 110.1, "6thPerf": 108.0, "7thPerf": 107.1, "8thPerf": 107.1, "9thPerf": 106.2, "10thPerf": 106.0 },
+    { "date": "2026-01-28", "1st": "Yash Kumar Bhawsingka", "2nd": "Yorck Linderhaus", "3rd": "Victor Popescu", "4th": "yuki sumiyoshi", "5th": "Yigit Kaan Ertürk", "6th": "Hana Shigeta", "7th": "Divyansh Kashyap", "8th": "Elizabeth Dufrane", "9th": "Pratyush Kumar", "10th": "William Florio", "1stPerf": 132.1, "2ndPerf": 117.2, "3rdPerf": 115.4, "4thPerf": 112.3, "5thPerf": 111.2, "6thPerf": 109.8, "7thPerf": 107.1, "8thPerf": 106.3, "9thPerf": 106.2, "10thPerf": 105.2 },
+    { "date": "2026-01-29", "1st": "Yash Kumar Bhawsingka", "2nd": "Victor Popescu", "3rd": "Pratyush Kumar", "4th": "yuki sumiyoshi", "5th": "Yigit Kaan Ertürk", "6th": "Hana Shigeta", "7th": "Yorck Linderhaus", "8th": "Divyansh Kashyap", "9th": "Elizabeth Dufrane", "10th": "Kokota SUMI", "1stPerf": 129.8, "2ndPerf": 116.4, "3rdPerf": 115.9, "4thPerf": 112.3, "5thPerf": 111.2, "6thPerf": 110.5, "7thPerf": 107.8, "8thPerf": 107.2, "9thPerf": 106.3, "10thPerf": 105.2 },
+    { "date": "2026-01-30", "1st": "Yash Kumar Bhawsingka", "2nd": "Pratyush Kumar", "3rd": "Victor Popescu", "4th": "Yigit Kaan Ertürk", "5th": "yuki sumiyoshi", "6th": "Divyansh Kashyap", "7th": "Yorck Linderhaus", "8th": "Hana Shigeta", "9th": "Kokota SUMI", "10th": "William Florio", "1stPerf": 144.4, "2ndPerf": 114.6, "3rdPerf": 114.1, "4thPerf": 113.3, "5thPerf": 112.4, "6thPerf": 107.2, "7thPerf": 106.8, "8thPerf": 105.9, "9thPerf": 104.6, "10thPerf": 103.6 }
   ],
   "hallOfFame": {
     "mostDaysAt1": [
-      { "name": "Yorck Linderhaus", "days": 27, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "Yorck Linderhaus", "days": 26, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "Yash Kumar Bhawsingka", "days": 5, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yash Kumar", "days": 1, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
       { "name": "William Florio", "days": 1, "country": "🇺🇸", "university": "Roger Williams University" }
     ],
