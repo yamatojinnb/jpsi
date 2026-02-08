@@ -161,7 +161,7 @@ export default function AllocationTab({
                   borderRadius: "8px",
                   color: "#fafafa",
                 }}
-                formatter={(value: number) => [`${value.toFixed(2)}%`, "Allocation"]}
+                formatter={(value: number | undefined) => [`${(value ?? 0).toFixed(2)}%`, "Allocation"]}
               />
               <Bar
                 dataKey="percentage"
