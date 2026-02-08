@@ -76,6 +76,9 @@ const COLORS: { [key: string]: string } = {
   "Risa KONNO": "#f59e0b",
   "yuki sumiyoshi": "#22c55e",
   "Pratyush Kumar": "#3b82f6",
+  "Yash Kumar Bhawsingka": "#1d4ed8",
+  "Seungho": "#166534",
+  "André dos Santos Mendo": "#059669",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";
