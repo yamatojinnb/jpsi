@@ -1,0 +1,798 @@
+﻿ClientAccountID,AssetClass,Symbol,UnderlyingSymbol,Multiplier,Strike,Expiry,Put/Call,OrderID,TradeDate,Buy/Sell,Quantity,Price,Amount,NetCash,LevelOfDetail,大学名,国,氏名,GICS_Sector
+DUO858183,OPT,QQQ   260122C00613000,QQQ,100,613,20260122,C,661869448,20260121,BUY,60,1.93,11580,-11622.2725,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00613000,QQQ,100,613,20260122,C,661940603,20260121,SELL,-60,4.9045,-29427,29379.0876,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00616000,QQQ,100,616,20260122,C,661896127,20260121,BUY,230,1.6,36800,-37057.6125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00616000,QQQ,100,616,20260122,C,661940396,20260121,SELL,-230,2.950130435,-67853,67626.0408,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00620000,QQQ,100,620,20260122,C,662088637,20260121,BUY,70,1.65,11550,-11598.2125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00620000,QQQ,100,620,20260122,C,662095510,20260121,SELL,-70,1.98,-13860,13811.5572,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00622000,QQQ,100,622,20260122,C,662100456,20260121,BUY,163,1.54,25102,-25214.26625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00622000,QQQ,100,622,20260122,C,662109508,20260121,BUY,70,1.25,8750,-8816.4125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00622000,QQQ,100,622,20260122,C,662119397,20260121,BUY,100,0.64,6400,-6454.525,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00622000,QQQ,100,622,20260122,C,662241256,20260122,SELL,-333,1.5,-49950,49678.23318,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662091274,20260121,BUY,191,0.991204188,18932,-19151.14125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662257209,20260122,BUY,85,0.76,6460,-6502.73375,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662092156,20260121,SELL,-90,1.23,-11070,11007.7164,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662093767,20260121,SELL,-51,1.2,-6120,6084.70596,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662095482,20260121,SELL,-50,0.92,-4600,4569.308,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662289738,20260122,SELL,-1,0.29,-29,27.95796,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662289759,20260122,SELL,-69,0.28,-1932,1894.59924,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260122C00623000,QQQ,100,623,20260122,C,662289806,20260122,SELL,-15,0.28,-420,411.8694,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260126P00624000,QQQ,100,624,20260126,P,662978337,20260126,BUY,100,1.07,10700,-10793.795,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260126P00624000,QQQ,100,624,20260126,P,663010901,20260126,SELL,-100,0.45,-4500,4449.866,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260126P00627000,QQQ,100,627,20260126,P,663143014,20260126,BUY,164,0.662804878,10870,-10961.665,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260126P00627000,QQQ,100,627,20260126,P,663164967,20260126,SELL,-164,0.8,-13120,13038.77294,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260128P00632000,QQQ,100,632,20260128,P,663614749,20260128,BUY,130,1.32,17160,-17230.0375,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260128P00632000,QQQ,100,632,20260128,P,663625700,20260128,BUY,30,1.3,3900,-3916.1625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260128P00632000,QQQ,100,632,20260128,P,663686458,20260128,SELL,-160,1.33,-21280,21169.2736,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260128P00634000,QQQ,100,634,20260128,P,663675054,20260128,BUY,118,2.03,23954,-24073.1225,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260128P00634000,QQQ,100,634,20260128,P,663724159,20260128,SELL,-118,2.76,-32568,32544.52928,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260129C00634000,QQQ,100,634,20260129,C,663741859,20260128,BUY,90,3.36,30240,-30330.8175,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260129C00634000,QQQ,100,634,20260129,C,663820347,20260128,SELL,-90,3.67,-33030,32943.6064,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00629000,QQQ,100,629,20260130,C,662837977,20260123,BUY,96,3.211458333,30830,-30862.7,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00629000,QQQ,100,629,20260130,C,663451349,20260127,BUY,78,6.335641026,49418,-49480.1025,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00629000,QQQ,100,629,20260130,C,662955888,20260126,SELL,-96,3.2446875,-31149,31097.62916,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00629000,QQQ,100,629,20260130,C,663271670,20260127,SELL,-60,4.820666667,-28924,28874.5451,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00629000,QQQ,100,629,20260130,C,663307726,20260127,SELL,-18,5.01,-9018,9012.56328,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00630000,QQQ,100,630,20260130,C,663451651,20260127,BUY,33,5.68,18744,-18753.85875,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00630000,QQQ,100,630,20260130,C,663452012,20260127,BUY,3,5.71,1713,-1713.89625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00630000,QQQ,100,630,20260130,C,663452036,20260127,BUY,3,5.73,1719,-1719.89625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00630000,QQQ,100,630,20260130,C,663318022,20260127,SELL,-36,5.413333333,-19488,19473.37656,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00630000,QQQ,100,630,20260130,C,663452432,20260127,SELL,-3,5.69,-1707,1705.34388,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,663284136,20260127,BUY,100,3.1911,31911,-31999.9375,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,663307723,20260127,BUY,30,2.950333333,8851,-8859.9625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,663451709,20260127,SELL,-130,3.97,-51610,51498.0848,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00634000,QQQ,100,634,20260130,C,663317467,20260127,BUY,60,3.240666667,19444,-19468.175,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00634000,QQQ,100,634,20260130,C,663452106,20260127,BUY,5,3.46,1730,-1732.74375,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00634000,QQQ,100,634,20260130,C,663451703,20260127,SELL,-55,3.429818182,-18864,18847.3878,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00634000,QQQ,100,634,20260130,C,663452102,20260127,SELL,-5,3.45,-1725,1723.4898,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130C00634000,QQQ,100,634,20260130,C,663452093,20260127,SELL,-5,3.47,-1735,1733.4898,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130P00615000,QQQ,100,615,20260130,P,662837651,20260123,BUY,96,3.738541667,35890,-35922.7,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260130P00615000,QQQ,100,615,20260130,P,662955886,20260126,SELL,-96,3.008541667,-28882,28830.62916,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260202P00624000,QQQ,100,624,20260202,P,664371848,20260130,BUY,100,2.547,25470,-25538.155,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260202P00624000,QQQ,100,624,20260202,P,664374901,20260130,BUY,70,2.26,15820,-15857.7125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,QQQ   260202P00624000,QQQ,100,624,20260202,P,664433666,20260130,SELL,-170,3.62,-61540,61486.1932,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659147272,20260109,BUY,35,5.471428571,19150,-19170.68625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659185563,20260109,BUY,44,3.949545455,17378,-17406.945,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659186822,20260109,BUY,26,4.12,10712,-10725.2275,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659179954,20260109,SELL,-35,3.385714286,-11850,11832.5286,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659179949,20260109,SELL,-35,3.52,-12320,12302.4486,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109C00687000,SPY,100,687,20260109,C,659185536,20260109,SELL,-35,3.746857143,-13114,13096.0186,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659147173,20260109,BUY,35,0.549142857,1922,-1940.67625,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659185484,20260109,BUY,44,0.4,1760,-1785.545,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659186714,20260109,BUY,26,0.36,936,-949.2275,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659179626,20260109,SELL,-35,0.552571429,-1934,1916.5286,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659179655,20260109,SELL,-35,0.52,-1820,1802.4486,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260109P00687000,SPY,100,687,20260109,P,659185477,20260109,SELL,-35,0.415142857,-1453,1435.0186,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260113P00695000,SPY,100,695,20260113,P,659844049,20260113,BUY,100,1.25,12500,-12609.425,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260113P00695000,SPY,100,695,20260113,P,659886892,20260113,SELL,-100,2.9442,-29442,29346.356,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260113P00696000,SPY,100,696,20260113,P,659841780,20260113,BUY,100,1.62,16200,-16312.045,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260113P00696000,SPY,100,696,20260113,P,659843464,20260113,BUY,100,1.65,16500,-16577.4175,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,SPY   260113P00696000,SPY,100,696,20260113,P,659885575,20260113,SELL,-200,3.52,-70400,70184.1495,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,ETF/Index
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660641714,20260115,BUY,26,1,2600,-2604.1975,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660642781,20260115,BUY,224,1,22400,-22482.1525,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660905349,20260116,SELL,-2,0.99,-198,198.69592,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660941837,20260116,SELL,-48,0.4,-1920,1914.60708,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660948310,20260116,SELL,-39,0.4,-1560,1562.69044,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00130000,STT,100,130,20260116,P,660949534,20260116,SELL,-161,0.4,-6440,6409.55906,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660644932,20260115,BUY,89,2.430337079,21630,-21661.84125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660664051,20260115,BUY,1,2.5,250,-251.03875,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660684039,20260115,BUY,60,2.5,15000,-15013.5125,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660712716,20260115,BUY,16,2.36875,3790,-3789.78,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660766241,20260115,BUY,24,2.479166667,5950,-5949.15,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660782322,20260115,BUY,10,2.45,2450,-2456.8875,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858183,OPT,STT   260116P00135000,STT,100,135,20260116,P,660932807,20260116,SELL,-200,3.599,-71980,71928.552,ORDER,Technical University of Munich,Germany,Yigit Kaan Ertürk,Financials
+DUO858732,STK,JEF,JEF,1,,,,658835086,20260108,BUY,927.3999,61.99994394,57498.74181,-57503.37881,ORDER,Waseda University,Japan,Kokota SUMI,Financials
+DUO858732,STK,JEF,JEF,1,,,,658474581,20260107,SELL,-3179.5833,65.87293933,-209448.4978,209431.9799,ORDER,Waseda University,Japan,Kokota SUMI,Financials
+DUO858732,STK,JEF,JEF,1,,,,658593044,20260107,SELL,-927.3999,64.7,-60002.77353,59997.95569,ORDER,Waseda University,Japan,Kokota SUMI,Financials
+DUO858732,STK,SGOV,SGOV,1,,,,657881362,20260105,BUY,3983.0711,100.42,399979.9999,-399999.9152,ORDER,Waseda University,Japan,Kokota SUMI,ETF/Index
+DUO858732,STK,SGOV,SGOV,1,,,,658086672,20260106,SELL,-308,100.42,-30929.36,30927.75994,ORDER,Waseda University,Japan,Kokota SUMI,ETF/Index
+DUO860245,STK,ACN,ACN,1,,,,659192049,20260109,SELL,-400,278.96,-111584,111581.922,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AEM,AEM,1,,,,661845652,20260121,BUY,500,213.4,106700,-106702.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Materials
+DUO860245,STK,AEM,AEM,1,,,,663735263,20260128,SELL,-500,221.4,-110700,110697.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Materials
+DUO860245,STK,ALAB,ALAB,1,,,,661791158,20260121,BUY,500,185.7,92850,-92852.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,ALAB,ALAB,1,,,,664088721,20260129,SELL,-500,159,-79500,79497.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APH,APH,1,,,,659548045,20260112,BUY,500,146.8,73400,-73402.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APH,APH,1,,,,663599066,20260128,BUY,500,146.86,73430,-73432.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APH,APH,1,,,,660982348,20260116,SELL,-500,152.49,-76245,76242.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APH,APH,1,,,,664062211,20260129,SELL,-500,146.79056,-73395.28,73392.6825,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APLD,APLD,1,,,,659192174,20260109,BUY,10000,35.17225,351722.5,-351772.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APLD,APLD,1,,,,659839494,20260113,SELL,-2000,38.1665,-76333,76322.61,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APLD,APLD,1,,,,660108779,20260114,SELL,-7000,36.38131143,-254669.18,254632.815,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,APLD,APLD,1,,,,660949012,20260116,SELL,-1000,36.02065,-36020.65,36015.455,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,ARKK,ARKK,1,,,,664087718,20260129,SELL,-1000,77.0093,-77009.3,77004.105,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO860245,STK,AVGO,AVGO,1,,,,659485893,20260112,BUY,270,350.31,94583.7,-94585.05,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AVGO,AVGO,1,,,,660988247,20260116,SELL,-270,345.6814815,-93334,93332.59735,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AXTI,AXTI,1,,,,664330934,20260130,BUY,10000,18.9378,189378,-189428,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AXTI,AXTI,1,,,,664331062,20260130,BUY,30000,18.89170267,566751.08,-566901.08,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AXTI,AXTI,1,,,,664333942,20260130,BUY,10000,19.0219,190219,-190269,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AXTI,AXTI,1,,,,664335404,20260130,BUY,200,19.29,3858,-3859,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,AXTI,AXTI,1,,,,664349180,20260130,SELL,-50200,19.93101235,-1000536.82,1000276.031,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,BA,BA,1,,,,661513902,20260120,BUY,500,246.41,123205,-123207.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,BA,BA,1,,,,663234518,20260127,BUY,100,248.42,24842,-24843,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,BA,BA,1,,,,663250922,20260127,BUY,100,248.8,24880,-24881,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,BA,BA,1,,,,661925814,20260121,SELL,-500,249.754,-124877,124874.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,BA,BA,1,,,,663586717,20260128,SELL,-200,244.2,-48840,48838.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,CLS,CLS,1,,,,663284245,20260127,BUY,500,318.99,159495,-159497.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CLS,CLS,1,,,,663289327,20260127,BUY,500,321.776,160888,-160890.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CLS,CLS,1,,,,663313513,20260127,BUY,500,327.5,163750,-163752.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CLS,CLS,1,,,,663515429,20260127,BUY,500,330.81,165405,-165407.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CLS,CLS,1,,,,663528775,20260127,BUY,500,333.34,166670,-166672.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CLS,CLS,1,,,,663952887,20260129,SELL,-2500,315.5928,-788982,788969.0125,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CMCL,CMCL,1,,,,661839588,20260121,BUY,3000,28.44033333,85321,-85336,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Materials
+DUO860245,STK,CMCL,CMCL,1,,,,663281753,20260127,SELL,-3000,29.506,-88518,88502.415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Materials
+DUO860245,STK,CNXC,CNXC,1,,,,659777660,20260113,BUY,300,42.34333333,12703,-12704.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CNXC,CNXC,1,,,,659810727,20260113,SELL,-300,38.5,-11550,11548.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CRDO,CRDO,1,,,,659489351,20260112,BUY,600,152.0283333,91217,-91220,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CRDO,CRDO,1,,,,661791011,20260121,BUY,500,155.37,77685,-77687.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CRDO,CRDO,1,,,,660989465,20260116,SELL,-600,151.705,-91023,91019.883,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CRDO,CRDO,1,,,,664088516,20260129,SELL,-500,126.76,-63380,63377.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,CRMD,CRMD,1,,,,660171812,20260114,BUY,5000,7.43,37150,-37175,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,DAL,DAL,1,,,,659767261,20260113,BUY,500,70.88,35440,-35442.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,DAL,DAL,1,,,,659778850,20260113,SELL,-500,66.958,-33479,33476.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,DAVE,DAVE,1,,,,659779080,20260113,BUY,100,218,21800,-21801,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DAVE,DAVE,1,,,,659797408,20260113,BUY,100,221,22100,-22101,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DAVE,DAVE,1,,,,659835343,20260113,BUY,400,219.955,87982,-87984,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DAVE,DAVE,1,,,,660983553,20260116,BUY,100,192.91,19291,-19292,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DAVE,DAVE,1,,,,663288094,20260127,SELL,-500,182.01,-91005,91002.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DAVE,DAVE,1,,,,664088137,20260129,SELL,-200,171.54,-34308,34306.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,DHI,DHI,1,,,,661407853,20260120,BUY,100,156.99,15699,-15700,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Consumer Discretionary
+DUO860245,STK,DHI,DHI,1,,,,661397695,20260120,SELL,-100,153.3,-15330,15328.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Consumer Discretionary
+DUO860245,STK,GOOG,GOOG,1,,,,659485014,20260112,BUY,300,328.57,98571,-98572.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Communication Services
+DUO860245,STK,GOOG,GOOG,1,,,,661718819,20260120,SELL,-300,322.36,-96708,96706.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Communication Services
+DUO860245,STK,IBKR,IBKR,1,,,,661856269,20260121,BUY,400,72.04,28816,-28818,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,IBKR,IBKR,1,,,,661402453,20260120,SELL,-400,71.3,-28520,28517.922,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,IMSR,IMSR,1,,,,660183172,20260114,BUY,500,11.48,5740,-5742.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Unknown
+DUO860245,STK,IMSR,IMSR,1,,,,662780857,20260123,SELL,-500,12.17,-6085,6082.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Unknown
+DUO860245,STK,INTC,INTC,1,,,,661507429,20260120,BUY,500,49.392,24696,-24698.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,INTC,INTC,1,,,,663280139,20260127,SELL,-500,44.06,-22030,22027.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,IOT,IOT,1,,,,659489829,20260112,BUY,2000,32.90702,65814.04,-65824.04,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,IOT,IOT,1,,,,659826295,20260113,SELL,-2000,33.452,-66904,66893.61,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,IREN,IREN,1,,,,661855011,20260121,BUY,1800,55.15,99270,-99279,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,IREN,IREN,1,,,,663281628,20260127,SELL,-1800,53.17888889,-95722,95712.649,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,JPM,JPM,1,,,,659767066,20260113,BUY,80,324.66,25972.8,-25973.8,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,JPM,JPM,1,,,,659768788,20260113,BUY,280,325.6,91168,-91169.4,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,JPM,JPM,1,,,,659778982,20260113,SELL,-360,325.41,-117147.6,117145.7298,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,KARO,KARO,1,,,,661720997,20260120,BUY,500,45.5,22750,-22752.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,KARO,KARO,1,,,,662459100,20260122,SELL,-500,45,-22500,22497.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,KMB,KMB,1,,,,663248604,20260127,BUY,500,103,51500,-51502.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Consumer Staples
+DUO860245,STK,KMB,KMB,1,,,,663237081,20260127,SELL,-100,100.91,-10091,10089.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Consumer Staples
+DUO860245,STK,KMB,KMB,1,,,,663237186,20260127,SELL,-400,100.5075,-40203,40200.922,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Consumer Staples
+DUO860245,STK,KNX,KNX,1,,,,662459296,20260122,BUY,500,58.9458,29472.9,-29475.4,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,KNX,KNX,1,,,,661718970,20260120,SELL,-500,55.21,-27605,27602.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,MMM,MMM,1,,,,661851186,20260121,BUY,100,157.29,15729,-15730,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,MMM,MMM,1,,,,661395114,20260120,SELL,-100,165,-16500,16498.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,MSTR,MSTR,1,,,,660175290,20260114,BUY,500,188.068,94034,-94036.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MSTR,MSTR,1,,,,661472681,20260120,SELL,-500,162.096,-81048,81045.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,661840386,20260121,BUY,500,373.1,186550,-186552.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,659483628,20260112,SELL,-500,347.314,-173657,173654.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,659834186,20260113,SELL,-200,343.4,-68680,68678.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,660108600,20260114,SELL,-600,335.515,-201309,201305.883,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,660980095,20260116,SELL,-200,354.63,-70926,70924.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,663286419,20260127,SELL,-300,402.37,-120711,120709.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,MU,MU,1,,,,664160370,20260129,SELL,-200,433.89,-86778,86776.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,NFLX,NFLX,1,,,,661844903,20260121,BUY,500,83.0548,41527.4,-41529.9,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Communication Services
+DUO860245,STK,NFLX,NFLX,1,,,,661740337,20260120,SELL,-500,84,-42000,41997.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Communication Services
+DUO860245,STK,PAAS,PAAS,1,,,,661839834,20260121,BUY,1500,59.09,88635,-88642.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Materials
+DUO860245,STK,PLMR,PLMR,1,,,,659493815,20260112,BUY,2500,129.1416,322854,-322866.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,PLMR,PLMR,1,,,,660986000,20260116,SELL,-1300,128.1876923,-166644,166637.2465,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,PLMR,PLMR,1,,,,663296346,20260127,SELL,-1000,125.99,-125990,125984.805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,PLMR,PLMR,1,,,,663732946,20260128,SELL,-200,120.82,-24164,24162.961,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,RCAT,RCAT,1,,,,661613690,20260120,BUY,500,15.11,7555,-7557.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,RCAT,RCAT,1,,,,664316362,20260130,BUY,100000,15.5175054,1551750.54,-1552250.54,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,RCAT,RCAT,1,,,,664324805,20260130,SELL,-100500,14.75271363,-1482647.72,1482125.622,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,SEZL,SEZL,1,,,,659208193,20260109,BUY,3000,78.44566667,235337,-235352,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SEZL,SEZL,1,,,,661792733,20260121,BUY,500,67.566,33783,-33785.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SEZL,SEZL,1,,,,660160117,20260114,SELL,-3000,72.69533333,-218086,218070.415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SNDK,SNDK,1,,,,661840338,20260121,BUY,500,463.05,231525,-231527.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,SNDK,SNDK,1,,,,663285740,20260127,SELL,-400,488.55875,-195423.5,195421.422,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,SNDK,SNDK,1,,,,664160286,20260129,SELL,-100,544.28,-54428,54426.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,SOFI,SOFI,1,,,,663283991,20260127,BUY,5000,25.67996,128399.8,-128424.8,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,663290901,20260127,BUY,5000,25.67,128350,-128375,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,663955212,20260129,BUY,5000,24.84,124200,-124225,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,664062445,20260129,BUY,10000,24.1138,241138,-241188,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,664062478,20260129,BUY,25000,24.13,603250,-603375,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,664134870,20260129,BUY,10000,24.5,245000,-245050,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,664273964,20260130,BUY,10000,23.8551,238551,-238601,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,SOFI,SOFI,1,,,,664309974,20260130,SELL,-70000,24.89574914,-1742702.44,1742338.79,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Financials
+DUO860245,STK,TDY,TDY,1,,,,661724781,20260120,BUY,100,567.64,56764,-56765,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,TDY,TDY,1,,,,661854085,20260121,SELL,-100,597.52,-59752,59750.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,TSM,TSM,1,,,,660414978,20260114,BUY,500,326.04,163020,-163022.5,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,TSM,TSM,1,,,,660980852,20260116,SELL,-500,342.49,-171245,171242.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,UAL,UAL,1,,,,661742946,20260120,BUY,100,113.7,11370,-11371,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,UAL,UAL,1,,,,661742941,20260120,BUY,400,113.6825,45473,-45475,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,UAL,UAL,1,,,,661926171,20260121,SELL,-500,111.21,-55605,55602.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,STK,VERO,VERO,1,,,,660936802,20260116,BUY,30000,7.175268,215258.04,-215408.04,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,VERO,VERO,1,,,,660939525,20260116,SELL,-10000,7.679562,-76795.62,76743.67,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,VERO,VERO,1,,,,660939589,20260116,SELL,-10000,7.6094,-76094,76042.05,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,VERO,VERO,1,,,,660940623,20260116,SELL,-5000,7.681398,-38406.99,38381.015,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,VERO,VERO,1,,,,660940667,20260116,SELL,-5000,7.6484,-38242,38216.025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,STK,WDC,WDC,1,,,,661845722,20260121,BUY,800,231.94625,185557,-185561,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,WDC,WDC,1,,,,663287159,20260127,SELL,-500,244.26,-122130,122127.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,WDC,WDC,1,,,,664160325,20260129,SELL,-300,279.3733333,-83812,83810.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,STK,ZETA,ZETA,1,,,,660988484,20260116,SELL,-10000,20.8467,-208467,208415.05,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Information Technology
+DUO860245,OPT,ISRG  260123C00532500,ISRG,100,532.5,20260123,C,661924470,20260121,BUY,10,10.1,10100,-10105.6575,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,OPT,ISRG  260123C00532500,ISRG,100,532.5,20260123,C,662061614,20260121,BUY,10,7.1,7100,-7103.7375,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,OPT,ISRG  260123C00532500,ISRG,100,532.5,20260123,C,662780639,20260123,SELL,-20,0.1,-200,201.6967,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Health Care
+DUO860245,OPT,JBHT  260116C00210000,JBHT,100,210,20260116,C,660507961,20260115,BUY,20,6.33,12660,-12667.5975,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,OPT,JBHT  260116C00210000,JBHT,100,210,20260116,C,660915989,20260116,SELL,-20,0.1,-200,190.0042,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,Industrials
+DUO860245,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,660157632,20260114,BUY,30,7.83,23490,-23510.0225,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO860245,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,660163999,20260114,BUY,5,8.14,4070,-4075.94375,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO860245,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,660164078,20260114,BUY,5,8.12,4060,-4063.05375,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO860245,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,661542612,20260120,SELL,-20,9.53,-19060,19049.7592,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO860245,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,661934671,20260121,SELL,-20,8.92,-17840,17829.7592,ORDER,Ludwig Maximilian University of Munich,Germany,Yorck Linderhaus,ETF/Index
+DUO858565,STK,COST,COST,1,,,,663704256,20260128,BUY,40,966.48,38659.2,-38660.2,ORDER,Roger Williams University,United States,William Florio,Consumer Staples
+DUO858565,STK,MSFT,MSFT,1,,,,659005113,20260108,BUY,200,477.37,95474,-95475,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,MSFT,MSFT,1,,,,663696422,20260128,SELL,-100,479.59,-47959,47957.9805,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,MSFT,MSFT,1,,,,663697927,20260128,SELL,-100,479.13,-47913,47911.9805,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,MU,MU,1,,,,663699982,20260128,BUY,200,433.15,86630,-86631,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,NEM,NEM,1,,,,663697576,20260128,BUY,100,129.54,12954,-12955,ORDER,Roger Williams University,United States,William Florio,Materials
+DUO858565,STK,NVDA,NVDA,1,,,,663703100,20260128,SELL,-200,191.05,-38210,38208.961,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,NVDA,NVDA,1,,,,663934323,20260129,SELL,-105,192.0633333,-20166.65,20165.62953,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO858565,STK,SPY,SPY,1,,,,663933594,20260129,SELL,-30,696.77,-20903.1,20902.09415,ORDER,Roger Williams University,United States,William Florio,ETF/Index
+DUO858565,STK,WMT,WMT,1,,,,663938206,20260129,BUY,180,116.8,21024,-21025,ORDER,Roger Williams University,United States,William Florio,Consumer Staples
+DUO858565,STK,ZS,ZS,1,,,,663949624,20260129,BUY,80,206.53,16522.4,-16523.4,ORDER,Roger Williams University,United States,William Florio,Information Technology
+DUO860184,STK,BVN,BVN,1,,,,663310556,20260127,BUY,1288.6053,38.80164049,49999.99959,-50006.44261,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Materials
+DUO860184,STK,CLS,CLS,1,,,,663514688,20260127,BUY,2419,330.6132245,799753.39,-799765.485,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,CLS,CLS,1,,,,663958742,20260129,SELL,-2419,317.3133898,-767581.09,767568.5233,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,COIN,COIN,1,,,,660049531,20260113,BUY,2000,254.4871,508974.2,-508984.2,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,COIN,COIN,1,,,,662484658,20260122,SELL,-1500,224.684,-337026,337018.2075,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,COIN,COIN,1,,,,662491763,20260122,SELL,-250,224.14,-56035,56033.70125,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,COIN,COIN,1,,,,663300582,20260127,SELL,-250,208.81,-52202.5,52201.20125,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,COLO,COLO,1,,,,663307309,20260127,BUY,2287.1683,43.72218611,99999.99808,-100011.4339,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,CSW,CSW,1,,,,659512372,20260112,BUY,150,320.246,48036.9,-48037.9,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,CSW,CSW,1,,,,659706785,20260112,SELL,-150,318.08,-47712,47710.97075,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,DOV,DOV,1,,,,659509832,20260112,BUY,200,203,40600,-40601,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,DOV,DOV,1,,,,659708103,20260112,SELL,-200,203.25,-40650,40648.961,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,DUOL,DUOL,1,,,,659507599,20260112,BUY,300,164.81,49443,-49444.5,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,DUOL,DUOL,1,,,,659707402,20260112,SELL,-300,163.5906667,-49077.2,49075.6415,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,ECH,ECH,1,,,,663308264,20260127,BUY,2103.4917,47.54,99999.99542,-100010.5129,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,ETF/Index
+DUO860184,STK,EPU,EPU,1,,,,663308777,20260127,BUY,1097.2893,91.13366214,99999.99234,-100005.4788,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,ETF/Index
+DUO860184,STK,EWW,EWW,1,,,,663310028,20260127,BUY,1293.8932,77.28613044,99999.99863,-100006.4681,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,ETF/Index
+DUO860184,STK,EWZ,EWZ,1,,,,663308976,20260127,BUY,2665.9557,37.51,99999.99831,-100013.3281,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,ETF/Index
+DUO860184,STK,GEV,GEV,1,,,,659512334,20260112,BUY,100,640.77,64077,-64078,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,GEV,GEV,1,,,,659708253,20260112,SELL,-100,638.88,-63888,63886.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,INVX,INVX,1,,,,659511683,20260112,BUY,2000,23.3225,46645,-46655,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,INVX,INVX,1,,,,659708440,20260112,SELL,-2000,23.31,-46620,46609.61,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,ISRG,ISRG,1,,,,659724068,20260112,BUY,1,573.51,573.51,-574.51,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,ISRG,ISRG,1,,,,660134739,20260114,BUY,5,542.83,2714.15,-2715.15,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,ISRG,ISRG,1,,,,662499307,20260122,BUY,190,524.98,99746.2,-99747.2,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,ISRG,ISRG,1,,,,660144308,20260114,SELL,-5,543.95,-2719.75,2718.749025,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,ISRG,ISRG,1,,,,662512421,20260122,SELL,-120,540,-64800,64798.9766,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,ISRG,ISRG,1,,,,663300623,20260127,SELL,-71,530.4477465,-37661.79,37660.77616,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,LAD,LAD,1,,,,659514317,20260112,BUY,120,335.5833333,40270,-40271,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,LAD,LAD,1,,,,659707209,20260112,SELL,-120,333.07,-39968.4,39967.3766,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,LOW,LOW,1,,,,659513879,20260112,BUY,180,268.86,48394.8,-48395.8,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,LOW,LOW,1,,,,659707447,20260112,SELL,-180,269.89,-48580.2,48579.1649,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,LWAY,LWAY,1,,,,659507695,20260112,BUY,2000,23.4675,46935,-46945,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Staples
+DUO860184,STK,LWAY,LWAY,1,,,,659726228,20260112,BUY,300,22.87,6861,-6862.5,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Staples
+DUO860184,STK,LWAY,LWAY,1,,,,659707439,20260112,SELL,-2000,22.743,-45486,45475.61,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Staples
+DUO860184,STK,LWAY,LWAY,1,,,,659709642,20260112,SELL,-300,22.75,-6825,6823.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Staples
+DUO860184,STK,MNDY,MNDY,1,,,,659507954,20260112,BUY,350,144.63,50620.5,-50622.25,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,MNDY,MNDY,1,,,,659707727,20260112,SELL,-350,146.98,-51443,51441.18175,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,MOG A,MOG A,1,,,,659511507,20260112,BUY,150,275.42,41313,-41314,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,MOG A,MOG A,1,,,,659707513,20260112,SELL,-150,273.99,-41098.5,41097.47075,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,MSTR,MSTR,1,,,,660189496,20260114,BUY,1351.0242,185.0447978,249999.9999,-250006.755,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,MSTR,MSTR,1,,,,662492733,20260122,SELL,-650,161.52,-104988,104984.6233,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,MSTR,MSTR,1,,,,664060490,20260129,SELL,-701.0242,142.8471185,-100139.287,100135.6451,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,NFLX,NFLX,1,,,,659707883,20260112,SELL,-1200,89.83,-107796,107789.766,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Communication Services
+DUO860184,STK,ORI,ORI,1,,,,659509654,20260112,BUY,1000,42.755,42755,-42760,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,ORI,ORI,1,,,,659708809,20260112,SELL,-1000,42.46,-42460,42454.805,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,OUST,OUST,1,,,,659509180,20260112,BUY,2000,27.4055,54811,-54821,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,OUST,OUST,1,,,,659710233,20260112,BUY,2800,27.61821429,77331,-77345,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,OUST,OUST,1,,,,659708424,20260112,SELL,-2000,27.4616,-54923.2,54912.81,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,OUST,OUST,1,,,,659709039,20260112,SELL,-1600,27.44,-43904,43895.688,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,OUST,OUST,1,,,,659709060,20260112,SELL,-1100,27.458,-30203.8,30198.0855,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,OUST,OUST,1,,,,659709722,20260112,SELL,-100,27.46,-2746,2744.9805,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO860184,STK,PEN,PEN,1,,,,659511055,20260112,BUY,150,322.74,48411,-48412,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,PEN,PEN,1,,,,659709262,20260112,SELL,-150,313.93,-47089.5,47088.47075,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Health Care
+DUO860184,STK,PGY,PGY,1,,,,659506875,20260112,BUY,4000,24.2549875,97019.95,-97039.95,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,PGY,PGY,1,,,,659709691,20260112,SELL,-4000,24.750555,-99002.22,98981.44,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,POOL,POOL,1,,,,659512995,20260112,BUY,180,259.42,46695.6,-46696.6,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,POOL,POOL,1,,,,659710620,20260112,SELL,-180,257.8,-46404,46402.9649,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,PSKY,PSKY,1,,,,659446441,20260112,BUY,10000,12.053243,120532.43,-120582.43,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Unknown
+DUO860184,STK,SOFI,SOFI,1,,,,663960408,20260129,BUY,5000,25.07,125350,-125375,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,663981282,20260129,BUY,5000,24.95,124750,-124775,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,664010613,20260129,BUY,5000,24.61,123050,-123075,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,664010667,20260129,BUY,5000,24.59,122950,-122975,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,664060151,20260129,BUY,10000,24.16,241600,-241650,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,664060772,20260129,BUY,5000,24.1882,120941,-120966,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SOFI,SOFI,1,,,,664285485,20260130,SELL,-35000,25.61006429,-896352.25,896170.425,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Financials
+DUO860184,STK,SPXC,SPXC,1,,,,659509784,20260112,BUY,200,211.26,42252,-42253,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,SPXC,SPXC,1,,,,659710629,20260112,SELL,-200,208.03,-41606,41604.961,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,WAB,WAB,1,,,,659512600,20260112,BUY,200,225.23,45046,-45047,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,WAB,WAB,1,,,,659710609,20260112,SELL,-200,225.03,-45006,45004.961,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Industrials
+DUO860184,STK,WHR,WHR,1,,,,659513087,20260112,BUY,500,84.31,42155,-42157.5,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,WHR,WHR,1,,,,659711352,20260112,SELL,-500,83.68,-41840,41837.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Consumer Discretionary
+DUO860184,STK,ZETA,ZETA,1,,,,662484048,20260122,BUY,5547.8506,21.62999847,120000,-120027.7392,ORDER,Ludwig Maximilian University of Munich,Germany,Paul Rockholz,Information Technology
+DUO858257,STK,CEG,CEG,1,,,,662506788,20260122,BUY,120,287,34440,-34441,ORDER,The University of New South Wales,Australia,Cathlyn Widjaja,Utilities
+DUO858257,STK,PLTR,PLTR,1,,,,661059185,20260116,BUY,500,173,86500,-86502.5,ORDER,The University of New South Wales,Australia,Cathlyn Widjaja,Information Technology
+DUO858257,STK,VGT,VGT,1,,,,658154998,20260106,BUY,100,757.53,75753,-75754,ORDER,The University of New South Wales,Australia,Cathlyn Widjaja,ETF/Index
+DUO858280,STK,AXP,AXP,1,,,,662263720,20260122,SELL,-438,366.1258904,-160363.14,160360.8646,ORDER,The University of Sheffield,United Kingdom,Hana Shigeta,Financials
+DUO858280,STK,MA,MA,1,,,,662290054,20260122,SELL,-20,527.52,-10550.4,10549.3961,ORDER,The University of Sheffield,United Kingdom,Hana Shigeta,Financials
+DUO858280,STK,PG,PG,1,,,,662300372,20260122,BUY,1000,149.37,149370,-149375,ORDER,The University of Sheffield,United Kingdom,Hana Shigeta,Consumer Staples
+DUO858271,STK,AAPL,AAPL,1,,,,661144107,20260116,BUY,244,256.41,62564.04,-62565.26,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Information Technology
+DUO858271,STK,GE,GE,1,,,,662638522,20260123,BUY,466,295.31,137614.46,-137616.79,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO858271,STK,GE,GE,1,,,,662963920,20260126,SELL,-466,295.8259657,-137854.9,137852.4791,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO858271,STK,META,META,1,,,,662625054,20260123,SELL,-62.4155,650.31,-40589.42381,40588.41163,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Communication Services
+DUO858271,STK,NVDA,NVDA,1,,,,657781937,20260105,BUY,1992,192.4296185,383319.8,-383329.76,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Information Technology
+DUO858271,STK,NVDA,NVDA,1,,,,663975405,20260129,BUY,8,191.17,1529.36,-1530.36,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Information Technology
+DUO858271,STK,PANW,PANW,1,,,,661131431,20260116,SELL,-324.0263,188.9800024,-61234.49096,61232.80765,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Information Technology
+DUO858271,STK,QQQ,QQQ,1,,,,658870075,20260108,BUY,150,619.09,92863.5,-92864.5,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,ETF/Index
+DUO858271,STK,QQQ,QQQ,1,,,,662636934,20260123,SELL,-150,620.05,-93007.5,93006.47075,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,ETF/Index
+DUO858271,STK,RTX,RTX,1,,,,664383158,20260130,BUY,927.9975,199.5289224,185162.3412,-185166.9812,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO858271,STK,RTX,RTX,1,,,,663365826,20260127,SELL,-927.9975,197,-182815.5075,182810.6866,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO858271,STK,RTX,RTX,1,,,,663368740,20260127,SELL,-927.9975,197.6900537,-183455.8757,183451.0547,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO858271,OPT,RTX   260320C00180000,RTX,100,180,20260320,C,663363429,20260127,BUY,5,20.85,10425,-10427.46375,ORDER,The University of Sheffield,United Kingdom,Yutaro Nagamori,Industrials
+DUO860400,STK,ACB,ACB,1,,,,658514774,20260107,SELL,-10000,4.2325,-42325,42273.05,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Health Care
+DUO860400,STK,ADI,ADI,1,,,,659524166,20260112,BUY,150,295.86,44379,-44380,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,AFRM,AFRM,1,,,,659521054,20260112,BUY,500,78.32,39160,-39162.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,AFRM,AFRM,1,,,,663521437,20260127,SELL,-500,68.874,-34437,34434.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,ALB,ALB,1,,,,659526178,20260112,BUY,300,165.85,49755,-49756.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Materials
+DUO860400,STK,ALB,ALB,1,,,,663527773,20260127,SELL,-200,194.37,-38874,38872.961,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Materials
+DUO860400,STK,AMKR,AMKR,1,,,,659523594,20260112,BUY,1000,51.95,51950,-51955,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,BULL,BULL,1,,,,659518117,20260112,BUY,5000,8.39,41950,-41975,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Unknown
+DUO860400,STK,BULL,BULL,1,,,,663518531,20260127,SELL,-5000,7.64,-38200,38174.025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Unknown
+DUO860400,STK,BYRN,BYRN,1,,,,659517352,20260112,BUY,3000,17.445,52335,-52350,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,BYRN,BYRN,1,,,,663429100,20260127,SELL,-3000,14.97049333,-44911.48,44895.895,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,CAVA,CAVA,1,,,,659525540,20260112,BUY,500,70.88,35440,-35442.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,CAVA,CAVA,1,,,,663430374,20260127,SELL,-500,61.97,-30985,30982.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,CLS,CLS,1,,,,663432616,20260127,BUY,500,331.38,165690,-165692.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CLS,CLS,1,,,,663432625,20260127,BUY,500,331.38,165690,-165692.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CLS,CLS,1,,,,663518788,20260127,BUY,1000,330.8708,330870.8,-330875.8,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CLS,CLS,1,,,,663527008,20260127,BUY,500,332.5,166250,-166252.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CLS,CLS,1,,,,663528654,20260127,BUY,500,333.08,166540,-166542.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CLS,CLS,1,,,,663957149,20260129,SELL,-3000,316.8757067,-950627.12,950611.535,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,CMG,CMG,1,,,,659522180,20260112,BUY,1000,39.921,39921,-39926,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,CMG,CMG,1,,,,663528232,20260127,SELL,-1000,39.64,-39640,39634.805,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,DDOG,DDOG,1,,,,659518379,20260112,BUY,400,128.14,51256,-51258,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,GLW,GLW,1,,,,659524280,20260112,BUY,500,87.45,43725,-43727.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,HITI,HITI,1,,,,658526467,20260107,BUY,1600,2.695625,4313,-4321,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Staples
+DUO860400,STK,HITI,HITI,1,,,,658521123,20260107,SELL,-20000,2.68,-53600,53496.1,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Staples
+DUO860400,STK,HITI,HITI,1,,,,658524060,20260107,SELL,-1600,2.68,-4288,4279.688,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Staples
+DUO860400,STK,KLAC,KLAC,1,,,,659522725,20260112,BUY,40,1406.95,56278,-56279,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,KLIC,KLIC,1,,,,659521904,20260112,BUY,1000,57.574,57574,-57579,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,KNX,KNX,1,,,,659526242,20260112,BUY,500,56.75,28375,-28377.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,KNX,KNX,1,,,,663430119,20260127,SELL,-500,55.69,-27845,27842.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,LUCY,LUCY,1,,,,658518002,20260107,BUY,50000,1.84,92000,-92250,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658519523,20260107,BUY,50000,1.89,94500,-94750,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658520786,20260107,BUY,200000,1.92819915,385639.83,-386639.83,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658524996,20260107,BUY,100000,1.81,181000,-181500,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658535877,20260107,SELL,-50000,1.76,-88000,87740.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658537255,20260107,SELL,-50000,1.76,-88000,87740.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658537302,20260107,SELL,-50000,1.75,-87500,87240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658537342,20260107,SELL,-50000,1.75,-87500,87240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658538445,20260107,SELL,-50000,1.73,-86500,86240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658538477,20260107,SELL,-50000,1.75,-87500,87240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658538476,20260107,SELL,-50000,1.75,-87500,87240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,LUCY,LUCY,1,,,,658538501,20260107,SELL,-50000,1.75,-87500,87240.25,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,MDB,MDB,1,,,,659520980,20260112,BUY,100,415.99,41599,-41600,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,MELI,MELI,1,,,,659520576,20260112,BUY,50,2141,107050,-107051,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,MELI,MELI,1,,,,663431308,20260127,SELL,-40,2261.3,-90452,90450.9922,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,MELI,MELI,1,,,,663431646,20260127,SELL,-40,2261.3,-90452,90450.9922,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,MOS,MOS,1,,,,659526744,20260112,BUY,2000,25.92,51840,-51850,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Materials
+DUO860400,STK,MOS,MOS,1,,,,663431856,20260127,SELL,-1500,28.18,-42270,42262.2075,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Materials
+DUO860400,STK,MSOS,MSOS,1,,,,658521510,20260107,SELL,-20000,4.55,-91000,90896.1,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,ETF/Index
+DUO860400,STK,NBR,NBR,1,,,,659526881,20260112,BUY,800,60.91,48728,-48732,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Energy
+DUO860400,STK,NBR,NBR,1,,,,663430060,20260127,SELL,-800,66.98625,-53589,53584.844,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Energy
+DUO860400,STK,NVVE,NVVE,1,,,,658514961,20260107,BUY,1000,3.468,3468,-3473,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,NVVE,NVVE,1,,,,659451634,20260112,SELL,-1000,3.574,-3574,3568.805,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,ODFL,ODFL,1,,,,659526145,20260112,BUY,300,172.19,51657,-51658.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,ODFL,ODFL,1,,,,663429905,20260127,SELL,-300,174.2,-52260,52258.4415,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Industrials
+DUO860400,STK,OGI,OGI,1,,,,658518564,20260107,SELL,-30000,1.69,-50700,50544.15,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Health Care
+DUO860400,STK,PHR,PHR,1,,,,659519965,20260112,BUY,3000,16.90533333,50716,-50731,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Health Care
+DUO860400,STK,PHR,PHR,1,,,,663429665,20260127,BUY,700,14.85,10395,-10398.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Health Care
+DUO860400,STK,PHR,PHR,1,,,,663429148,20260127,SELL,-3700,14.83,-54871,54851.7785,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Health Care
+DUO860400,STK,PSTG,PSTG,1,,,,659518294,20260112,BUY,700,73.21428571,51250,-51253.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,PSTG,PSTG,1,,,,663520425,20260127,SELL,-350,74.27,-25994.5,25992.68175,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,SG,SG,1,,,,659525851,20260112,BUY,5000,7.7,38500,-38525,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,SG,SG,1,,,,663430936,20260127,SELL,-5000,6.41,-32050,32024.025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,SMCI,SMCI,1,,,,659517606,20260112,BUY,2000,30.07,60140,-60150,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,SMCI,SMCI,1,,,,663431755,20260127,SELL,-160,31.16,-4985.6,4984.5688,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,SMCI,SMCI,1,,,,663431764,20260127,SELL,-1440,31.16833333,-44882.4,44874.9192,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,SOFI,SOFI,1,,,,663957343,20260129,BUY,5000,25.08,125400,-125425,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,SOFI,SOFI,1,,,,664061515,20260129,BUY,20000,24.12155,482431,-482531,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,SOFI,SOFI,1,,,,664061533,20260129,BUY,7500,24.12,180900,-180937.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,SOFI,SOFI,1,,,,664129876,20260129,BUY,10000,24.46,244600,-244650,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,SOFI,SOFI,1,,,,664310660,20260130,SELL,-42500,24.36379694,-1035461.37,1035240.582,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Financials
+DUO860400,STK,TEAM,TEAM,1,,,,659520171,20260112,BUY,400,147.88,59152,-59154,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,TEAM,TEAM,1,,,,664205083,20260129,SELL,-400,118.92,-47568,47565.922,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,TWLO,TWLO,1,,,,659521217,20260112,BUY,500,132.34,66170,-66172.5,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,TWLO,TWLO,1,,,,663429936,20260127,SELL,-500,133.11,-66555,66552.4025,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Information Technology
+DUO860400,STK,XPEV,XPEV,1,,,,659550090,20260112,BUY,10000,21.023569,210235.69,-210285.69,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO860400,STK,XPEV,XPEV,1,,,,663431051,20260127,SELL,-10000,18.66,-186600,186548.05,ORDER,Ludwig Maximilian University of Munich,Germany,Lukas Matzer,Consumer Discretionary
+DUO858195,STK,SPY,SPY,1,,,,659148491,20260109,BUY,722.794,691.759989,499999.9695,-500003.5835,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,STK,SPY,SPY,1,,,,659205880,20260109,SELL,-722.794,693.160011,-501011.897,501008.1421,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260122C00624000,QQQ,100,624,20260122,C,662105994,20260121,BUY,230,0.8,18400,-18638.4925,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260122C00624000,QQQ,100,624,20260122,C,662292970,20260122,SELL,-230,0.17,-3910,3778.8208,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260123C00616000,QQQ,100,616,20260123,C,662125885,20260121,BUY,50,3.9,19500,-19526.9375,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260123C00616000,QQQ,100,616,20260123,C,662353803,20260122,SELL,-50,5.919,-29595,29566.9555,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130C00622000,QQQ,100,622,20260130,C,662841899,20260123,BUY,10,6.863,6863,-6866.2375,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130C00622000,QQQ,100,622,20260130,C,663519555,20260127,SELL,-10,11.81,-11810,11805.0696,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130P00622000,QQQ,100,622,20260130,P,662841997,20260123,BUY,10,5.908,5908,-5911.2375,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130P00622000,QQQ,100,622,20260130,P,663518887,20260127,SELL,-10,2.053,-2053,2048.2496,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130P00630000,QQQ,100,630,20260130,P,663633011,20260128,BUY,66,3,19800,-19837.5975,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260130P00630000,QQQ,100,630,20260130,P,663735021,20260128,SELL,-66,4.13,-27258,27226.94536,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260202P00624000,QQQ,100,624,20260202,P,664415454,20260130,BUY,50,2.57,12850,-12894.2675,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858195,OPT,QQQ   260202P00624000,QQQ,100,624,20260202,P,664430868,20260130,SELL,-50,3.2,-16000,15972.898,ORDER,Technical University of Munich,Germany,Kenzo Ota,ETF/Index
+DUO858167,STK,APLD,APLD,1,,,,9595791023,20260108,BUY,1500,29,43500,-43500,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658872364,20260108,SELL,-500,32.75,-16375,16372.4025,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658873633,20260108,SELL,-500,32.7,-16350,16347.4025,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658874909,20260108,SELL,-100,32.77,-3277,3275.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658875878,20260108,SELL,-100,32.72,-3272,3270.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658875912,20260108,SELL,-100,32.85,-3285,3283.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658875920,20260108,SELL,-100,32.95,-3295,3293.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,APLD,APLD,1,,,,658878264,20260108,SELL,-100,32.9,-3290,3288.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,CRMD,CRMD,1,,,,660310433,20260114,BUY,500,7.22,3610,-3612.5,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,STK,DAVE,DAVE,1,,,,660320397,20260114,BUY,500,192.36,96180,-96182.5,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,STK,INTC,INTC,1,,,,661522203,20260120,BUY,1000,49.16,49160,-49165,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,INTC,INTC,1,,,,663016499,20260126,SELL,-1000,42.45,-42450,42444.805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,MRVL,MRVL,1,,,,660312466,20260114,BUY,1500,79.67933333,119519,-119526.5,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,TLRY,TLRY,1,,,,9603641198,20260109,BUY,5000,9.5,47500,-47500,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,STK,TLRY,TLRY,1,,,,9603653284,20260109,SELL,-5000,9.5,-47500,47499.025,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,STK,TSM,TSM,1,,,,9642956878,20260116,BUY,1000,200,200000,-200000,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,TSM,TSM,1,,,,663031616,20260126,SELL,-1000,333.3034,-333303.4,333298.205,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,STK,XOM,XOM,1,,,,9603641190,20260109,BUY,1500,121,181500,-181500,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659138029,20260109,SELL,-300,123.44,-37032,37030.4415,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659138073,20260109,SELL,-300,123.34,-37002,37000.4415,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659143131,20260109,SELL,-100,123.48,-12348,12346.9805,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659144759,20260109,SELL,-300,123.4633333,-37039,37037.4415,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659144815,20260109,SELL,-200,123.51,-24702,24700.961,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,XOM,XOM,1,,,,659146660,20260109,SELL,-300,123.69,-37107,37105.4415,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,STK,ZETA,ZETA,1,,,,660310671,20260114,BUY,3000,22.18833333,66565,-66580,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,APH   260220C00155000,APH,100,155,20260220,C,663069415,20260126,BUY,8,6.6,5280,-5284.39,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,APLD  260109C00029000,APLD,100,29,20260109,C,658867955,20260108,SELL,-5,4.6,-2300,2297.7398,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,APLD  260109C00029000,APLD,100,29,20260109,C,9595791021,20260108,SELL,-15,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,CAT   260130C00642500,CAT,100,642.5,20260130,C,663843341,20260128,BUY,1,18.05,1805,-1806.04875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,CAT   260130C00642500,CAT,100,642.5,20260130,C,664085161,20260129,SELL,-1,24.15,-2415,2414.22796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,CFG   260220C00062500,CFG,100,62.5,20260220,C,661564727,20260120,BUY,40,1.155,4620,-4633.33,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,CFG   260220C00062500,CFG,100,62.5,20260220,C,661942341,20260121,SELL,-10,2.18,-2180,2173.0796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,CFG   260220C00062500,CFG,100,62.5,20260220,C,661966578,20260121,SELL,-30,1.9,-5700,5686.7388,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,CLS   260130C00345000,CLS,100,345,20260130,C,663638059,20260128,BUY,20,17.75,35500,-35489.975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,CLS   260130C00345000,CLS,100,345,20260130,C,9717418216,20260130,SELL,-20,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,CODI  260116P00005000,CODI,100,5,20260116,P,660334029,20260114,BUY,100,0.15,1500,-1539.745,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,CODI  260116P00005000,CODI,100,5,20260116,P,9643081165,20260116,SELL,-100,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,CVX   260206P00172500,CVX,100,172.5,20260206,P,664080588,20260129,BUY,50,3.25,16250,-16265.3975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,OPT,CVX   260206P00172500,CVX,100,172.5,20260206,P,664493990,20260130,SELL,-50,1.72,-8600,8582.478,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,OPT,DHR   260130C00235000,DHR,100,235,20260130,C,663468523,20260127,BUY,30,6.6,19800,-19811.2225,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,OPT,DHR   260130C00235000,DHR,100,235,20260130,C,9717440540,20260130,SELL,-30,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,OPT,ELV   260220P00310000,ELV,100,310,20260220,P,663462954,20260127,BUY,20,7.8,15600,-15605.025,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,OPT,FHN   260116C00024000,FHN,100,24,20260116,C,660331906,20260114,BUY,100,0.55,5500,-5480.815,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,FHN   260116C00024000,FHN,100,24,20260116,C,660541761,20260115,SELL,-100,0.5,-5000,4959.076,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,GEV   260130P00690000,GEV,100,690,20260130,P,663467653,20260127,BUY,10,18.86,18860,-18857.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,GEV   260130P00690000,GEV,100,690,20260130,P,664085474,20260129,SELL,-10,5.4,-5400,5400.9796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,GLW   260130P00110000,GLW,100,110,20260130,P,663468534,20260127,BUY,40,4.15,16600,-16610.75,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,GLW   260130P00110000,GLW,100,110,20260130,P,663742703,20260128,SELL,-40,5.35,-21400,21389.1184,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,GS    260116C00930000,GS,100,930,20260116,C,660374286,20260114,BUY,5,17.52,8760,-8762.24375,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,GS    260116C00930000,GS,100,930,20260116,C,660411557,20260114,BUY,5,17.784,8892,-8894.44375,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,GS    260116C00930000,GS,100,930,20260116,C,660556897,20260115,SELL,-10,25.7,-25700,25695.4796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,INTC  260123C00053000,INTC,100,53,20260123,C,662094618,20260121,BUY,10,2.99,2990,-2994.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,INTC  260123C00053000,INTC,100,53,20260123,C,661533747,20260120,SELL,-10,1.11,-1110,1105.4996,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,LMT   260130C00597500,LMT,100,597.5,20260130,C,663759067,20260128,BUY,3,13.25,3975,-3974.24625,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,LMT   260130C00597500,LMT,100,597.5,20260130,C,663810829,20260128,BUY,7,13.55,9485,-9483.24125,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,LMT   260130C00597500,LMT,100,597.5,20260130,C,663985463,20260129,SELL,-10,38.3,-38300,38302.3296,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,LRCX  260130C00240000,LRCX,100,240,20260130,C,663649387,20260128,BUY,30,8.47,25410,-25420.4625,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,LRCX  260130C00240000,LRCX,100,240,20260130,C,664120335,20260129,SELL,-30,5.75,-17250,17237.6588,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,MA    260130C00522500,MA,100,522.5,20260130,C,663787524,20260128,BUY,18,7.9,14220,-14229.7575,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MA    260130C00522500,MA,100,522.5,20260130,C,664096903,20260129,SELL,-18,12.9,-23220,23210.24328,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,META  260130C00670000,META,100,670,20260130,C,663030511,20260126,BUY,10,22,22000,-22003.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Communication Services
+DUO858167,OPT,META  260130C00670000,META,100,670,20260130,C,663767808,20260128,BUY,10,21.75,21750,-21752.6875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Communication Services
+DUO858167,OPT,META  260130C00670000,META,100,670,20260130,C,664083886,20260129,SELL,-20,53.23,-106460,106453.9592,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Communication Services
+DUO858167,OPT,MS    260116C00172500,MS,100,172.5,20260116,C,660398783,20260114,BUY,10,9.45,9450,-9454.1875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MS    260116C00172500,MS,100,172.5,20260116,C,660529590,20260115,SELL,-10,13.3,-13300,13295.7796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MSCI  260220C00580000,MSCI,100,580,20260220,C,663500354,20260127,BUY,10,21.55,21550,-21544.9875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MSCI  260220C00580000,MSCI,100,580,20260220,C,663717572,20260128,SELL,-10,28.1,-28100,28099.6796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MSCI  260220C00590000,MSCI,100,590,20260220,C,663513980,20260127,BUY,1,15.55,1555,-1554.99875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MSCI  260220C00590000,MSCI,100,590,20260220,C,663718499,20260128,SELL,-1,20,-2000,1999.59796,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,MSFT  260130C00470000,MSFT,100,470,20260130,C,663027377,20260126,BUY,30,12.55,37650,-37659.1825,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,MSFT  260130C00470000,MSFT,100,470,20260130,C,663767737,20260128,BUY,10,17.4,17400,-17402.6875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,MSFT  260130C00470000,MSFT,100,470,20260130,C,663958898,20260129,SELL,-40,0.12,-480,469.4684,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,NFLX  260123C00089000,NFLX,100,89,20260123,C,661480707,20260120,BUY,10,3.68,3680,-3684.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Communication Services
+DUO858167,OPT,NFLX  260123C00089000,NFLX,100,89,20260123,C,9676664573,20260123,SELL,-10,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Communication Services
+DUO858167,OPT,NOW   260130C00135000,NOW,100,135,20260130,C,663033456,20260126,BUY,20,5.395,10790,-10784.975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,NOW   260130C00135000,NOW,100,135,20260130,C,9717420810,20260130,SELL,-20,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,ORCL  260123C00195000,ORCL,100,195,20260123,C,661467009,20260120,BUY,50,1.2,6000,-6017.4375,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,ORCL  260123C00195000,ORCL,100,195,20260123,C,660400098,20260114,SELL,-50,4.05,-20250,20238.908,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,PGY   260220C00021000,PGY,100,21,20260220,C,663730211,20260128,BUY,100,2.3,23000,-23043.595,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,PPG   260130P00111000,PPG,100,111,20260130,P,663460749,20260127,BUY,50,2.25,11250,-11268.9075,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Materials
+DUO858167,OPT,PPG   260130P00111000,PPG,100,111,20260130,P,9717425404,20260130,SELL,-50,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Materials
+DUO858167,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,663745613,20260128,BUY,30,4.95,14850,-14869.585,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,663767115,20260128,BUY,50,4.69,23450,-23493.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,QQQ   260130C00633000,QQQ,100,633,20260130,C,664422715,20260130,SELL,-80,0.08,-640,611.0368,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,QQQ   260313C00623000,QQQ,100,623,20260313,C,664091890,20260129,BUY,10,18.26,18260,-18270.3875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SBUX  260130C00096000,SBUX,100,96,20260130,C,663040285,20260126,BUY,2,3.85,770,-770.5975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,SBUX  260130C00096000,SBUX,100,96,20260130,C,663720953,20260128,SELL,-2,2.8,-560,559.39592,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,SBUX  260130P00096000,SBUX,100,96,20260130,P,663040217,20260126,BUY,2,3.4,680,-680.5975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,SBUX  260130P00096000,SBUX,100,96,20260130,P,663720885,20260128,SELL,-2,1.2,-240,239.39592,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,SOFI  260206C00026000,SOFI,100,26,20260206,C,663041030,20260126,BUY,80,1.3215,10572,-10605.92,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,SPY   260130C00686000,SPY,100,686,20260130,C,662086169,20260121,BUY,20,7,14000,-14010.175,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SPY   260130C00686000,SPY,100,686,20260130,C,662113411,20260121,BUY,10,6.98,6980,-6989.4875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SPY   260130C00686000,SPY,100,686,20260130,C,663017184,20260126,SELL,-30,9.35,-28050,28033.7388,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,660317891,20260114,BUY,50,8.84,44200,-44238.4275,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SPY   260220P00680000,SPY,100,680,20260220,P,661461535,20260120,SELL,-50,11.08,-55400,55365.398,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,SPY   260313C00689000,SPY,100,689,20260313,C,664087859,20260129,BUY,20,15.76,31520,-31530.775,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,ETF/Index
+DUO858167,OPT,TLRY  260109C00009500,TLRY,100,9.5,20260109,C,657812904,20260105,BUY,50,0.6308,3154,-3184.7275,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,OPT,TLRY  260109C00009500,TLRY,100,9.5,20260109,C,9603641197,20260109,SELL,-50,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,OPT,TLRY  260109P00009500,TLRY,100,9.5,20260109,P,657811404,20260105,BUY,50,0.7992,3996,-4026.7275,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,OPT,TLRY  260109P00009500,TLRY,100,9.5,20260109,P,9603653283,20260109,SELL,-50,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Staples
+DUO858167,OPT,TMO   260130C00615000,TMO,100,615,20260130,C,663751555,20260128,BUY,10,13.8,13800,-13800.7875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,OPT,TMO   260130C00615000,TMO,100,615,20260130,C,663985012,20260129,SELL,-10,0.17,-170,172.0496,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Health Care
+DUO858167,OPT,TSLA  260130C00437500,TSLA,100,437.5,20260130,C,663771474,20260128,BUY,5,11.35,5675,-5676.34375,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,TSLA  260130C00437500,TSLA,100,437.5,20260130,C,663984951,20260129,SELL,-5,2.436,-1218,1216.2398,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,TSLA  260130P00432500,TSLA,100,432.5,20260130,P,663770180,20260128,BUY,10,11.47,11470,-11472.9875,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,TSLA  260130P00432500,TSLA,100,432.5,20260130,P,664083215,20260129,SELL,-10,13.64,-13640,13636.8496,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Consumer Discretionary
+DUO858167,OPT,TSM   260116C00200000,TSM,100,200,20260116,C,659447822,20260112,BUY,10,124.5,124500,-124505.6375,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,TSM   260116C00200000,TSM,100,200,20260116,C,9642956877,20260116,SELL,-10,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Information Technology
+DUO858167,OPT,TXT   260220C00095000,TXT,100,95,20260220,C,663469413,20260127,BUY,60,2.95,17700,-17729.665,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,V     260206C00330000,V,100,330,20260206,C,664119530,20260129,BUY,30,7.15,21450,-21462.2625,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,V     260206C00330000,V,100,330,20260206,C,664372253,20260130,SELL,-30,2.19,-6570,6561.2788,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,WM    260220C00240000,WM,100,240,20260220,C,663470034,20260127,BUY,100,2.15,21500,-21544.965,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Industrials
+DUO858167,OPT,XOM   260109C00121000,XOM,100,121,20260109,C,9603641189,20260109,SELL,-15,0,0,0,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Energy
+DUO858167,OPT,ZION  260220C00055000,ZION,100,55,20260220,C,661737607,20260120,BUY,20,5.05,10100,-10097.975,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858167,OPT,ZION  260220C00055000,ZION,100,55,20260220,C,661965674,20260121,SELL,-20,6,-12000,11995.7092,ORDER,Technical University of Munich,Germany,Xianmingsheng Diao,Financials
+DUO858213,STK,CVX,CVX,1,,,,658136550,20260106,BUY,1000,164.892,164892,-164897,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Energy
+DUO858213,OPT,MSTR  260220C00155000,MSTR,100,155,20260220,C,664101307,20260129,BUY,400,6.25,250000,-250198.2,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Information Technology
+DUO858213,OPT,MSTR  260220C00167500,MSTR,100,167.5,20260220,C,663130887,20260126,BUY,200,8.85,177000,-177053.75,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Information Technology
+DUO858213,OPT,MSTR  260220C00167500,MSTR,100,167.5,20260220,C,663282520,20260127,BUY,1,8.25,825,-825.76875,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Information Technology
+DUO858213,OPT,MSTR  260220C00167500,MSTR,100,167.5,20260220,C,663282957,20260127,BUY,199,8.25,164175,-164244.1613,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Information Technology
+DUO858213,FOP,LOG6 C5900,CLG6,1000,59,20260114,C,231530775,20260105,BUY,100,0.55,55000,-55237,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Futures
+DUO858213,FOP,LOG6 C5900,CLG6,1000,59,20260114,C,231712714,20260112,SELL,-100,1.1,-110000,109763,ORDER,RWTH Aachen University,Germany,Maximilian Emmanuel Zimmer,Futures
+DUO858252,STK,BABA,BABA,1,,,,661854414,20260121,BUY,800,167,133600,-133604,ORDER,The University of New South Wales,Australia,Charlotte Voon,Consumer Discretionary
+DUO858252,STK,BABA,BABA,1,,,,662953697,20260126,BUY,200,169.04,33808,-33809,ORDER,The University of New South Wales,Australia,Charlotte Voon,Consumer Discretionary
+DUO858252,STK,BIDU,BIDU,1,,,,662943000,20260126,BUY,400,157.855,63142,-63144,ORDER,The University of New South Wales,Australia,Charlotte Voon,Communication Services
+DUO858252,STK,BIDU,BIDU,1,,,,661845025,20260121,SELL,-200,158.65,-31730,31728.961,ORDER,The University of New South Wales,Australia,Charlotte Voon,Communication Services
+DUO858252,STK,FRMI,FRMI,1,,,,663278842,20260127,BUY,100,9.27,927,-928,ORDER,The University of New South Wales,Australia,Charlotte Voon,Unknown
+DUO858252,STK,MOD,MOD,1,,,,658711307,20260107,SELL,-500,121.35,-60675,60672.4025,ORDER,The University of New South Wales,Australia,Charlotte Voon,Industrials
+DUO858252,STK,MOD,MOD,1,,,,658713649,20260107,SELL,-300,120.77,-36231,36229.4415,ORDER,The University of New South Wales,Australia,Charlotte Voon,Industrials
+DUO858252,STK,PINS,PINS,1,,,,661845666,20260121,BUY,400,25.4775,10191,-10193,ORDER,The University of New South Wales,Australia,Charlotte Voon,Communication Services
+DUO858252,STK,WY,WY,1,,,,662102590,20260121,BUY,1000,27.18,27180,-27185,ORDER,The University of New South Wales,Australia,Charlotte Voon,Real Estate
+DUO858252,STK,WY,WY,1,,,,662482798,20260122,BUY,3000,26.94,80820,-80835,ORDER,The University of New South Wales,Australia,Charlotte Voon,Real Estate
+DUO858252,STK,WY,WY,1,,,,662990149,20260126,BUY,750,26.79,20092.5,-20096.25,ORDER,The University of New South Wales,Australia,Charlotte Voon,Real Estate
+DUO858320,STK,BMNR,BMNR,1,,,,663935955,20260129,SELL,-40,28.69,-1147.6,1146.5922,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,CCCX,CCCX,1,,,,661571460,20260120,BUY,400,17,6800,-6802,ORDER,University of Delhi,India,Pratyush Kumar,Unknown
+DUO858320,STK,CCCX,CCCX,1,,,,663977792,20260129,SELL,-1000,16.35,-16350,16344.805,ORDER,University of Delhi,India,Pratyush Kumar,Unknown
+DUO858320,STK,GLD,GLD,1,,,,661517404,20260120,SELL,-100,436.05,-43605,43603.9805,ORDER,University of Delhi,India,Pratyush Kumar,ETF/Index
+DUO858320,STK,GOOG,GOOG,1,,,,661516798,20260120,BUY,300,323.6633333,97099,-97100.5,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,STK,IREN,IREN,1,,,,661550200,20260120,BUY,100,55.81,5581,-5582,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,661570443,20260120,BUY,500,56.8,28400,-28402.5,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,662380909,20260122,BUY,1000,52.782,52782,-52787,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,662619688,20260123,BUY,100,51.2,5120,-5121,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,664100367,20260129,BUY,1000,59.22,59220,-59225,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,662826142,20260123,SELL,-500,57.2,-28600,28597.4025,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,IREN,IREN,1,,,,664404115,20260130,SELL,-2253,56.74,-127835.22,127823.5157,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,MP,MP,1,,,,9676654007,20260123,BUY,5000,69,345000,-345000,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MP,MP,1,,,,663011499,20260126,BUY,300,64.69666667,19409,-19410.5,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MP,MP,1,,,,663012499,20260126,BUY,100,64.6,6460,-6461,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MP,MP,1,,,,663048225,20260126,BUY,500,64.228,32114,-32116.5,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MP,MP,1,,,,663403233,20260127,SELL,-4500,67.13000444,-302085.02,302061.6425,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MP,MP,1,,,,663404599,20260127,SELL,-1400,67.18142857,-94054,94046.727,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,STK,MU,MU,1,,,,661934056,20260121,BUY,300,389.31,116793,-116794.5,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,MU,MU,1,,,,661939751,20260121,BUY,100,388.62,38862,-38863,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,MU,MU,1,,,,663275389,20260127,SELL,-400,405.3,-162120,162117.922,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,STK,NFLX,NFLX,1,,,,661546595,20260120,BUY,20,88.55,1771,-1772,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,STK,NFLX,NFLX,1,,,,661559072,20260120,BUY,500,88.34,44170,-44172.5,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,STK,NFLX,NFLX,1,,,,661770295,20260121,BUY,300,82.508,24752.4,-24753.9,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,STK,NFLX,NFLX,1,,,,664530443,20260130,SELL,-820,83.13,-68166.6,68162.3401,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,STK,OXY,OXY,1,,,,661523087,20260120,BUY,2000,42.673,85346,-85356,ORDER,University of Delhi,India,Pratyush Kumar,Energy
+DUO858320,OPT,META  260130C00675000,META,100,675,20260130,C,663083863,20260126,BUY,40,22.45,89800,-89812.89,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,OPT,META  260130C00675000,META,100,675,20260130,C,664016087,20260129,SELL,-40,44.6,-178400,178385.2884,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,OPT,MP    260123C00069000,MP,100,69,20260123,C,662379331,20260122,BUY,50,2.37,11850,-11863.4375,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,OPT,MP    260123C00069000,MP,100,69,20260123,C,9676654006,20260123,SELL,-50,0,0,0,ORDER,University of Delhi,India,Pratyush Kumar,Materials
+DUO858320,OPT,NFLX  260130C00089000,NFLX,100,89,20260130,C,661566051,20260120,BUY,50,3.8,19000,-19020.9375,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,OPT,NFLX  260130C00089000,NFLX,100,89,20260130,C,663412930,20260127,SELL,-50,0.1,-500,487.398,ORDER,University of Delhi,India,Pratyush Kumar,Communication Services
+DUO858320,OPT,NVDA  260130C00182500,NVDA,100,182.5,20260130,C,661570411,20260120,BUY,300,4.45,133500,-133625.625,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,OPT,NVDA  260130C00182500,NVDA,100,182.5,20260130,C,662615438,20260123,SELL,-100,7.15,-71500,71469.526,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,OPT,NVDA  260130C00182500,NVDA,100,182.5,20260130,C,662615444,20260123,SELL,-200,7.25,-145000,144961.337,ORDER,University of Delhi,India,Pratyush Kumar,Information Technology
+DUO858320,OPT,RTX   260130C00197500,RTX,100,197.5,20260130,C,661589884,20260120,BUY,20,6.85,13700,-13708.885,ORDER,University of Delhi,India,Pratyush Kumar,Industrials
+DUO858320,OPT,RTX   260130C00197500,RTX,100,197.5,20260130,C,664525735,20260130,SELL,-20,0.55,-1100,1093.9592,ORDER,University of Delhi,India,Pratyush Kumar,Industrials
+DUO858796,STK,AAPL,AAPL,1,,,,664301283,20260130,BUY,974.4808,256.5468549,249999.9844,-250004.8568,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858796,STK,KLAC,KLAC,1,,,,664305470,20260130,BUY,100,1572.72,157272,-157273,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858796,STK,LBRT,LBRT,1,,,,664300456,20260130,BUY,1974.7226,25.32001098,49999.99791,-50009.87152,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Energy
+DUO858796,STK,NVDA,NVDA,1,,,,664305187,20260130,SELL,-1000,191.484,-191484,191478.805,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858796,STK,NVDA,NVDA,1,,,,9717413299,20260130,SELL,-1000,195,-195000,194999.805,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858796,STK,SBUX,SBUX,1,,,,664303167,20260130,BUY,1073.4197,93.16020196,99999.99604,-100005.3631,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Consumer Discretionary
+DUO858796,OPT,AJG   260220P00250000,AJG,100,250,20260220,P,664300620,20260130,BUY,10,8.89,8890,-8892.3375,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Financials
+DUO858796,OPT,NVDA  260130P00195000,NVDA,100,195,20260130,P,664301458,20260130,BUY,10,3.533,3533,-3536.1275,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858796,OPT,NVDA  260130P00195000,NVDA,100,195,20260130,P,9717413298,20260130,SELL,-10,0,0,0,ORDER,University of Geneva,Switzerland,André dos Santos Mendo,Information Technology
+DUO858287,STK,AG,AG,1,,,,664600294,20260130,SELL,-500,20.81,-10405,10402.4025,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Materials
+DUO858287,STK,BTGO,BTGO,1,,,,663159867,20260126,SELL,-5000,13.0024,-65012,64986.025,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Unknown
+DUO858287,STK,CELH,CELH,1,,,,663662519,20260128,SELL,-500,55.33,-27665,27662.4025,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Consumer Staples
+DUO858287,STK,DUOL,DUOL,1,,,,663678348,20260128,SELL,-100,147.56,-14756,14754.9805,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Information Technology
+DUO858287,STK,HIMS,HIMS,1,,,,663148840,20260126,SELL,-1000,30.73,-30730,30724.805,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Health Care
+DUO858287,STK,HL,HL,1,,,,664597306,20260130,SELL,-2200,22.49,-49478,49466.571,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Materials
+DUO858287,STK,NBIS,NBIS,1,,,,663166846,20260126,BUY,400,92.6,37040,-37042,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Information Technology
+DUO858287,STK,ZETA,ZETA,1,,,,663157488,20260126,SELL,-1000,21.16,-21160,21154.805,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Information Technology
+DUO858287,OPT,MSTR  261218C00120000,MSTR,100,120,20261218,C,663144703,20260126,BUY,1,69.45,6945,-6945.76875,ORDER,The University of Sheffield,United Kingdom,Noah Holland,Information Technology
+DUO858287,OPT,QQQ   260320C00600000,QQQ,100,600,20260320,C,663672115,20260128,BUY,14,45.93,64302,-64309.5825,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   260320C00610000,QQQ,100,610,20260320,C,663673422,20260128,BUY,12,38.06,45672,-45680,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   260320C00620000,QQQ,100,620,20260320,C,663673732,20260128,BUY,10,30.5,30500,-30505.1075,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   260320C00650000,QQQ,100,650,20260320,C,663674963,20260128,BUY,13,11.91,15483,-15487.66375,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   260430P00570000,QQQ,100,570,20260430,P,663156556,20260126,BUY,2,8.42,1684,-1684.7175,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   260430P00570000,QQQ,100,570,20260430,P,663156568,20260126,BUY,18,8.39,15102,-15117.7775,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858287,OPT,QQQ   261218C00520000,QQQ,100,520,20261218,C,663154834,20260126,BUY,5,139.27,69635,-69637.74375,ORDER,The University of Sheffield,United Kingdom,Noah Holland,ETF/Index
+DUO858223,STK,CVX,CVX,1,,,,662400258,20260122,BUY,750,167.112,125334,-125337.75,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Energy
+DUO858223,STK,CVX,CVX,1,,,,662398971,20260122,SELL,-100,167.09,-16709,16707.9805,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Energy
+DUO858223,STK,DHR,DHR,1,,,,658574711,20260107,BUY,700,235.9671429,165177,-165180.5,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Health Care
+DUO858223,STK,DHR,DHR,1,,,,662410054,20260122,BUY,700,241.32,168924,-168927.5,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Health Care
+DUO858223,STK,HD,HD,1,,,,662399168,20260122,BUY,380,384.3921053,146069,-146070.9,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Consumer Discretionary
+DUO858223,STK,HD,HD,1,,,,662398737,20260122,SELL,-100,384.42,-38442,38440.9805,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Consumer Discretionary
+DUO858223,STK,IBKR,IBKR,1,,,,658587457,20260107,BUY,1000,71.655,71655,-71660,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Financials
+DUO858223,STK,LLY,LLY,1,,,,9642957625,20260116,BUY,1000,1100,1100000,-1100000,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Health Care
+DUO858223,STK,NVDA,NVDA,1,,,,662401463,20260122,BUY,600,184.83,110898,-110901,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Information Technology
+DUO858223,OPT,GOOG  260116P00310000,GOOG,100,310,20260116,P,9643111529,20260116,BUY,10,0,0,0,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Communication Services
+DUO858223,OPT,LLY   260116P01100000,LLY,100,1100,20260116,P,9642957624,20260116,BUY,10,0,0,0,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Health Care
+DUO858223,OPT,LLY   260116P01100000,LLY,100,1100,20260116,P,659277530,20260109,SELL,-10,33,-33000,32994.4671,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Health Care
+DUO858223,FUT,MHGG6,MHG,2500,,20260128,,231610871,20260107,BUY,10,5.8404,146010,-193.7,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Unknown
+DUO858223,FUT,MHGG6,MHG,2500,,20260128,,1052978356,20260128,SELL,-10,5.898,-147450,-8.7,ORDER,Indian Institute of Technology Roorkee,India,Yash Kumar,Unknown
+DUO858325,STK,CAT,CAT,1,,,,664095905,20260129,BUY,1080,668.06,721504.8,-721510.2,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Industrials
+DUO858325,STK,CAT,CAT,1,,,,664430470,20260130,SELL,-1080,653.72,-706017.6,706011.9894,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Industrials
+DUO858325,STK,IREN,IREN,1,,,,663177414,20260126,BUY,12000,52.12911667,625549.4,-625609.4,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Information Technology
+DUO858325,STK,IREN,IREN,1,,,,663754898,20260128,BUY,9210,61.54205212,566802.3,-566848.35,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Information Technology
+DUO858325,STK,IREN,IREN,1,,,,663527698,20260127,SELL,-12000,59.6945625,-716334.75,716272.41,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Information Technology
+DUO858325,STK,IREN,IREN,1,,,,663860522,20260128,SELL,-100,62.92,-6292,6290.9805,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Information Technology
+DUO858325,STK,IREN,IREN,1,,,,664431692,20260130,SELL,-9110,55.09417124,-501907.9,501860.5736,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Information Technology
+DUO858325,STK,MRK,MRK,1,,,,663180440,20260126,BUY,5000,107.7,538500,-538525,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Health Care
+DUO858325,STK,MRK,MRK,1,,,,663516566,20260127,SELL,-5000,107.84,-539200,539174.025,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Health Care
+DUO858325,STK,XOM,XOM,1,,,,663518806,20260127,BUY,4000,136.71951,546878.04,-546898.04,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,STK,XOM,XOM,1,,,,663528704,20260127,BUY,5400,136.8203704,738830,-738857,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,STK,XOM,XOM,1,,,,663738815,20260128,SELL,-4700,137.4174468,-645862,645837.5835,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,STK,XOM,XOM,1,,,,663860179,20260128,SELL,-100,137.71,-13771,13769.9805,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,STK,XOM,XOM,1,,,,663860243,20260128,SELL,-100,137.7,-13770,13768.9805,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,STK,XOM,XOM,1,,,,664093708,20260129,SELL,-4500,139.4104444,-627347,627323.6225,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Energy
+DUO858325,OPT,TSLA  260220C00440000,TSLA,100,440,20260220,C,664438216,20260130,BUY,686,18.0106414,1235530,-1235808.125,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220C00440000,TSLA,100,440,20260220,C,664438751,20260130,SELL,-686,18.25932945,-1252590,1252287.806,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00440000,TSLA,100,440,20260220,P,664444036,20260130,BUY,666,18.80112613,1252155,-1252397.608,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00440000,TSLA,100,440,20260220,P,664473468,20260130,BUY,600,20.1395,1208370,-1208603.905,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00440000,TSLA,100,440,20260220,P,664455165,20260130,SELL,-666,19.96346847,-1329567,1329369.211,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00440000,TSLA,100,440,20260220,P,664578729,20260130,SELL,-600,21.95,-1317000,1316729.596,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00450000,TSLA,100,450,20260220,P,662617175,20260123,BUY,404,24.76346535,1000444,-1000623.878,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO858325,OPT,TSLA  260220P00450000,TSLA,100,450,20260220,P,663169452,20260126,SELL,-404,29.85,-1205940,1205846.321,ORDER,University of Delhi,India,Yash Kumar Bhawsingka,Consumer Discretionary
+DUO859247,STK,AMZN,AMZN,1,,,,663451277,20260127,BUY,8.2287,243.05,1999.985535,-2000.985535,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Consumer Discretionary
+DUO859247,STK,LAC,LAC,1,,,,661448539,20260120,BUY,51085.1762,5.872545069,299999.9996,-300255.4255,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Materials
+DUO859247,STK,LAC,LAC,1,,,,661448613,20260120,BUY,118424.8053,5.910923795,699999.9996,-700592.1236,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Materials
+DUO859247,STK,LAC,LAC,1,,,,662939003,20260126,SELL,-169509.9815,6.611504225,-1120715.959,1119835.354,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Materials
+DUO859247,STK,NFLX,NFLX,1,,,,663454182,20260127,BUY,100,84.42,8442,-8443,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Communication Services
+DUO859247,STK,NVDA,NVDA,1,,,,663449532,20260127,BUY,5.2737,189.62,999.998994,-1000.998994,ORDER,"University of California, Los Angeles",United States,yuki sumiyoshi,Information Technology
+DUO858779,STK,CVX,CVX,1,,,,658868729,20260108,BUY,1250,156.6496,195812,-195818.25,ORDER,University of Geneva,Switzerland,Ohji Fukuda,Energy
+DUO858779,STK,GS,GS,1,,,,658870548,20260108,BUY,264,937,247368,-247369.32,ORDER,University of Geneva,Switzerland,Ohji Fukuda,Financials
+DUO858779,STK,MSTR,MSTR,1,,,,658866856,20260108,BUY,2140,159.6970093,341751.6,-341762.3,ORDER,University of Geneva,Switzerland,Ohji Fukuda,Information Technology
+DUO858779,STK,NVDA,NVDA,1,,,,658866307,20260108,BUY,791,186.1074716,147211.01,-147214.965,ORDER,University of Geneva,Switzerland,Ohji Fukuda,Information Technology
+DUO858779,STK,TSLA,TSLA,1,,,,658874544,20260108,BUY,350,430.35,150622.5,-150624.25,ORDER,University of Geneva,Switzerland,Ohji Fukuda,Consumer Discretionary
+DUO858786,STK,AAPL,AAPL,1,,,,661686108,20260120,BUY,300,247.6,74280,-74281.5,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,STK,GME,GME,1,,,,658583467,20260107,BUY,2000,21.88,43760,-43770,ORDER,University of Geneva,Switzerland,Victor Popescu,Consumer Discretionary
+DUO858786,STK,GME,GME,1,,,,663311897,20260127,SELL,-2000,23.3135,-46627,46616.61,ORDER,University of Geneva,Switzerland,Victor Popescu,Consumer Discretionary
+DUO858786,STK,TMC,TMC,1,,,,662465563,20260122,SELL,-6000,8.95,-53700,53668.83,ORDER,University of Geneva,Switzerland,Victor Popescu,Materials
+DUO858786,OPT,AAPL  260130P00252500,AAPL,100,252.5,20260130,P,660063848,20260113,BUY,75,3.25,24375,-24421.71625,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,AAPL  260130P00252500,AAPL,100,252.5,20260130,P,661686115,20260120,SELL,-75,8.75,-65625,65584.437,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,AAPL  260206C00260000,AAPL,100,260,20260206,C,662085281,20260121,BUY,50,2.55,12750,-12784.4375,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,AVGO  260130P00320000,AVGO,100,320,20260130,P,660291753,20260114,BUY,100,6.25,62500,-62539.225,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,AVGO  260130P00320000,AVGO,100,320,20260130,P,662081731,20260121,SELL,-100,5.65,-56500,56452.756,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,GOOGL 260130C00335000,GOOGL,100,335,20260130,C,662134425,20260121,BUY,50,3.6,18000,-18026.9375,ORDER,University of Geneva,Switzerland,Victor Popescu,Communication Services
+DUO858786,OPT,GOOGL 260130C00335000,GOOGL,100,335,20260130,C,664594004,20260130,SELL,-50,2.947,-14735,14712.273,ORDER,University of Geneva,Switzerland,Victor Popescu,Communication Services
+DUO858786,OPT,GOOGL 260206C00335000,GOOGL,100,335,20260206,C,664594211,20260130,BUY,50,12.257,61285,-61307.5625,ORDER,University of Geneva,Switzerland,Victor Popescu,Communication Services
+DUO858786,OPT,META  260123P00640000,META,100,640,20260123,P,657783492,20260105,BUY,100,10.15,101500,-101544.875,ORDER,University of Geneva,Switzerland,Victor Popescu,Communication Services
+DUO858786,OPT,META  260123P00640000,META,100,640,20260123,P,659924614,20260113,SELL,-100,19.5,-195000,194938.766,ORDER,University of Geneva,Switzerland,Victor Popescu,Communication Services
+DUO858786,OPT,SMCI  260130P00026000,SMCI,100,26,20260130,P,660200992,20260114,BUY,100,0.66,6600,-6667.795,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858786,OPT,SMCI  260130P00026000,SMCI,100,26,20260130,P,9717446826,20260130,SELL,-100,0,0,0,ORDER,University of Geneva,Switzerland,Victor Popescu,Information Technology
+DUO858245,STK,ITA,ITA,1,,,,657843275,20260105,BUY,445,224.97,100111.65,-100113.875,ORDER,Indian Institute of Technology Roorkee,India,Aditya Jain,ETF/Index
+DUO858245,STK,ITA,ITA,1,,,,659726798,20260112,SELL,-445,236.23,-105122.35,105120.0382,ORDER,Indian Institute of Technology Roorkee,India,Aditya Jain,ETF/Index
+DUO858245,STK,SLV,SLV,1,,,,9558206775,20260102,BUY,200,65,13000,-13000,ORDER,Indian Institute of Technology Roorkee,India,Aditya Jain,ETF/Index
+DUO858245,OPT,SLV   260102C00065000,SLV,100,65,20260102,C,9558206752,20260102,SELL,-2,0,0,0,ORDER,Indian Institute of Technology Roorkee,India,Aditya Jain,ETF/Index
+DUO858245,OPT,SLV   260102P00065000,SLV,100,65,20260102,P,9559071331,20260102,SELL,-2,0,0,0,ORDER,Indian Institute of Technology Roorkee,India,Aditya Jain,ETF/Index
+DUO858332,STK,AMD,AMD,1,,,,657835628,20260105,SELL,-300,225.8333333,-67750,67748.4415,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,STK,C,C,1,,,,657835892,20260105,SELL,-1400,121.46,-170044,170036.727,ORDER,University of Delhi,India,Divyansh Kashyap,Financials
+DUO858332,STK,CMC,CMC,1,,,,657836910,20260105,SELL,-1700,72.59588235,-123413,123404.1685,ORDER,University of Delhi,India,Divyansh Kashyap,Materials
+DUO858332,STK,FCX,FCX,1,,,,657837054,20260105,SELL,-1900,53.86411053,-102341.81,102331.9395,ORDER,University of Delhi,India,Divyansh Kashyap,Materials
+DUO858332,STK,HOOD,HOOD,1,,,,657837180,20260105,SELL,-1100,119.08,-130988,130982.2855,ORDER,University of Delhi,India,Divyansh Kashyap,Financials
+DUO858332,STK,NVDA,NVDA,1,,,,657837663,20260105,SELL,-1500,190.31,-285465,285457.2075,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,STK,PANW,PANW,1,,,,657477104,20260102,BUY,100,178.76,17876,-17877,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,STK,PANW,PANW,1,,,,657837968,20260105,SELL,-700,183.5128571,-128459,128455.3635,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,AAPL  260130C00250000,AAPL,100,250,20260130,C,661538866,20260120,BUY,150,7.05,105750,-105832.905,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,AAPL  260130C00250000,AAPL,100,250,20260130,C,661645518,20260120,BUY,850,6.2,527000,-527534.23,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,AAPL  260130C00250000,AAPL,100,250,20260130,C,661866425,20260121,BUY,100,4.5,45000,-45065.595,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,AAPL  260130C00250000,AAPL,100,250,20260130,C,662113075,20260121,SELL,-1100,5.7,-627000,626498.6935,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,NVDA  260220C00177500,NVDA,100,177.5,20260220,C,661653313,20260120,BUY,350,9.75,341250,-341383.685,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858332,OPT,NVDA  260220C00177500,NVDA,100,177.5,20260220,C,662112829,20260121,SELL,-350,12.6,-441000,440810.5635,ORDER,University of Delhi,India,Divyansh Kashyap,Information Technology
+DUO858216,STK,CVX,CVX,1,,,,659166382,20260109,BUY,311,160.54,49927.94,-49929.495,ORDER,RWTH Aachen University,Germany,Elias Hannert,Energy
+DUO858216,STK,TTWO,TTWO,1,,,,664594240,20260130,SELL,-1000,218.002,-218002,217996.805,ORDER,RWTH Aachen University,Germany,Elias Hannert,Communication Services
+DUO858216,STK,URA,URA,1,,,,663467028,20260127,BUY,1500,57.856,86784,-86791.5,ORDER,RWTH Aachen University,Germany,Elias Hannert,ETF/Index
+DUO858345,STK,AAPL,AAPL,1,,,,658813788,20260108,BUY,200,256.62,51324,-51325,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Information Technology
+DUO858345,STK,AAPL,AAPL,1,,,,660867087,20260116,BUY,100,258.06,25806,-25807,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Information Technology
+DUO858345,STK,AMZN,AMZN,1,,,,660878068,20260116,BUY,100,238.74,23874,-23875,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Consumer Discretionary
+DUO858345,STK,AMZN,AMZN,1,,,,661672981,20260120,BUY,100,231.09,23109,-23110,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Consumer Discretionary
+DUO858345,STK,DIS,DIS,1,,,,657344222,20260102,BUY,100,113.24,11324,-11325,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Communication Services
+DUO858345,STK,NVDA,NVDA,1,,,,657934638,20260105,BUY,500,188.98,94490,-94492.5,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Information Technology
+DUO858345,STK,NVDA,NVDA,1,,,,660953915,20260116,BUY,100,187.98,18798,-18799,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Information Technology
+DUO858345,STK,NVDA,NVDA,1,,,,661675465,20260120,BUY,100,179.74,17974,-17975,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Information Technology
+DUO858345,STK,TSLA,TSLA,1,,,,657364564,20260102,BUY,100,449.59,44959,-44960,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Consumer Discretionary
+DUO858345,STK,TSLA,TSLA,1,,,,658819955,20260108,BUY,180,425.5855556,76605.4,-76606.4,ORDER,University of Toronto,Canada,Catherine Yanran Xu,Consumer Discretionary
+DUO858204,STK,CCJ,CCJ,1,,,,662779376,20260123,BUY,130,122.84,15969.2,-15970.2,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,STK,CCJ,CCJ,1,,,,663151258,20260126,SELL,-130,121.54,-15800.2,15799.17465,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,STK,CEG,CEG,1,,,,662780039,20260123,BUY,40,289.4,11576,-11577,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,STK,CEG,CEG,1,,,,662783343,20260123,BUY,100,289.83,28983,-28984,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,STK,CEG,CEG,1,,,,663151865,20260126,SELL,-140,285.46,-39964.4,39963.3727,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,STK,DXJ,DXJ,1,,,,662689852,20260123,BUY,700,153.44,107408,-107411.5,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,STK,DXJ,DXJ,1,,,,663012076,20260126,SELL,-700,150.6271429,-105439,105435.3635,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,STK,GEV,GEV,1,,,,662779241,20260123,BUY,24,656.33,15751.92,-15752.92,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Industrials
+DUO858204,STK,GEV,GEV,1,,,,662799276,20260123,BUY,76,657,49932,-49933,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Industrials
+DUO858204,STK,GEV,GEV,1,,,,663151547,20260126,SELL,-100,668.73,-66873,66871.9805,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Industrials
+DUO858204,STK,KMI,KMI,1,,,,662779928,20260123,BUY,400,29.55,11820,-11822,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,STK,KMI,KMI,1,,,,663150231,20260126,SELL,-400,29.31,-11724,11721.922,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,STK,VST,VST,1,,,,662784713,20260123,BUY,200,161.225,32245,-32246,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,STK,VST,VST,1,,,,663150992,20260126,SELL,-200,159.86,-31972,31970.961,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,STK,XLE,XLE,1,,,,662770144,20260123,BUY,1000,49.33,49330,-49335,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,STK,XLE,XLE,1,,,,663150216,20260126,SELL,-1000,49.2,-49200,49194.805,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,CEG   260220C00325000,CEG,100,325,20260220,C,663147792,20260126,BUY,1,3.9,390,-390.39875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,CEG   260220C00325000,CEG,100,325,20260220,C,662787899,20260123,SELL,-1,5,-500,499.59796,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,GDX   260320C00110000,GDX,100,110,20260320,C,660515150,20260115,BUY,15,3.23,4845,-4851.73125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,GDX   260320C00110000,GDX,100,110,20260320,C,663147837,20260126,SELL,-15,8.6,-12900,12895.9194,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,GDX   260320P00085000,GDX,100,85,20260320,P,661122001,20260116,BUY,10,2.34,2340,-2344.1875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,GDX   260320P00085000,GDX,100,85,20260320,P,660422820,20260114,SELL,-10,2.4,-2400,2393.5596,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,GEV   260206P00625000,GEV,100,625,20260206,P,663147952,20260126,BUY,1,9.4,940,-940.39875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Industrials
+DUO858204,OPT,GEV   260206P00625000,GEV,100,625,20260206,P,662803147,20260123,SELL,-1,11.9,-1190,1189.59796,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Industrials
+DUO858204,OPT,KMI   260220C00029500,KMI,100,29.5,20260220,C,663147720,20260126,BUY,4,0.45,180,-180.725,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,OPT,KMI   260220C00029500,KMI,100,29.5,20260220,C,662803644,20260123,SELL,-4,0.55,-220,218.91184,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Energy
+DUO858204,OPT,KWEB  260320C00037000,KWEB,100,37,20260320,C,660738281,20260115,BUY,100,2.05,20500,-20541.875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,KWEB  260320C00037000,KWEB,100,37,20260320,C,663147832,20260126,SELL,-100,1.27,-12700,12661.036,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,KWEB  260320C00041000,KWEB,100,41,20260320,C,663147916,20260126,BUY,200,0.36,7200,-7249.83,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,KWEB  260320C00041000,KWEB,100,41,20260320,C,660738048,20260115,SELL,-200,0.67,-13400,13286.752,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,KWEB  260320C00047000,KWEB,100,47,20260320,C,660738283,20260115,BUY,100,0.16,1600,-1661.755,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,OKLO  260320C00125000,OKLO,100,125,20260320,C,660404861,20260114,BUY,26,7.6,19760,-19769.0675,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,OKLO  260320C00125000,OKLO,100,125,20260320,C,663147950,20260126,SELL,-26,2.14,-5564,5553.84696,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,SLV   260320C00135000,SLV,100,135,20260320,C,660402136,20260114,BUY,50,2.19,10950,-10969.9375,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SLV   260320C00135000,SLV,100,135,20260320,C,663116532,20260126,SELL,-10,9.2,-9200,9198.3996,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SLV   260320C00135000,SLV,100,135,20260320,C,663148094,20260126,SELL,-40,6.05,-24200,24189.1184,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SLV   260320P00065000,SLV,100,65,20260320,P,660403516,20260114,BUY,1,2.23,223,-223.76875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SLV   260320P00065000,SLV,100,65,20260320,P,660404746,20260114,BUY,49,2.24,10976,-10996.51875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SLV   260320P00065000,SLV,100,65,20260320,P,663042000,20260126,SELL,-50,0.86,-4300,4286.398,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260108P06820000,SPX,100,6820,20260108,P,658269519,20260106,BUY,4,2.9,1160,-1165.165,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260108P06820000,SPX,100,6820,20260108,P,658515524,20260107,SELL,-4,0.6,-240,235.195,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260108P06860000,SPX,100,6860,20260108,P,658516593,20260107,BUY,4,1.4,560,-565.165,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260108P06860000,SPX,100,6860,20260108,P,658269645,20260106,SELL,-4,6.1,-2440,2434.835,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C06650000,SPX,100,6650,20260109,C,659062494,20260108,BUY,2,275.7,55140,-55142.5825,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C06650000,SPX,100,6650,20260109,C,659064259,20260108,SELL,-2,272.7,-54540,54537.4175,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C06990000,SPX,100,6990,20260109,C,659242938,20260109,BUY,10,0.515,515,-527.0125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C06990000,SPX,100,6990,20260109,C,659067681,20260108,SELL,-10,1.4,-1400,1387.0875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C07010000,SPX,100,7010,20260109,C,659067729,20260108,BUY,10,0.5,500,-512.0125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109C07010000,SPX,100,7010,20260109,C,659242683,20260109,SELL,-10,0.115,-115,102.9875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06655000,SPX,100,6655,20260109,P,659064991,20260108,BUY,2,0.2,40,-42.4025,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06655000,SPX,100,6655,20260109,P,659067030,20260108,SELL,-2,0.2,-40,37.5975,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06855000,SPX,100,6855,20260109,P,659061798,20260108,BUY,1,4.8,480,-481.64125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06855000,SPX,100,6855,20260109,P,659067512,20260108,BUY,9,4.9,4410,-4421.62125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06855000,SPX,100,6855,20260109,P,659242054,20260109,SELL,-10,0.3,-300,287.9875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06875000,SPX,100,6875,20260109,P,659241629,20260109,BUY,10,0.45,450,-462.0125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06875000,SPX,100,6875,20260109,P,659061986,20260108,SELL,-1,7.5,-750,748.35875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06875000,SPX,100,6875,20260109,P,659067534,20260108,SELL,-9,7.6,-6840,6828.37875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06925000,SPX,100,6925,20260109,P,659067003,20260108,BUY,1,21.7,2170,-2171.64125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260109P06925000,SPX,100,6925,20260109,P,659061907,20260108,SELL,-1,21.9,-2190,2188.35875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260331P06650000,SPX,100,6650,20260331,P,659066852,20260108,BUY,2,92,18400,-18402.5825,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260331P06650000,SPX,100,6650,20260331,P,663147863,20260126,SELL,-2,72.3,-14460,14457.7175,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260331P06925000,SPX,100,6925,20260331,P,663148073,20260126,BUY,1,132.5,13250,-13251.64125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,SPXW  260331P06925000,SPX,100,6925,20260331,P,659066645,20260108,SELL,-1,160.1,-16010,16008.35875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00055000,URA,100,55,20260320,C,663147926,20260126,BUY,80,5.1,40800,-40791.9,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00055000,URA,100,55,20260320,C,660565116,20260115,SELL,-80,3.8,-30400,30393.6268,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00060000,URA,100,60,20260320,C,660697139,20260115,BUY,6,2.57,1542,-1539.8925,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00060000,URA,100,60,20260320,C,660705354,20260115,BUY,2,2.58,516,-515.2975,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00060000,URA,100,60,20260320,C,660722094,20260115,BUY,2,2.57,514,-513.2975,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00060000,URA,100,60,20260320,C,660737989,20260115,BUY,150,2.65,39750,-39757.3125,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,URA   260320C00060000,URA,100,60,20260320,C,663148089,20260126,SELL,-160,2.75,-44000,43999.4236,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,VST   260220C00175000,VST,100,175,20260220,C,663148155,20260126,BUY,2,3.4,680,-680.5375,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,VST   260220C00175000,VST,100,175,20260220,C,662788692,20260123,SELL,-2,3.7,-740,739.15592,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,VST   260220P00145000,VST,100,145,20260220,P,662799418,20260123,BUY,2,3.05,610,-610.5375,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,VST   260220P00145000,VST,100,145,20260220,P,663147928,20260126,SELL,-2,2.6,-520,519.45592,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Utilities
+DUO858204,OPT,XLU   260320C00044000,XLU,100,44,20260320,C,660737933,20260115,BUY,100,1.2,12000,-12041.875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,XLU   260320C00044000,XLU,100,44,20260320,C,663147831,20260126,SELL,-100,0.64,-6400,6362.436,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,XLU   260320C00044500,XLU,100,44.5,20260320,C,663147841,20260126,BUY,1,0.5,50,-50.79875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,XLU   260320C00044500,XLU,100,44.5,20260320,C,663151283,20260126,BUY,1,0.5,50,-50.79875,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,XLU   260320C00044500,XLU,100,44.5,20260320,C,660505941,20260115,SELL,-100,0.69,-6900,6854.796,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,OPT,XLU   260320C00047500,XLU,100,47.5,20260320,C,660738142,20260115,BUY,200,0.2,4000,-4118.75,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,FUT,MHGH6,MHG,2500,,20260225,,232020250,20260123,BUY,1,5.955,14887.5,-19.62,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Unknown
+DUO858204,FUT,MHGH6,MHG,2500,,20260225,,232057335,20260126,SELL,-1,5.919,-14797.5,-254.62,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Unknown
+DUO858204,FUT,SILK6,SI,1000,,20260527,,232054507,20260126,BUY,2,118.355,236710,-3936.54,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Financials
+DUO858204,FUT,SILK6,SI,1000,,20260527,,232057291,20260126,SELL,-2,109.1475,-218295,-14483.54,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Financials
+DUO858204,FUT,VXF6,VIX,1000,,20260121,,231772882,20260114,BUY,10,18,180000,-7153.8,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,FUT,VXF6,VIX,1000,,20260121,,231713576,20260112,SELL,-10,16.15,-161500,252.2,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,FUT,VXG6,VIX,1000,,20260218,,231712545,20260112,BUY,10,17.9,179000,250.2,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,FUT,VXG6,VIX,1000,,20260218,,231773111,20260114,SELL,-10,19.15,-191500,3285.2,ORDER,RWTH Aachen University,Germany,Mathis Makarski,ETF/Index
+DUO858204,FOP,SOK6 P10000,SIK6,5000,100,20260427,P,232054480,20260126,BUY,2,12.775,127750,-127755.04,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Futures
+DUO858204,FOP,SOK6 P10000,SIK6,5000,100,20260427,P,232057146,20260126,SELL,-1,10.265,-51325,51322.48,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Futures
+DUO858204,FOP,SOK6 P10000,SIK6,5000,100,20260427,P,232057155,20260126,SELL,-1,10.156,-50780,50777.48,ORDER,RWTH Aachen University,Germany,Mathis Makarski,Futures
