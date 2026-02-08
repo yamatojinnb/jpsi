@@ -106,6 +106,7 @@ export default function Footer() {
             <p>
               © 2025 Japan Students Investment Union (JPSI). All rights
               reserved.
+              <a href="/dashboard" className="ml-4 text-gray-400 hover:text-gray-500 transition-colors duration-300 text-xs">Judges</a>
             </p>
           </div>
         </div>
