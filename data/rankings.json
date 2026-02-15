@@ -1,6 +1,26 @@
 {
   "week": 9,
   "lastUpdated": "2026-02-13",
+  "teamRankings": [
+    {
+      "rank": 1,
+      "university": "University of California, Los Angeles",
+      "country": "🇺🇸",
+      "return": 6.8
+    },
+    {
+      "rank": 2,
+      "university": "University of Geneva",
+      "country": "🇨🇭",
+      "return": 6.0
+    },
+    {
+      "rank": 3,
+      "university": "Roger Williams University",
+      "country": "🇺🇸",
+      "return": 1.2
+    }
+  ],
   "rankings": [
     {
       "rank": 1,

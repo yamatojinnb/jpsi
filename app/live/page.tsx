@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import RankingHistoryChart from "@/components/RankingHistoryChart";
 import BarChartRace from "@/components/BarChartRace";
 import HallOfFame from "@/components/HallOfFame";
+import TeamRankings from "@/components/TeamRankings";
 
 // Import rankings data
 import rankingsData from "@/data/rankings.json";
@@ -122,6 +123,14 @@ export default function LivePage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Rankings Table - Main Content */}
             <div className="lg:col-span-2">
+              {/* Team Standings */}
+              {data.teamRankings && data.teamRankings.length > 0 && (
+                <TeamRankings
+                  teamRankings={data.teamRankings}
+                  lastUpdated={data.lastUpdated}
+                />
+              )}
+
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
                   <div className="flex items-center gap-2">
