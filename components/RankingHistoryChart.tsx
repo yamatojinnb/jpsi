@@ -79,6 +79,7 @@ const COLORS: { [key: string]: string } = {
   "Yash Kumar Bhawsingka": "#1d4ed8",
   "Seungho": "#166534",
   "André dos Santos Mendo": "#059669",
+  "Elias Hannert": "#ca8a04",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";

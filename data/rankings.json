@@ -1,89 +1,94 @@
 {
-  "week": 8,
-  "lastUpdated": "2026-02-06",
+  "week": 9,
+  "lastUpdated": "2026-02-13",
   "rankings": [
     {
       "rank": 1,
       "team": "Pratyush Kumar",
       "university": "University of Delhi",
       "country": "🇮🇳",
-      "return": 31.8,
-      "change": 17.2
+      "return": 29.9,
+      "change": -1.9
     },
     {
       "rank": 2,
-      "team": "Yash Kumar Bhawsingka",
-      "university": "University of Delhi",
-      "country": "🇮🇳",
-      "return": 25.9,
-      "change": -18.5
-    },
-    {
-      "rank": 3,
       "team": "Victor Popescu",
       "university": "University of Geneva",
       "country": "🇨🇭",
-      "return": 17.9,
-      "change": 3.8
+      "return": 15.0,
+      "change": -2.9
     },
     {
-      "rank": 4,
-      "team": "Seungho",
-      "university": "University of California, Los Angeles",
-      "country": "🇺🇸",
-      "return": 16.1,
-      "change": "NEW"
-    },
-    {
-      "rank": 5,
+      "rank": 3,
       "team": "yuki sumiyoshi",
       "university": "University of California, Los Angeles",
       "country": "🇺🇸",
-      "return": 12.7,
-      "change": 0.3
+      "return": 12.9,
+      "change": 0.2
     },
     {
-      "rank": 6,
+      "rank": 4,
       "team": "Hana Shigeta",
       "university": "The University of Sheffield",
       "country": "🇬🇧",
-      "return": 11.7,
-      "change": 5.8
+      "return": 12.4,
+      "change": 0.7
     },
     {
-      "rank": 7,
-      "team": "Yutaro Nagamori",
-      "university": "The University of Sheffield",
-      "country": "🇬🇧",
-      "return": 6.6,
-      "change": "NEW"
-    },
-    {
-      "rank": 8,
-      "team": "Yigit Kaan Ertürk",
-      "university": "Technical University of Munich",
-      "country": "🇩🇪",
-      "return": 5.1,
-      "change": -8.2
-    },
-    {
-      "rank": 9,
+      "rank": 5,
       "team": "Divyansh Kashyap",
       "university": "University of Delhi",
       "country": "🇮🇳",
-      "return": 3.9,
-      "change": -3.3
+      "return": 10.3,
+      "change": 6.4
     },
     {
-      "rank": 10,
+      "rank": 6,
       "team": "André dos Santos Mendo",
       "university": "University of Geneva",
       "country": "🇨🇭",
-      "return": 3.4,
+      "return": 5.2,
+      "change": 1.8
+    },
+    {
+      "rank": 7,
+      "team": "Yigit Kaan Ertürk",
+      "university": "Technical University of Munich",
+      "country": "🇩🇪",
+      "return": 5.2,
+      "change": 0.1
+    },
+    {
+      "rank": 8,
+      "team": "William Florio",
+      "university": "Roger Williams University",
+      "country": "🇺🇸",
+      "return": 1.9,
+      "change": "NEW"
+    },
+    {
+      "rank": 9,
+      "team": "Aditya Jain",
+      "university": "Indian Institute of Technology Roorkee",
+      "country": "🇮🇳",
+      "return": 1.2,
+      "change": "NEW"
+    },
+    {
+      "rank": 10,
+      "team": "Elizabeth Dufrane",
+      "university": "Roger Williams University",
+      "country": "🇺🇸",
+      "return": 0.9,
       "change": "NEW"
     }
   ],
   "announcements": [
+    {
+      "date": "2026-02-13",
+      "title": "Week 9 Rankings Updated",
+      "content": "Week 9 rankings are live! Pratyush Kumar continues to dominate with a solid +29.9% return, holding the top spot for the second consecutive week."
+    },
     {
       "date": "2026-02-06",
       "title": "Week 8 Rankings Updated",
@@ -158,29 +163,34 @@
     { "date": "2026-02-03", "1st": "Yash Kumar Bhawsingka", "2nd": "Yigit Kaan Ertürk", "3rd": "Victor Popescu", "4th": "Pratyush Kumar", "5th": "yuki sumiyoshi", "6th": "Hana Shigeta", "7th": "Divyansh Kashyap", "8th": "Kokota SUMI", "9th": "Elizabeth Dufrane", "10th": "Yorck Linderhaus", "1stPerf": 138.2, "2ndPerf": 135.7, "3rdPerf": 117.3, "4thPerf": 114.7, "5thPerf": 112.5, "6thPerf": 107.6, "7thPerf": 107.5, "8thPerf": 104.1, "9thPerf": 103.5, "10thPerf": 103.3 },
     { "date": "2026-02-04", "1st": "Yigit Kaan Ertürk", "2nd": "Victor Popescu", "3rd": "Pratyush Kumar", "4th": "yuki sumiyoshi", "5th": "Hana Shigeta", "6th": "Divyansh Kashyap", "7th": "Kokota SUMI", "8th": "André dos Santos Mendo", "9th": "Yash Kumar", "10th": "Seungho", "1stPerf": 127.5, "2ndPerf": 117.3, "3rdPerf": 114.7, "4thPerf": 112.6, "5thPerf": 109.5, "6thPerf": 103.9, "7thPerf": 103.2, "8thPerf": 103.2, "9thPerf": 102.4, "10thPerf": 101.8 },
     { "date": "2026-02-05", "1st": "Yigit Kaan Ertürk", "2nd": "Seungho", "3rd": "Victor Popescu", "4th": "yuki sumiyoshi", "5th": "Noah Holland", "6th": "Hana Shigeta", "7th": "Kokota SUMI", "8th": "Divyansh Kashyap", "9th": "André dos Santos Mendo", "10th": "Aditya Jain", "1stPerf": 127.5, "2ndPerf": 117.6, "3rdPerf": 117.2, "4thPerf": 112.7, "5thPerf": 109.4, "6thPerf": 109.2, "7thPerf": 104.5, "8thPerf": 104.3, "9thPerf": 104.1, "10thPerf": 101.4 },
-    { "date": "2026-02-06", "1st": "Pratyush Kumar", "2nd": "Yash Kumar Bhawsingka", "3rd": "Victor Popescu", "4th": "Seungho", "5th": "yuki sumiyoshi", "6th": "Hana Shigeta", "7th": "Yutaro Nagamori", "8th": "Yigit Kaan Ertürk", "9th": "Divyansh Kashyap", "10th": "André dos Santos Mendo", "1stPerf": 131.8, "2ndPerf": 125.9, "3rdPerf": 117.9, "4thPerf": 116.1, "5thPerf": 112.7, "6thPerf": 111.7, "7thPerf": 106.6, "8thPerf": 105.1, "9thPerf": 103.9, "10thPerf": 103.4 }
+    { "date": "2026-02-06", "1st": "Pratyush Kumar", "2nd": "Yash Kumar Bhawsingka", "3rd": "Victor Popescu", "4th": "Seungho", "5th": "yuki sumiyoshi", "6th": "Hana Shigeta", "7th": "Yutaro Nagamori", "8th": "Yigit Kaan Ertürk", "9th": "Divyansh Kashyap", "10th": "André dos Santos Mendo", "1stPerf": 131.8, "2ndPerf": 125.9, "3rdPerf": 117.9, "4thPerf": 116.1, "5thPerf": 112.7, "6thPerf": 111.7, "7thPerf": 106.6, "8thPerf": 105.1, "9thPerf": 103.9, "10thPerf": 103.4 },
+    { "date": "2026-02-09", "1st": "Pratyush Kumar", "2nd": "Yash Kumar Bhawsingka", "3rd": "Victor Popescu", "4th": "Seungho", "5th": "yuki sumiyoshi", "6th": "Hana Shigeta", "7th": "Yutaro Nagamori", "8th": "Divyansh Kashyap", "9th": "André dos Santos Mendo", "10th": "William Florio", "1stPerf": 129.9, "2ndPerf": 125.9, "3rdPerf": 117.9, "4thPerf": 117.0, "5thPerf": 112.7, "6thPerf": 110.2, "7thPerf": 109.2, "8thPerf": 104.9, "9thPerf": 104.3, "10thPerf": 103.0 },
+    { "date": "2026-02-10", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Hana Shigeta", "5th": "Divyansh Kashyap", "6th": "André dos Santos Mendo", "7th": "Charlotte Voon", "8th": "Yutaro Nagamori", "9th": "Elias Hannert", "10th": "William Florio", "1stPerf": 129.8, "2ndPerf": 117.7, "3rdPerf": 112.8, "4thPerf": 110.5, "5thPerf": 105.2, "6thPerf": 105.1, "7thPerf": 103.6, "8thPerf": 102.5, "9thPerf": 102.4, "10thPerf": 102.4 },
+    { "date": "2026-02-11", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Yash Kumar Bhawsingka", "5th": "Hana Shigeta", "6th": "André dos Santos Mendo", "7th": "Seungho", "8th": "Charlotte Voon", "9th": "William Florio", "10th": "Divyansh Kashyap", "1stPerf": 129.8, "2ndPerf": 117.4, "3rdPerf": 112.8, "4thPerf": 112.4, "5thPerf": 111.6, "6thPerf": 106.2, "7thPerf": 105.8, "8thPerf": 103.6, "9thPerf": 103.3, "10thPerf": 102.0 },
+    { "date": "2026-02-12", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Hana Shigeta", "5th": "Divyansh Kashyap", "6th": "Yash Kumar Bhawsingka", "7th": "Yigit Kaan Ertürk", "8th": "André dos Santos Mendo", "9th": "William Florio", "10th": "Aditya Jain", "1stPerf": 129.9, "2ndPerf": 115.8, "3rdPerf": 112.9, "4thPerf": 112.4, "5thPerf": 110.3, "6thPerf": 106.7, "7thPerf": 105.2, "8thPerf": 104.6, "9thPerf": 101.9, "10thPerf": 101.4 },
+    { "date": "2026-02-13", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Hana Shigeta", "5th": "Divyansh Kashyap", "6th": "André dos Santos Mendo", "7th": "Yigit Kaan Ertürk", "8th": "William Florio", "9th": "Aditya Jain", "10th": "Elizabeth Dufrane", "1stPerf": 129.9, "2ndPerf": 115.0, "3rdPerf": 112.9, "4thPerf": 112.4, "5thPerf": 110.3, "6thPerf": 105.2, "7thPerf": 105.2, "8thPerf": 101.9, "9thPerf": 101.2, "10thPerf": 100.9 }
   ],
   "hallOfFame": {
     "mostDaysAt1": [
       { "name": "Yorck Linderhaus", "days": 26, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
       { "name": "Yash Kumar Bhawsingka", "days": 7, "country": "🇮🇳", "university": "University of Delhi" },
+      { "name": "Pratyush Kumar", "days": 6, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yigit Kaan Ertürk", "days": 2, "country": "🇩🇪", "university": "Technical University of Munich" },
-      { "name": "Pratyush Kumar", "days": 1, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yash Kumar", "days": 1, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
       { "name": "William Florio", "days": 1, "country": "🇺🇸", "university": "Roger Williams University" }
     ],
     "top3Appearances": [
       { "name": "Yorck Linderhaus", "count": 28, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
-      { "name": "Victor Popescu", "count": 19, "country": "🇨🇭", "university": "University of Geneva" },
+      { "name": "Victor Popescu", "count": 24, "country": "🇨🇭", "university": "University of Geneva" },
       { "name": "William Florio", "count": 18, "country": "🇺🇸", "university": "Roger Williams University" },
       { "name": "Yutaro Nagamori", "count": 12, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "Pratyush Kumar", "count": 9, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Maximilian Emmanuel Zimmer", "count": 9, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
-      { "name": "Yash Kumar Bhawsingka", "count": 8, "country": "🇮🇳", "university": "University of Delhi" },
+      { "name": "Yash Kumar Bhawsingka", "count": 9, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yigit Kaan Ertürk", "count": 7, "country": "🇩🇪", "university": "Technical University of Munich" },
-      { "name": "Pratyush Kumar", "count": 4, "country": "🇮🇳", "university": "University of Delhi" },
+      { "name": "yuki sumiyoshi", "count": 5, "country": "🇺🇸", "university": "University of California, Los Angeles" },
       { "name": "Noah Holland", "count": 3, "country": "🇬🇧", "university": "The University of Sheffield" },
       { "name": "Yash Kumar", "count": 2, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
-      { "name": "yuki sumiyoshi", "count": 1, "country": "🇺🇸", "university": "University of California, Los Angeles" },
       { "name": "Seungho", "count": 1, "country": "🇺🇸", "university": "University of California, Los Angeles" },
       { "name": "Catherine Yanran Xu", "count": 1, "country": "🇨🇦", "university": "University of Toronto" },
       { "name": "Xianmingsheng Diao", "count": 1, "country": "🇩🇪", "university": "Technical University of Munich" }
