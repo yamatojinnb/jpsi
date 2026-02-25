@@ -12,13 +12,13 @@
       "rank": 2,
       "university": "University of Geneva",
       "country": "🇨🇭",
-      "return": 6.0
+      "return": 6.5
     },
     {
       "rank": 3,
-      "university": "Roger Williams University",
-      "country": "🇺🇸",
-      "return": 1.2
+      "university": "Waseda University",
+      "country": "🇯🇵",
+      "return": 1.8
     }
   ],
   "rankings": [

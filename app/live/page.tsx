@@ -123,7 +123,6 @@ export default function LivePage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Rankings Table - Main Content */}
             <div className="lg:col-span-2">
-              {/* Team Standings */}
               {data.teamRankings && data.teamRankings.length > 0 && (
                 <TeamRankings
                   teamRankings={data.teamRankings}

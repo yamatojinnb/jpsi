@@ -12,7 +12,10 @@ interface TeamRankingsProps {
   lastUpdated: string;
 }
 
-export default function TeamRankings({ teamRankings, lastUpdated }: TeamRankingsProps) {
+export default function TeamRankings({
+  teamRankings,
+  lastUpdated,
+}: TeamRankingsProps) {
   if (!teamRankings || teamRankings.length === 0) return null;
 
   const formatDate = (dateString: string) => {
@@ -76,19 +79,17 @@ export default function TeamRankings({ teamRankings, lastUpdated }: TeamRankings
                 key={team.rank}
                 className={`${style.bg} ${style.border} border rounded-xl p-5 flex flex-col items-center text-center transition-transform hover:scale-[1.02]`}
               >
-                {/* Rank Badge */}
                 <div
                   className={`${style.badge} w-10 h-10 rounded-full flex items-center justify-center text-white text-lg font-bold mb-3`}
                 >
                   {team.rank}
                 </div>
-                {/* Country Flag */}
                 <span className="text-3xl mb-2">{team.country}</span>
-                {/* University Name */}
-                <h3 className={`font-semibold ${style.text} text-sm mb-2 leading-tight min-h-[2.5rem] flex items-center`}>
+                <h3
+                  className={`font-semibold ${style.text} text-sm mb-2 leading-tight min-h-[2.5rem] flex items-center`}
+                >
                   {team.university}
                 </h3>
-                {/* Return */}
                 <div className="mt-auto">
                   <span
                     className={`text-2xl font-bold ${
