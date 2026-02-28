@@ -23,6 +23,7 @@ export default function SectorPieChart({
   const chartData = data.map((d) => ({
     name: d.sector,
     value: d.percentage,
+    dollarValue: d.value,
   }));
 
   const renderCustomLabel = ({
@@ -60,7 +61,7 @@ export default function SectorPieChart({
         <div className="bg-[#18181b] border border-[#27272a] rounded-lg p-3 shadow-lg">
           <p className="text-[#fafafa] font-semibold">{payload[0].name}</p>
           <p className="text-[#a1a1aa] text-sm">
-            {payload[0].value.toFixed(2)}% · ${payload[0].payload.value.toLocaleString()}
+            {payload[0].value.toFixed(2)}% · ${payload[0].payload.dollarValue.toLocaleString()}
           </p>
         </div>
       );
