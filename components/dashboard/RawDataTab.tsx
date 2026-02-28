@@ -126,7 +126,7 @@ export default function RawDataTab({ selectedTeam, ordersData, allOrdersData }: 
     <div className="space-y-4">
       {/* Search Bar */}
       <div className="bg-[#18181b] border border-[#27272a] rounded-lg p-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center gap-6 flex-wrap">
           <input
             type="text"
             placeholder="Search by ticker..."
@@ -134,7 +134,30 @@ export default function RawDataTab({ selectedTeam, ordersData, allOrdersData }: 
             onChange={(e) => setSearchTicker(e.target.value)}
             className="bg-[#09090b] border border-[#27272a] rounded px-4 py-2 text-[#fafafa] placeholder-[#52525b] focus:outline-none focus:ring-2 focus:ring-[#22c55e] w-64"
           />
-          <div className="text-sm text-[#a1a1aa]">
+          <div className="flex items-center gap-4 text-xs text-[#a1a1aa]">
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block w-3 h-3 rounded bg-[#22c55e] bg-opacity-20 border border-[#22c55e]"></span>
+              <span>BUY</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block w-3 h-3 rounded bg-[#ef4444] bg-opacity-20 border border-[#ef4444]"></span>
+              <span>SELL</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block w-3 h-3 rounded bg-[#f59e0b] bg-opacity-20 border border-[#f59e0b]"></span>
+              <span>Day Trade</span>
+            </div>
+            <span className="text-[#27272a]">|</span>
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block w-3 h-3 rounded bg-[#64748b] bg-opacity-20 border border-[#64748b]"></span>
+              <span>STK</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block w-3 h-3 rounded bg-[#a855f7] bg-opacity-20 border border-[#a855f7]"></span>
+              <span>OPT</span>
+            </div>
+          </div>
+          <div className="text-sm text-[#a1a1aa] ml-auto">
             {filteredAndSortedOrders.length} trade{filteredAndSortedOrders.length !== 1 ? "s" : ""} found
           </div>
         </div>
