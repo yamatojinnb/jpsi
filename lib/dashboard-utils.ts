@@ -136,9 +136,17 @@ export function parseDate(dateInt: number): Date {
   return new Date(year, month, day);
 }
 
+/** Format a Date as local YYYY-MM-DD (avoids UTC shift from toISOString). */
+export function formatDateLocal(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 export function formatDate(dateInt: number): string {
   const date = parseDate(dateInt);
-  return date.toISOString().split("T")[0];
+  return formatDateLocal(date);
 }
 
 export function getWeekNumber(date: Date, startDate: Date = new Date(2025, 11, 15)): number {

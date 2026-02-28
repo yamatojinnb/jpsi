@@ -19,7 +19,7 @@ import {
   calculateTWR,
   calculateWeeklyTWR,
   filterOrdersByTeam,
-  formatDate,
+  formatDateLocal,
   getWeekNumber,
 } from "@/lib/dashboard-utils";
 
@@ -76,9 +76,9 @@ export default function SummaryTab({
       ? twrData[twrData.length - 1].cumulativeTWR
       : 0;
 
-  // Format chart data
+  // Format chart data (use local date to avoid UTC 1-day shift)
   const chartData = twrData.map((d) => ({
-    date: d.date.toISOString().split("T")[0],
+    date: formatDateLocal(d.date),
     "Team TWR": d.cumulativeTWR,
     "S&P 500": 0, // TODO: Add actual S&P 500 data
   }));
@@ -149,8 +149,14 @@ export default function SummaryTab({
               stroke="#52525b"
               tick={{ fill: "#52525b", fontSize: 12 }}
               tickFormatter={(value) => {
-                const date = new Date(value);
-                return `${date.getMonth() + 1}/${date.getDate()}`;
+                // value is local "YYYY-MM-DD"; parse without UTC
+                const parts = String(value).split("-");
+                if (parts.length === 3) {
+                  const m = parseInt(parts[1], 10);
+                  const d = parseInt(parts[2], 10);
+                  return `${m}/${d}`;
+                }
+                return value;
               }}
             />
             <YAxis
