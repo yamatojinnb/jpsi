@@ -231,7 +231,7 @@ export default function RawDataTab({ selectedTeam, ordersData, allOrdersData }: 
                         {order["Buy/Sell"]}
                       </span>
                       {dayTrade && (
-                        <span className="ml-2 inline-block px-2 py-1 rounded text-xs font-medium bg-[#22c55e] bg-opacity-20 text-[#22c55e]">
+                        <span className="ml-2 inline-block px-2 py-1 rounded text-xs font-medium bg-[#f59e0b] bg-opacity-20 text-[#f59e0b]">
                           DT
                         </span>
                       )}
