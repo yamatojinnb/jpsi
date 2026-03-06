@@ -78,6 +78,8 @@ const COLORS: { [key: string]: string } = {
   "Pratyush Kumar": "#3b82f6",
   "Elias Hannert": "#ca8a04",
   "Chihiro KUGA": "#d97706",
+  "Lukas Matzer": "#9f1239",
+  "Paul Rockholz": "#be123c",
 };
 
 const getColor = (name: string) => COLORS[name] || "#6b7280";

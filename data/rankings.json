@@ -1,24 +1,24 @@
 {
-  "week": 10,
-  "lastUpdated": "2026-02-20",
+  "week": 11,
+  "lastUpdated": "2026-02-27",
   "teamRankings": [
     {
       "rank": 1,
-      "university": "University of California, Los Angeles",
-      "country": "🇺🇸",
-      "return": 6.8
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 12.7
     },
     {
       "rank": 2,
-      "university": "University of Geneva",
-      "country": "🇨🇭",
-      "return": 6.5
+      "university": "University of California, Los Angeles",
+      "country": "🇺🇸",
+      "return": 5.2
     },
     {
       "rank": 3,
       "university": "Waseda University",
       "country": "🇯🇵",
-      "return": 1.8
+      "return": 2.7
     }
   ],
   "rankings": [
@@ -27,83 +27,88 @@
       "team": "Pratyush Kumar",
       "university": "University of Delhi",
       "country": "🇮🇳",
-      "return": 29.9,
-      "change": 0.0
+      "return": 30.0,
+      "change": 0.1
     },
     {
       "rank": 2,
-      "team": "Victor Popescu",
-      "university": "University of Geneva",
-      "country": "🇨🇭",
-      "return": 15.8,
-      "change": 0.8
+      "team": "Lukas Matzer",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 23.9,
+      "change": "NEW"
     },
     {
       "rank": 3,
-      "team": "yuki sumiyoshi",
-      "university": "University of California, Los Angeles",
-      "country": "🇺🇸",
-      "return": 12.8,
-      "change": -0.1
+      "team": "Victor Popescu",
+      "university": "University of Geneva",
+      "country": "🇨🇭",
+      "return": 16.2,
+      "change": 0.4
     },
     {
       "rank": 4,
-      "team": "Yigit Kaan Ertürk",
-      "university": "Technical University of Munich",
-      "country": "🇩🇪",
-      "return": 12.1,
-      "change": 7.0
+      "team": "yuki sumiyoshi",
+      "university": "University of California, Los Angeles",
+      "country": "🇺🇸",
+      "return": 13.0,
+      "change": 0.2
     },
     {
       "rank": 5,
       "team": "Divyansh Kashyap",
       "university": "University of Delhi",
       "country": "🇮🇳",
-      "return": 10.4,
-      "change": 0.1
+      "return": 12.4,
+      "change": 2.0
     },
     {
       "rank": 6,
       "team": "Hana Shigeta",
       "university": "The University of Sheffield",
       "country": "🇬🇧",
-      "return": 8.0,
-      "change": -4.4
+      "return": 10.7,
+      "change": 2.7
     },
     {
       "rank": 7,
-      "team": "André dos Santos Mendo",
-      "university": "University of Geneva",
-      "country": "🇨🇭",
-      "return": 5.0,
-      "change": -0.2
+      "team": "Paul Rockholz",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 8.0,
+      "change": "NEW"
     },
     {
       "rank": 8,
-      "team": "William Florio",
-      "university": "Roger Williams University",
-      "country": "🇺🇸",
-      "return": 3.1,
-      "change": 1.2
+      "team": "Yorck Linderhaus",
+      "university": "Ludwig Maximilian University of Munich",
+      "country": "🇩🇪",
+      "return": 6.2,
+      "change": "NEW"
     },
     {
       "rank": 9,
       "team": "Chihiro KUGA",
       "university": "Waseda University",
       "country": "🇯🇵",
-      "return": 2.6,
-      "change": "NEW"
+      "return": 5.5,
+      "change": 2.9
     },
     {
       "rank": 10,
-      "team": "Kokota SUMI",
-      "university": "Waseda University",
-      "country": "🇯🇵",
-      "return": 1.7,
-      "change": "NEW"
+      "team": "Yigit Kaan Ertürk",
+      "university": "Technical University of Munich",
+      "country": "🇩🇪",
+      "return": 2.7,
+      "change": -9.4
     }
   ],
   "announcements": [
+    {
+      "date": "2026-02-27",
+      "title": "Week 11 Rankings Updated",
+      "content": "Week 11 rankings are live! LMU Munich makes a dramatic entrance with Lukas Matzer surging to 2nd place. Ludwig Maximilian University of Munich now leads the Team Standings!"
+    },
     {
       "date": "2026-02-20",
       "title": "Week 10 Rankings Updated",
@@ -198,27 +203,33 @@
     { "date": "2026-02-17", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Divyansh Kashyap", "5th": "Hana Shigeta", "6th": "Yigit Kaan Ertürk", "7th": "André dos Santos Mendo", "8th": "Aditya Jain", "9th": "William Florio", "10th": "Risa KONNO", "1stPerf": 129.9, "2ndPerf": 115.7, "3rdPerf": 112.9, "4thPerf": 110.4, "5thPerf": 110.2, "6thPerf": 105.3, "7thPerf": 104.7, "8thPerf": 101.8, "9thPerf": 101.7, "10thPerf": 100.8 },
     { "date": "2026-02-18", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "Yigit Kaan Ertürk", "4th": "yuki sumiyoshi", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "André dos Santos Mendo", "8th": "William Florio", "9th": "Aditya Jain", "10th": "Elias Hannert", "1stPerf": 129.9, "2ndPerf": 116.0, "3rdPerf": 115.9, "4thPerf": 112.9, "5thPerf": 110.4, "6thPerf": 109.7, "7thPerf": 104.5, "8thPerf": 102.7, "9thPerf": 101.8, "10thPerf": 101.1 },
     { "date": "2026-02-19", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Yigit Kaan Ertürk", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "André dos Santos Mendo", "8th": "William Florio", "9th": "Chihiro KUGA", "10th": "Aditya Jain", "1stPerf": 129.9, "2ndPerf": 115.8, "3rdPerf": 112.9, "4thPerf": 112.1, "5thPerf": 110.4, "6thPerf": 108.8, "7thPerf": 104.0, "8thPerf": 102.3, "9thPerf": 101.6, "10thPerf": 101.6 },
-    { "date": "2026-02-20", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Yigit Kaan Ertürk", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "André dos Santos Mendo", "8th": "William Florio", "9th": "Chihiro KUGA", "10th": "Kokota SUMI", "1stPerf": 129.9, "2ndPerf": 115.8, "3rdPerf": 112.8, "4thPerf": 112.1, "5thPerf": 110.4, "6thPerf": 108.0, "7thPerf": 105.0, "8thPerf": 103.1, "9thPerf": 102.6, "10thPerf": 101.7 }
+    { "date": "2026-02-20", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Yigit Kaan Ertürk", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "André dos Santos Mendo", "8th": "William Florio", "9th": "Chihiro KUGA", "10th": "Kokota SUMI", "1stPerf": 129.9, "2ndPerf": 115.8, "3rdPerf": 112.8, "4thPerf": 112.1, "5thPerf": 110.4, "6thPerf": 108.0, "7thPerf": 105.0, "8thPerf": 103.1, "9thPerf": 102.6, "10thPerf": 101.7 },
+    { "date": "2026-02-23", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Divyansh Kashyap", "5th": "Hana Shigeta", "6th": "Yigit Kaan Ertürk", "7th": "André dos Santos Mendo", "8th": "William Florio", "9th": "Chihiro KUGA", "10th": "Yigit Kaan Ertürk", "1stPerf": 130.0, "2ndPerf": 115.8, "3rdPerf": 112.9, "4thPerf": 112.4, "5thPerf": 109.4, "6thPerf": 105.3, "7thPerf": 103.5, "8thPerf": 103.2, "9thPerf": 102.6, "10thPerf": 102.2 },
+    { "date": "2026-02-24", "1st": "Pratyush Kumar", "2nd": "Yorck Linderhaus", "3rd": "Lukas Matzer", "4th": "Victor Popescu", "5th": "yuki sumiyoshi", "6th": "Divyansh Kashyap", "7th": "Hana Shigeta", "8th": "Paul Rockholz", "9th": "Yigit Kaan Ertürk", "10th": "André dos Santos Mendo", "1stPerf": 130.0, "2ndPerf": 122.1, "3rdPerf": 121.6, "4thPerf": 115.9, "5thPerf": 112.9, "6thPerf": 112.4, "7thPerf": 109.8, "8thPerf": 108.0, "9thPerf": 105.3, "10thPerf": 105.2 },
+    { "date": "2026-02-25", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "Lukas Matzer", "4th": "yuki sumiyoshi", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "Paul Rockholz", "8th": "André dos Santos Mendo", "9th": "Yutaro Nagamori", "10th": "William Florio", "1stPerf": 130.0, "2ndPerf": 116.0, "3rdPerf": 114.7, "4thPerf": 112.8, "5thPerf": 112.4, "6thPerf": 109.4, "7thPerf": 108.0, "8thPerf": 106.1, "9thPerf": 105.0, "10thPerf": 104.2 },
+    { "date": "2026-02-26", "1st": "Pratyush Kumar", "2nd": "Victor Popescu", "3rd": "yuki sumiyoshi", "4th": "Divyansh Kashyap", "5th": "Lukas Matzer", "6th": "Hana Shigeta", "7th": "Yigit Kaan Ertürk", "8th": "Paul Rockholz", "9th": "Yorck Linderhaus", "10th": "Chihiro KUGA", "1stPerf": 130.0, "2ndPerf": 116.2, "3rdPerf": 113.0, "4thPerf": 112.4, "5thPerf": 110.7, "6thPerf": 109.2, "7thPerf": 108.5, "8thPerf": 108.0, "9thPerf": 104.7, "10thPerf": 104.1 },
+    { "date": "2026-02-27", "1st": "Pratyush Kumar", "2nd": "Lukas Matzer", "3rd": "Victor Popescu", "4th": "yuki sumiyoshi", "5th": "Divyansh Kashyap", "6th": "Hana Shigeta", "7th": "Paul Rockholz", "8th": "Yorck Linderhaus", "9th": "Chihiro KUGA", "10th": "Yigit Kaan Ertürk", "1stPerf": 130.0, "2ndPerf": 123.9, "3rdPerf": 116.2, "4thPerf": 113.0, "5thPerf": 112.4, "6thPerf": 110.7, "7thPerf": 108.0, "8thPerf": 106.2, "9thPerf": 105.5, "10thPerf": 102.7 }
   ],
   "hallOfFame": {
     "mostDaysAt1": [
       { "name": "Yorck Linderhaus", "days": 26, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
-      { "name": "Pratyush Kumar", "days": 11, "country": "🇮🇳", "university": "University of Delhi" },
+      { "name": "Pratyush Kumar", "days": 16, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yash Kumar Bhawsingka", "days": 7, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yigit Kaan Ertürk", "days": 2, "country": "🇩🇪", "university": "Technical University of Munich" },
       { "name": "Yash Kumar", "days": 1, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
       { "name": "William Florio", "days": 1, "country": "🇺🇸", "university": "Roger Williams University" }
     ],
     "top3Appearances": [
-      { "name": "Victor Popescu", "count": 29, "country": "🇨🇭", "university": "University of Geneva" },
-      { "name": "Yorck Linderhaus", "count": 28, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "Victor Popescu", "count": 33, "country": "🇨🇭", "university": "University of Geneva" },
+      { "name": "Yorck Linderhaus", "count": 29, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
+      { "name": "Pratyush Kumar", "count": 19, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "William Florio", "count": 18, "country": "🇺🇸", "university": "Roger Williams University" },
-      { "name": "Pratyush Kumar", "count": 14, "country": "🇮🇳", "university": "University of Delhi" },
       { "name": "Yutaro Nagamori", "count": 12, "country": "🇬🇧", "university": "The University of Sheffield" },
+      { "name": "yuki sumiyoshi", "count": 11, "country": "🇺🇸", "university": "University of California, Los Angeles" },
       { "name": "Maximilian Emmanuel Zimmer", "count": 9, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
       { "name": "Yash Kumar Bhawsingka", "count": 9, "country": "🇮🇳", "university": "University of Delhi" },
-      { "name": "yuki sumiyoshi", "count": 9, "country": "🇺🇸", "university": "University of California, Los Angeles" },
       { "name": "Yigit Kaan Ertürk", "count": 8, "country": "🇩🇪", "university": "Technical University of Munich" },
+      { "name": "Lukas Matzer", "count": 3, "country": "🇩🇪", "university": "Ludwig Maximilian University of Munich" },
       { "name": "Noah Holland", "count": 3, "country": "🇬🇧", "university": "The University of Sheffield" },
       { "name": "Yash Kumar", "count": 2, "country": "🇮🇳", "university": "Indian Institute of Technology Roorkee" },
       { "name": "Seungho", "count": 1, "country": "🇺🇸", "university": "University of California, Los Angeles" },
