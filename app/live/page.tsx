@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -12,11 +11,9 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import RankingHistoryChart from "@/components/RankingHistoryChart";
 import BarChartRace from "@/components/BarChartRace";
 import HallOfFame from "@/components/HallOfFame";
 import TeamRankings from "@/components/TeamRankings";
-
 // Import rankings data
 import rankingsData from "@/data/rankings.json";
 
@@ -233,10 +230,6 @@ export default function LivePage() {
                 <HallOfFame hallOfFame={data.hallOfFame} />
               )}
 
-              {/* Ranking History Chart */}
-              {data.history && data.history.length > 0 && (
-                <RankingHistoryChart history={data.history} />
-              )}
             </div>
 
             {/* Sidebar */}
