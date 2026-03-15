@@ -17,6 +17,7 @@ export default function DashboardPage() {
   const [positionsData, setPositionsData] = useState<Position[]>([]);
   const [ordersData, setOrdersData] = useState<Order[]>([]);
   const [performanceData, setPerformanceData] = useState<Performance[]>([]);
+  const [sp500Data, setSp500Data] = useState<Record<string, unknown>[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -63,6 +64,19 @@ export default function DashboardPage() {
         setPositionsData(positions);
         setOrdersData(orders);
         setPerformanceData(performance);
+
+        try {
+          const sp500Response = await fetch("/dashboard-data/S&P500.csv");
+          const sp500Text = await sp500Response.text();
+          const parsed = Papa.parse(sp500Text, {
+            header: true,
+            dynamicTyping: true,
+            skipEmptyLines: true,
+          }).data as Record<string, unknown>[];
+          setSp500Data(parsed);
+        } catch {
+          setSp500Data([]);
+        }
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to load data");
         console.error("Error loading dashboard data:", err);
@@ -148,6 +162,7 @@ export default function DashboardPage() {
                 selectedTeam={selectedTeam}
                 performanceData={performanceData}
                 ordersData={ordersData}
+                sp500Data={sp500Data}
               />
             )}
             {activeTab === "allocation" && (
