@@ -149,7 +149,7 @@ export function formatDate(dateInt: number): string {
   return formatDateLocal(date);
 }
 
-export function getWeekNumber(date: Date, startDate: Date = new Date(2025, 11, 15)): number {
+export function getWeekNumber(date: Date, startDate: Date = new Date(2025, 11, 17)): number {
   const diffTime = date.getTime() - startDate.getTime();
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
   return Math.floor(diffDays / 7) + 1;
@@ -175,9 +175,9 @@ export function calculateTWR(
   teamAccountIds: string[],
   startNAV: number = 3000000
 ): { date: Date; twr: number; cumulativeTWR: number }[] {
-  // Filter performance data for team accounts
+  // Filter performance data for team accounts (exclude data before 2025-12-17)
   const teamData = performanceData.filter((p) =>
-    teamAccountIds.includes(p.ClientAccountID)
+    teamAccountIds.includes(p.ClientAccountID) && p.ReportDate >= 20251217
   );
 
   // Group by date and sum NAV
@@ -279,6 +279,7 @@ export function filterPositionsByTeam(
 ): Position[] {
   return positions.filter((p) => {
     if (!teamAccounts.includes(p.ClientAccountID)) return false;
+    if (p.ReportDate < 20251217) return false; // exclude data before display start 12/17
     if (startDate && p.ReportDate < startDate) return false;
     if (endDate && p.ReportDate > endDate) return false;
     return true;

@@ -49,7 +49,7 @@ export default function AllocationTab({
       const date = parseDate(dateInt);
       const weekStart = getWeekStart(date);
       const weekNum = Math.floor(
-        (date.getTime() - new Date(2025, 11, 15).getTime()) / (7 * 24 * 60 * 60 * 1000)
+        (date.getTime() - new Date(2025, 11, 17).getTime()) / (7 * 24 * 60 * 60 * 1000)
       ) + 1;
       if (!weekMap.has(weekNum)) {
         weekMap.set(weekNum, []);
