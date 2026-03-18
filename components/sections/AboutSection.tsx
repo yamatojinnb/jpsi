@@ -53,10 +53,10 @@ export default function AboutSection() {
     },
     {
       icon: DollarSign,
-      number: "$100,000",
+      number: "$1,000,000",
       title: "Virtual Portfolio",
       description:
-        "Each participant manages $100K in U.S. equities, ETFs, and options",
+        "Each participant manages $1M in U.S. equities, ETFs, and options",
     },
     {
       icon: Trophy,
