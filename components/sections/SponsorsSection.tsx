@@ -12,7 +12,7 @@ const sponsorsData = [
         <img
           src="/images/sponsors/interactive-brokers-logo.png"
           alt="Interactive Brokers"
-          className="h-12 w-auto object-contain"
+          className="h-24 w-64 object-contain"
         />
       </div>
     ),
@@ -50,6 +50,17 @@ const sponsorsData = [
       />
     ),
   },
+  {
+    title: "Gold Sponsor",
+    borderColor: "border-yellow-500",
+    content: (
+      <img
+        src="/images/sponsors/okayasu-shoji-logo.png"
+        alt="Okayasu Shoji"
+        className="h-20 w-auto object-contain"
+      />
+    ),
+  },
 ];
 
 export default function SponsorsSection() {
@@ -63,7 +74,7 @@ export default function SponsorsSection() {
   useEffect(() => {
     if (!inView) return;
 
-    const delays = [0, 250, 500, 750];
+    const delays = [0, 250, 500, 750, 1000];
     const timers = delays.map((delay, index) =>
       setTimeout(() => {
         setVisibleSponsors((prev) => [...prev, index]);
