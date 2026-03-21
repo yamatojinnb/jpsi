@@ -157,26 +157,38 @@ export default function DashboardPage() {
 
           {/* Tab Content */}
           <div className="flex-1 overflow-y-auto p-6">
-            {activeTab === "summary" && (
-              <SummaryTab
-                selectedTeam={selectedTeam}
-                performanceData={performanceData}
-                ordersData={ordersData}
-                sp500Data={sp500Data}
-              />
-            )}
-            {activeTab === "allocation" && (
-              <AllocationTab
-                selectedTeam={selectedTeam}
-                positionsData={positionsData}
-              />
-            )}
-            {activeTab === "rawdata" && (
-              <RawDataTab
-                selectedTeam={selectedTeam}
-                ordersData={ordersData}
-                allOrdersData={ordersData}
-              />
+            {selectedTeam === "University of California, Los Angeles" ? (
+              <div className="flex items-center justify-center h-full">
+                <div className="text-center">
+                  <div className="text-[#a1a1aa] text-lg">
+                    Data for this team is currently under review.
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <>
+                {activeTab === "summary" && (
+                  <SummaryTab
+                    selectedTeam={selectedTeam}
+                    performanceData={performanceData}
+                    ordersData={ordersData}
+                    sp500Data={sp500Data}
+                  />
+                )}
+                {activeTab === "allocation" && (
+                  <AllocationTab
+                    selectedTeam={selectedTeam}
+                    positionsData={positionsData}
+                  />
+                )}
+                {activeTab === "rawdata" && (
+                  <RawDataTab
+                    selectedTeam={selectedTeam}
+                    ordersData={ordersData}
+                    allOrdersData={ordersData}
+                  />
+                )}
+              </>
             )}
           </div>
 
