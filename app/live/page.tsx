@@ -120,17 +120,12 @@ export default function LivePage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Rankings Table - Main Content */}
             <div className="lg:col-span-2">
-              {/* Team Standings - Hidden until closing ceremony */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mb-6">
-                <div className="px-6 py-4 border-b border-gray-200">
-                  <h2 className="text-xl font-bold text-gray-900">🏫 Team Standings</h2>
-                  <p className="text-sm text-gray-500">Top performing universities</p>
-                </div>
-                <div className="px-6 py-8 text-center">
-                  <p className="text-gray-400 text-lg font-medium">Coming Soon</p>
-                  <p className="text-gray-400 text-sm mt-1">Full team rankings will be revealed at the closing ceremony.</p>
-                </div>
-              </div>
+              {data.teamRankings && data.teamRankings.length > 0 && (
+                <TeamRankings
+                  teamRankings={data.teamRankings}
+                  lastUpdated={data.lastUpdated}
+                />
+              )}
 
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
