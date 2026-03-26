@@ -62,6 +62,7 @@ export interface Performance {
 
 // Team mapping: University name -> Account IDs
 export const TEAM_ACCOUNT_MAP: { [key: string]: string[] } = {
+  "Ludwig Maximilian University of Munich": ["DUO860400", "DUO860184", "DUO860245"],
   "University of Alberta": ["DUO858010", "DUO858142", "DUO858153"],
   "Technical University of Munich": ["DUO858167", "DUO858183", "DUO858195"],
   "RWTH Aachen University": ["DUO858204", "DUO858213", "DUO858216"],
@@ -74,7 +75,6 @@ export const TEAM_ACCOUNT_MAP: { [key: string]: string[] } = {
   "Roger Williams University": ["DUO858565", "DUO858573", "DUO858580"],
   "Waseda University": ["DUO858694", "DUO858706", "DUO858732"],
   "University of Geneva": ["DUO858779", "DUO858786", "DUO858796"],
-  "Ludwig Maximilian University of Munich": ["DUO860400", "DUO860184", "DUO860245"],
   "University of California, Los Angeles": ["DUO859247", "DUO859340", "DUO859347"],
 };
 
