@@ -256,5 +256,10 @@
       { "name": "Catherine Yanran Xu", "count": 1, "country": "🇨🇦", "university": "University of Toronto" },
       { "name": "Xianmingsheng Diao", "count": 1, "country": "🇩🇪", "university": "Technical University of Munich" }
     ]
-  }
+  },
+  "reportRankings": [
+    { "rank": 1, "university": "Technical University of Munich", "country": "🇩🇪", "score": 93 },
+    { "rank": 2, "university": "University of Toronto", "country": "🇨🇦", "score": 86 },
+    { "rank": 3, "university": "The University of Sheffield", "country": "🇬🇧", "score": 79 }
+  ]
 }

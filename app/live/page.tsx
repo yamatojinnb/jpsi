@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import BarChartRace from "@/components/BarChartRace";
 import HallOfFame from "@/components/HallOfFame";
 import TeamRankings from "@/components/TeamRankings";
+import ReportAward from "@/components/ReportAward";
 // Import rankings data
 import rankingsData from "@/data/rankings.json";
 
@@ -123,6 +124,12 @@ export default function LivePage() {
               {data.teamRankings && data.teamRankings.length > 0 && (
                 <TeamRankings
                   teamRankings={data.teamRankings}
+                  lastUpdated={data.lastUpdated}
+                />
+              )}
+              {data.reportRankings && data.reportRankings.length > 0 && (
+                <ReportAward
+                  reportRankings={data.reportRankings}
                   lastUpdated={data.lastUpdated}
                 />
               )}
